@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/umedkit",
+  "textures": {
+    "0": "scpua:blocks/medkit"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:thebirthdaymonkey"
+    },
+    "facing=north": {
+      "model": "scpua:thebirthdaymonkey"
+    },
+    "facing=east": {
+      "model": "scpua:thebirthdaymonkey",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:thebirthdaymonkey",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:thebirthdaymonkey",
+      "y": 270
+    }
+  }
+}

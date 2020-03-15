@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/wetfloorsign",
+  "textures": {
+    "all": "scpua:blocks/wetfloorsign",
+    "particle": "scpua:blocks/wetfloorsign",
+    "0": "scpua:blocks/wetfloorsign"
+  }
+}

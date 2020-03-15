@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:uatrocityskull"
+    },
+    "facing=north": {
+      "model": "scpua:uatrocityskull"
+    },
+    "facing=east": {
+      "model": "scpua:uatrocityskull",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:uatrocityskull",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:uatrocityskull",
+      "y": 270
+    }
+  }
+}

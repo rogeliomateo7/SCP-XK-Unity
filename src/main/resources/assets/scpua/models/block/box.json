@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/ucontaimentbox",
+  "textures": {
+    "all": "scpua:blocks/contaimentboxu",
+    "particle": "scpua:blocks/contaimentboxu",
+    "0": "scpua:blocks/contaimentboxu"
+  }
+}

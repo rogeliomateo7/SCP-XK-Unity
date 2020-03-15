@@ -1,0 +1,9 @@
+{
+  "parent": "scpua:custom/umirror",
+  "textures": {
+    "all": "scpua:blocks/umirror",
+    "particle": "scpua:blocks/umirror",
+    "0": "scpua:blocks/umirror",
+    "missing": "scpua:blocks/"
+  }
+}

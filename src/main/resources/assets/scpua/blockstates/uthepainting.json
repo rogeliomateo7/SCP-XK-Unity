@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:uthepainting"
+    },
+    "facing=north": {
+      "model": "scpua:uthepainting"
+    },
+    "facing=east": {
+      "model": "scpua:uthepainting",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:uthepainting",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:uthepainting",
+      "y": 270
+    }
+  }
+}

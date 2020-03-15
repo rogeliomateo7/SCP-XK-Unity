@@ -1,0 +1,10 @@
+{
+  "parent": "scpua:custom/coffin",
+  "textures": {
+    "all": "scpua:blocks/076bottom",
+    "particle": "scpua:blocks/076bottom",
+    "0": "scpua:blocks/076bottom",
+    "1": "scpua:blocks/076floor",
+    "2": "scpua:blocks/076middle"
+  }
+}

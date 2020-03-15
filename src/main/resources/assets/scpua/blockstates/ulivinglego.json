@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:ulivinglego"
+    },
+    "facing=north": {
+      "model": "scpua:ulivinglego"
+    },
+    "facing=east": {
+      "model": "scpua:ulivinglego",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:ulivinglego",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:ulivinglego",
+      "y": 270
+    }
+  }
+}

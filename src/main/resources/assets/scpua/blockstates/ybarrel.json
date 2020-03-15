@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:ybarrel"
+    },
+    "facing=north": {
+      "model": "scpua:ybarrel"
+    },
+    "facing=east": {
+      "model": "scpua:ybarrel",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:ybarrel",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:ybarrel",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/alarmbuttonu",
+  "textures": {
+    "all": "scpua:blocks/alarmbutton",
+    "particle": "scpua:blocks/alarmbutton",
+    "0": "scpua:blocks/alarmbutton"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/phonemalo",
+  "textures": {
+    "2": "scpua:blocks/malo"
+  }
+}

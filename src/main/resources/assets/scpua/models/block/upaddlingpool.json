@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/120",
+  "textures": {
+    "all": "scpua:blocks/120",
+    "particle": "scpua:blocks/120",
+    "0": "scpua:blocks/120"
+  }
+}

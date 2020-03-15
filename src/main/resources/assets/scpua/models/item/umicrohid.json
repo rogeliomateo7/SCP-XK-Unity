@@ -1,0 +1,7 @@
+{
+  "parent": "scpua:custom/microhid",
+  "textures": {
+    "0": "scpua:blocks/microhid",
+    "missing": "scpua:blocks/"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/upainkiller",
+  "textures": {
+    "0": "scpua:blocks/painkiller"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/shelfmiddle",
+  "textures": {
+    "all": "scpua:blocks/shelf",
+    "particle": "scpua:blocks/shelf",
+    "0": "scpua:blocks/shelf"
+  }
+}

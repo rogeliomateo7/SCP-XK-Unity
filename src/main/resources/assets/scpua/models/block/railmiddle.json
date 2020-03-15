@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/urailingsm",
+  "textures": {
+    "all": "scpua:blocks/urailings",
+    "particle": "scpua:blocks/urailings",
+    "1": "scpua:blocks/urailings"
+  }
+}

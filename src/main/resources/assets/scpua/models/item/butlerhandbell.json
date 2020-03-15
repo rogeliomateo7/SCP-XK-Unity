@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/butlershandbell",
+  "textures": {
+    "1": "scpua:blocks/handbutlerbell"
+  }
+}

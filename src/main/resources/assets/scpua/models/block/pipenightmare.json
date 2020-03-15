@@ -1,0 +1,9 @@
+{
+  "parent": "scpua:custom/pipenightmarep",
+  "textures": {
+    "all": "scpua:blocks/rustymetal",
+    "particle": "scpua:blocks/rustymetal",
+    "0": "scpua:blocks/rustymetal",
+    "missing": "scpua:blocks/"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/phoneon",
+  "textures": {
+    "1": "scpua:blocks/cellphone"
+  }
+}

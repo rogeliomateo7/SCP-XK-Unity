@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/fireextinguixer",
+  "textures": {
+    "all": "scpua:blocks/fireextinguixer",
+    "particle": "scpua:blocks/fireextinguixer",
+    "0": "scpua:blocks/fireextinguixer"
+  }
+}

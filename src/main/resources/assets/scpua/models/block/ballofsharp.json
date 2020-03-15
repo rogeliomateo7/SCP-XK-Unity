@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "scpua:blocks/ballofsharp",
+    "up": "scpua:blocks/ballofsharp",
+    "north": "scpua:blocks/ballofsharp",
+    "east": "scpua:blocks/ballofsharp",
+    "south": "scpua:blocks/ballofsharp",
+    "west": "scpua:blocks/ballofsharp",
+    "particle": "scpua:blocks/ballofsharp"
+  }
+}

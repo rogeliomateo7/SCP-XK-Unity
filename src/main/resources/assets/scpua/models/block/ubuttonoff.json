@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/ubuttonoff",
+  "textures": {
+    "all": "scpua:blocks/ubutton",
+    "particle": "scpua:blocks/ubutton",
+    "0": "scpua:blocks/ubutton"
+  }
+}

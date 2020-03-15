@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/uspitt",
+  "textures": {
+    "0": "scpua:blocks/610stalker"
+  }
+}

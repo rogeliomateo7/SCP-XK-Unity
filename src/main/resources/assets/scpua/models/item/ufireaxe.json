@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/ufireaxe",
+  "textures": {
+    "0": "scpua:blocks/fireaxe"
+  }
+}

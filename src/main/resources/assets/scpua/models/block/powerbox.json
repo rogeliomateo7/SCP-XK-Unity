@@ -1,0 +1,9 @@
+{
+  "parent": "scpua:custom/powerbox",
+  "textures": {
+    "all": "scpua:blocks/powerbox",
+    "particle": "scpua:blocks/powerbox",
+    "0": "scpua:blocks/powerbox",
+    "missing": "scpua:blocks/"
+  }
+}

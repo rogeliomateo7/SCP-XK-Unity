@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:czglass"
+    },
+    "facing=north": {
+      "model": "scpua:czglass"
+    },
+    "facing=east": {
+      "model": "scpua:czglass",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:czglass",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:czglass",
+      "y": 270
+    }
+  }
+}

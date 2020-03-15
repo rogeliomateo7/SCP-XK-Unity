@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "scpua:blocks/genesissappling",
+    "particle": "scpua:blocks/genesissappling"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:walllightu"
+    },
+    "facing=north": {
+      "model": "scpua:walllightu"
+    },
+    "facing=east": {
+      "model": "scpua:walllightu",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:walllightu",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:walllightu",
+      "y": 270
+    }
+  }
+}

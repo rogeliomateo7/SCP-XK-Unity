@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:uwskull"
+    },
+    "facing=north": {
+      "model": "scpua:uwskull"
+    },
+    "facing=east": {
+      "model": "scpua:uwskull",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:uwskull",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:uwskull",
+      "y": 270
+    }
+  }
+}

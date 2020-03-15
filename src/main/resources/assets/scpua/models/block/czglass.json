@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/lczglass",
+  "textures": {
+    "all": "scpua:blocks/glasscz",
+    "particle": "scpua:blocks/glasscz",
+    "0": "scpua:blocks/glasscz"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/ubrokenpipe",
+  "textures": {
+    "0": "scpua:blocks/pipe"
+  }
+}

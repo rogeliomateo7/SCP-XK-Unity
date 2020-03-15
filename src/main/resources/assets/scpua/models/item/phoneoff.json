@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/phoneoff",
+  "textures": {
+    "1": "scpua:blocks/cellphone"
+  }
+}

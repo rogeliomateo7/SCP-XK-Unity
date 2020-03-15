@@ -1,0 +1,13 @@
+{
+  "parent": "scpua:custom/hbdopen",
+  "textures": {
+    "all": "scpua:blocks/upper",
+    "particle": "scpua:blocks/upper",
+    "2": "scpua:blocks/front",
+    "3": "scpua:blocks/inside",
+    "4": "scpua:blocks/bottom",
+    "5": "scpua:blocks/sides",
+    "6": "scpua:blocks/upper",
+    "missing": "scpua:blocks/"
+  }
+}

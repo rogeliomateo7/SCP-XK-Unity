@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/firstaidu",
+  "textures": {
+    "all": "scpua:blocks/firstaid",
+    "particle": "scpua:blocks/firstaid",
+    "0": "scpua:blocks/firstaid"
+  }
+}

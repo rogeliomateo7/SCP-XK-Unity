@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/uflamethrower",
+  "textures": {
+    "0": "scpua:blocks/up90"
+  }
+}

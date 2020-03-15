@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/storageshelfright",
+  "textures": {
+    "all": "scpua:blocks/storageshelf",
+    "particle": "scpua:blocks/storageshelf",
+    "0": "scpua:blocks/storageshelf"
+  }
+}

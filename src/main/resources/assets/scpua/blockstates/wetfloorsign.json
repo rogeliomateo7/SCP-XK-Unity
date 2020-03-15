@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:wetfloorsign"
+    },
+    "facing=north": {
+      "model": "scpua:wetfloorsign"
+    },
+    "facing=east": {
+      "model": "scpua:wetfloorsign",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:wetfloorsign",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:wetfloorsign",
+      "y": 270
+    }
+  }
+}

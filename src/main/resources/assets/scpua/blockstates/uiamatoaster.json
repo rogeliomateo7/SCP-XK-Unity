@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:uiamatoaster"
+    },
+    "facing=north": {
+      "model": "scpua:uiamatoaster"
+    },
+    "facing=east": {
+      "model": "scpua:uiamatoaster",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:uiamatoaster",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:uiamatoaster",
+      "y": 270
+    }
+  }
+}

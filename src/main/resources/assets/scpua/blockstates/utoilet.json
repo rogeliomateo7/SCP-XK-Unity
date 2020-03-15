@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:utoilet"
+    },
+    "facing=north": {
+      "model": "scpua:utoilet"
+    },
+    "facing=east": {
+      "model": "scpua:utoilet",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:utoilet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:utoilet",
+      "y": 270
+    }
+  }
+}

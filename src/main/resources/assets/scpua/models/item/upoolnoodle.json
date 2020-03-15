@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/upoolnoodle",
+  "textures": {
+    "0": "scpua:blocks/365"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:songofgenesisn"
+    },
+    "facing=north": {
+      "model": "scpua:songofgenesisn"
+    },
+    "facing=east": {
+      "model": "scpua:songofgenesisn",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:songofgenesisn",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:songofgenesisn",
+      "y": 270
+    }
+  }
+}

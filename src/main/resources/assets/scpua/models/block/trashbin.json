@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/trashbin",
+  "textures": {
+    "all": "scpua:blocks/trashbin",
+    "particle": "scpua:blocks/trashbin",
+    "0": "scpua:blocks/trashbin"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:alarmbutton"
+    },
+    "facing=north": {
+      "model": "scpua:alarmbutton"
+    },
+    "facing=east": {
+      "model": "scpua:alarmbutton",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:alarmbutton",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:alarmbutton",
+      "y": 270
+    }
+  }
+}

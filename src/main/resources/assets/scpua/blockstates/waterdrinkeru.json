@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:waterdrinkeru"
+    },
+    "facing=north": {
+      "model": "scpua:waterdrinkeru"
+    },
+    "facing=east": {
+      "model": "scpua:waterdrinkeru",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:waterdrinkeru",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:waterdrinkeru",
+      "y": 270
+    }
+  }
+}

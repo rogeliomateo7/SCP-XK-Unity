@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:storageshelfmiddle"
+    },
+    "facing=north": {
+      "model": "scpua:storageshelfmiddle"
+    },
+    "facing=east": {
+      "model": "scpua:storageshelfmiddle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:storageshelfmiddle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:storageshelfmiddle",
+      "y": 270
+    }
+  }
+}

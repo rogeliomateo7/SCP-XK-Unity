@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:firstaidu"
+    },
+    "facing=north": {
+      "model": "scpua:firstaidu"
+    },
+    "facing=east": {
+      "model": "scpua:firstaidu",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:firstaidu",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:firstaidu",
+      "y": 270
+    }
+  }
+}

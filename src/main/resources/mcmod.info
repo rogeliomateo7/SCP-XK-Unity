@@ -1,0 +1,19 @@
+[
+{
+  "modid": "scpua",
+  "name": "SCP lockdown XK Unity addon",
+  "description": "Addon for SCP Lockdown mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/scp-lockdown-unity-addon",
+  "updateUrl": "",
+  "authorList": [
+    "Gusutabo",
+    "Icerysky"
+   ],
+  "credits": "ConnorTron110 for the Recode.",
+  "logoFile": "assets/scpua/textures/unityxklogo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

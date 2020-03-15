@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/udesertcan",
+  "textures": {
+    "0": "scpua:blocks/622"
+  }
+}

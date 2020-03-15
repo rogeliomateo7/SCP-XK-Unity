@@ -1,0 +1,8 @@
+{
+  "parent": "scpua:custom/ulaptop",
+  "textures": {
+    "all": "scpua:blocks/ulaptop",
+    "particle": "scpua:blocks/ulaptop",
+    "0": "scpua:blocks/ulaptop"
+  }
+}

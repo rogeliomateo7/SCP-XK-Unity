@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/inkstain",
+  "textures": {
+    "0": "scpua:blocks/505"
+  }
+}

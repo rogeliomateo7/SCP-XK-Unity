@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:averyangryboxofcereal"
+    },
+    "facing=north": {
+      "model": "scpua:averyangryboxofcereal"
+    },
+    "facing=east": {
+      "model": "scpua:averyangryboxofcereal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:averyangryboxofcereal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:averyangryboxofcereal",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:genesislog"
+    },
+    "facing=south": {
+      "model": "scpua:genesislog"
+    },
+    "facing=north": {
+      "model": "scpua:genesislog"
+    },
+    "facing=east": {
+      "model": "scpua:genesislog",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "scpua:genesislog",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "scpua:genesislog",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "scpua:genesislog",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

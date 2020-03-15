@@ -1,0 +1,9 @@
+{
+  "parent": "scpua:custom/bdaymonkey",
+  "textures": {
+    "all": "scpua:blocks/monkey",
+    "particle": "scpua:blocks/monkey",
+    "0": "scpua:blocks/monkey",
+    "missing": "scpua:blocks/"
+  }
+}

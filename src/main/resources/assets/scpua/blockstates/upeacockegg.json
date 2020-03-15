@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:upeacockegg"
+    },
+    "facing=north": {
+      "model": "scpua:upeacockegg"
+    },
+    "facing=east": {
+      "model": "scpua:upeacockegg",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:upeacockegg",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:upeacockegg",
+      "y": 270
+    }
+  }
+}

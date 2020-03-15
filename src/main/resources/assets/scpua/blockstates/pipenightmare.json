@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:pipenightmare"
+    },
+    "facing=north": {
+      "model": "scpua:pipenightmare"
+    },
+    "facing=east": {
+      "model": "scpua:pipenightmare",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:pipenightmare",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:pipenightmare",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "scpua:pipenightmare",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "scpua:pipenightmare",
+      "x": 90
+    }
+  }
+}

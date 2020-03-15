@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:umirror"
+    },
+    "facing=north": {
+      "model": "scpua:umirror"
+    },
+    "facing=east": {
+      "model": "scpua:umirror",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:umirror",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:umirror",
+      "y": 270
+    }
+  }
+}

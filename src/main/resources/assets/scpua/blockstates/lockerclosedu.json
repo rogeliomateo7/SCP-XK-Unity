@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "scpua:lockerclosedu"
+    },
+    "facing=north": {
+      "model": "scpua:lockerclosedu"
+    },
+    "facing=east": {
+      "model": "scpua:lockerclosedu",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:lockerclosedu",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:lockerclosedu",
+      "y": 270
+    }
+  }
+}

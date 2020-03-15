@@ -1,0 +1,6 @@
+{
+  "parent": "scpua:custom/playdoug",
+  "textures": {
+    "0": "scpua:blocks/playdoug"
+  }
+}
