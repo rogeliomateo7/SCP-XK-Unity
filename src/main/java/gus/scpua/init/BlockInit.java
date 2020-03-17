@@ -48,4 +48,25 @@ public class BlockInit {
 	public static final Block RAIL_RIGHT = new OrientableBlock("railright", Material.IRON, 3, 2);
 	public static final Block POWER_BOX = new OrientableBlock("powerbox", Material.IRON, 3, 3);
 	public static final Block FIRE_EXT = new OrientableBlock("fireextinguixer", Material.IRON, 3, 4);
+
+	//Lockdown Unity
+	// All of these hurt me inside
+	public static final Block WALL_1 = new BlockBase("walls1", Material.IRON, 1);
+	public static final Block WALL_1A = new BlockBase("walls1a", Material.IRON, 1);
+	public static final Block WALL_1B = new BlockBase("walls1b", Material.IRON, 1);
+	public static final Block WALL_1D = new BlockBase("walls1d", Material.IRON, 1);
+	public static final Block WALL_1E = new BlockBase("walls1e", Material.IRON, 1);
+	public static final Block WALL_1F = new BlockBase("walls1f", Material.IRON, 1);
+
+	public static final Block WALL_2 = new BlockBase("walls2", Material.IRON, 1);
+	public static final Block WALL_2B = new BlockBase("walls2b", Material.IRON, 1);
+	public static final Block WALL_2D = new BlockBase("walls2d", Material.IRON, 1);
+	public static final Block WALL_2F = new BlockBase("walls2f", Material.IRON, 1);
+
+	public static final Block WALL_3B = new BlockBase("walls3b", Material.IRON, 1);
+	public static final Block WALL_3D = new BlockBase("walls3d", Material.IRON, 1);
+
+	public static final Block FLOORS = new BlockBase("floors", Material.IRON, 1);
+	public static final Block GRID = new BlockBase("grid", Material.IRON, 1);
+	public static final Block WALLPILLOW = new BlockBase("wallpillow", Material.CLOTH, 1);
 }
