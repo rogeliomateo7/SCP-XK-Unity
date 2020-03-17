@@ -12,25 +12,38 @@ import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.*;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class OrientatableBlock extends Block implements IHasModel {
+import javax.annotation.Nullable;
+import java.util.List;
+
+public class OrientableBlock extends Block implements IHasModel {
 
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
+    public boolean fullCube = true;
+    public int collisSet;
 
-    public OrientatableBlock(String name, Material material, int inv) {
+    public OrientableBlock(String name, Material material, int inv, int collision) {
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
         setHardness(2.0F);
         setResistance(30);
+
+        collisSet = collision;
+
+        if (name.equals("trashbin") || name.contains("rail") || name.equals("powerbox")) fullCube = false;
 
         if(inv == 1) setCreativeTab(scpua.tablockdownunitytab);
         if(inv == 2) setCreativeTab(scpua.tabweaponsscp);
@@ -38,7 +51,7 @@ public class OrientatableBlock extends Block implements IHasModel {
         if(inv == 4) setCreativeTab(scpua.tabsite93blocks);
 
         BlockInit.BLOCKS.add(this);
-        ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(name));
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING , EnumFacing.NORTH));
     }
 
@@ -47,12 +60,67 @@ public class OrientatableBlock extends Block implements IHasModel {
         scpua.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 
+    //Removes X-ray effect
     @Override
-    public boolean isFullBlock(IBlockState state) {
-        return false;
+    public boolean isOpaqueCube(IBlockState state) { return fullCube; }
+
+    //Removes in block shadows
+    @Override
+    public boolean isFullCube(IBlockState state) { return fullCube; }
+
+    //Allows transparency
+    @SideOnly(Side.CLIENT)
+    public BlockRenderLayer getBlockLayer()
+    {
+        return BlockRenderLayer.CUTOUT;
     }
 
     /**
+     * Collision Sector
+     * 1 = Bin
+     * 2 = Rail
+     * 3 = PowerBox
+     */
+
+    public static AxisAlignedBB BASE_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0); //Used for Returning
+    public static AxisAlignedBB BIN_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
+    public static AxisAlignedBB RAIL_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
+    public static AxisAlignedBB POWER_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
+
+    @Override
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+        switch ((EnumFacing) state.getValue(BlockHorizontal.FACING)){
+            case NORTH:
+                BIN_AABB = new AxisAlignedBB(0.0625 * 4, 0, 0.0625 * 8, 0.0625 * 12, 0.0625 * 16, 0.0625 * 15);
+                RAIL_AABB = new AxisAlignedBB(0.0625 * 16, 0, 0.0625 * 13, 0, 0.0625 * 16, 0.0625 * 15);
+                POWER_AABB = new AxisAlignedBB(0.0625 * 2.5, 0.03125, 0.0625 * 14.5, 0.0625 * 13.5, 0.0625 * 16.5, 0.0625 * 16.5);
+                break;
+            case SOUTH:
+                BIN_AABB = new AxisAlignedBB(0.0625 * 4, 0, 0.0625, 0.0625 * 12, 0.0625 * 16, 0.0625 * 8);
+                RAIL_AABB = new AxisAlignedBB(0.0625 * 16, 0, 0.0625, 0, 0.0625 * 16, 0.0625 * 3);
+                POWER_AABB = new AxisAlignedBB(0.0625 * 2.5, 0.03125, 0.0625 * 1.5, 0.0625 * 13.5, 0.0625 * 16.5, -0.03125);
+                break;
+            case EAST:
+                BIN_AABB = new AxisAlignedBB(0.0625, 0, 0.0625 * 4, 0.0625 * 8, 0.0625 * 16, 0.0625 * 12);
+                RAIL_AABB = new AxisAlignedBB(0.0625 * 3, 0, 0, 0.0625, 0.0625 * 16, 0.0625 * 16);
+                POWER_AABB = new AxisAlignedBB(0.0625, 0, 0.0625, 0, 0.0625, 0.0625); // Not Done Yet
+                break;
+            case WEST:
+                BIN_AABB = new AxisAlignedBB(0.0625 * 15, 0, 0.0625 * 4, 0.0625 * 8, 0.0625 * 16, 0.0625 * 12);
+                RAIL_AABB = new AxisAlignedBB(0.0625 * 15, 0, 0, 0.0625 * 13, 0.0625 * 16, 0.0625 * 16);
+                POWER_AABB = new AxisAlignedBB(0.0625, 0, 0.0625, 0, 0.0625, 0.0625); // Not Done Yet
+        }
+
+        if(collisSet == 1) BASE_AABB = BIN_AABB; //Bin
+        if(collisSet == 2) BASE_AABB = RAIL_AABB; //Rail
+        if(collisSet == 3) BASE_AABB = POWER_AABB; //Power Box
+
+        return BASE_AABB;
+    }
+
+    /**
+     * Rotating Sector
+     *
      * Called after the block is set in the Chunk data, but before the Tile Entity is set
      */
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)

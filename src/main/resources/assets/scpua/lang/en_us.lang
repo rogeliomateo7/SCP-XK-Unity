@@ -31,6 +31,10 @@ tile.shczmiddle.name=SHCZ Middle
 tile.shczupper.name=SHCZ Wall
   //Cosmetics
 tile.trashbin.name=Trash Bin
+tile.railleft.name=Rail Left
+tile.railmiddle.name=Rail Middle
+tile.railright.name=Rail Right
+tile.powerbox.name=Power Box
 
 
 //Potions
@@ -154,8 +158,6 @@ tile.ubuttonoff.name=Button
 entity.thestatueu.name=The Statue (173 U)
 tile.wallpillow.name=Wall Pillow SubLevel
 tile.grid.name=Grid Sublevel
-tile.railleft.name=Rail Left
-tile.powerbox.name=Power Box
 entity.uo5.name=O5-Redacted
 tile.fireextinguixer.name=Fire Extinguixer
 tile.walls1e.name=Wall D1 Sublevel
@@ -238,7 +240,6 @@ tile.songofgenesis.name=Song of Genesis (407)
 tile.shelfmiddle.name=Shelf Middle
 entity.humansrefutedn.name=Human Refuted (3199)(SAFE)
 item.bdaycandy.name=Birthday Candy
-tile.railright.name=Rail Right
 item.uncleanland.name=Red Sea Object (093)
 tile.walls2.name=Wall A2 SubLevel2 
 item.capofneglectboots.name=Cap Of Neglect Boots
@@ -287,7 +288,6 @@ item.uantimaterielrifle.name=Anti-Materiel Rifle
 tile.utoilet.name=Toilet
 entity.harmlesskitten.name=A Harmless Kitten (247)
 potion.effect.bleeding=Bleeding
-tile.railmiddle.name=Rail Middle
 item.upoolnoodle.name=Pool Noodle (365)
 item.ufireaxe.name=Fire Axe
 entity.dohtank.name=Doh Tank
