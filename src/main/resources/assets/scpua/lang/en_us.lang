@@ -35,6 +35,8 @@ tile.railleft.name=Rail Left
 tile.railmiddle.name=Rail Middle
 tile.railright.name=Rail Right
 tile.powerbox.name=Power Box
+tile.fireextinguixer.name=Fire Extinguisher
+  //Said tab
 
 
 //Potions
@@ -159,7 +161,6 @@ entity.thestatueu.name=The Statue (173 U)
 tile.wallpillow.name=Wall Pillow SubLevel
 tile.grid.name=Grid Sublevel
 entity.uo5.name=O5-Redacted
-tile.fireextinguixer.name=Fire Extinguixer
 tile.walls1e.name=Wall D1 Sublevel
 tile.barrel.name=Red Barrel
 item.capofneglectlegs.name=Cap Of Neglect Leggings

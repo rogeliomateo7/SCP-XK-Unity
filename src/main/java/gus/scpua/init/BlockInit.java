@@ -47,4 +47,5 @@ public class BlockInit {
 	public static final Block RAIL_MIDDLE = new OrientableBlock("railmiddle", Material.IRON, 3, 2);
 	public static final Block RAIL_RIGHT = new OrientableBlock("railright", Material.IRON, 3, 2);
 	public static final Block POWER_BOX = new OrientableBlock("powerbox", Material.IRON, 3, 3);
+	public static final Block FIRE_EXT = new OrientableBlock("fireextinguixer", Material.IRON, 3, 4);
 }

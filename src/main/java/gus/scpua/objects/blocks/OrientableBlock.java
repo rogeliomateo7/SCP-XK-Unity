@@ -43,7 +43,7 @@ public class OrientableBlock extends Block implements IHasModel {
 
         collisSet = collision;
 
-        if (name.equals("trashbin") || name.contains("rail") || name.equals("powerbox")) fullCube = false;
+        if (name.equals("trashbin") || name.contains("rail") || name.equals("powerbox") || name.contains("fire")) fullCube = false;
 
         if(inv == 1) setCreativeTab(scpua.tablockdownunitytab);
         if(inv == 2) setCreativeTab(scpua.tabweaponsscp);
@@ -80,12 +80,14 @@ public class OrientableBlock extends Block implements IHasModel {
      * 1 = Bin
      * 2 = Rail
      * 3 = PowerBox
+     * 4 = Fire Ext
      */
 
     public static AxisAlignedBB BASE_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0); //Used for Returning
     public static AxisAlignedBB BIN_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
     public static AxisAlignedBB RAIL_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
     public static AxisAlignedBB POWER_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
+    public static AxisAlignedBB FIRE_EXT_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
@@ -94,26 +96,31 @@ public class OrientableBlock extends Block implements IHasModel {
                 BIN_AABB = new AxisAlignedBB(0.0625 * 4, 0, 0.0625 * 8, 0.0625 * 12, 0.0625 * 16, 0.0625 * 15);
                 RAIL_AABB = new AxisAlignedBB(0.0625 * 16, 0, 0.0625 * 13, 0, 0.0625 * 16, 0.0625 * 15);
                 POWER_AABB = new AxisAlignedBB(0.0625 * 2.5, 0.03125, 0.0625 * 14.5, 0.0625 * 13.5, 0.0625 * 16.5, 0.0625 * 16.5);
+                FIRE_EXT_AABB = new AxisAlignedBB(0.0625 * 12, 0.0625, 0.0625 * 9, 0.0625 * 4, 0.0625 * 17, 0.0625 * 16);
                 break;
             case SOUTH:
                 BIN_AABB = new AxisAlignedBB(0.0625 * 4, 0, 0.0625, 0.0625 * 12, 0.0625 * 16, 0.0625 * 8);
                 RAIL_AABB = new AxisAlignedBB(0.0625 * 16, 0, 0.0625, 0, 0.0625 * 16, 0.0625 * 3);
                 POWER_AABB = new AxisAlignedBB(0.0625 * 2.5, 0.03125, 0.0625 * 1.5, 0.0625 * 13.5, 0.0625 * 16.5, -0.03125);
+                FIRE_EXT_AABB = new AxisAlignedBB(0.0625 * 4, 0.0625, 0, 0.0625 * 12, 0.0625 * 17, 0.0625 * 7);
                 break;
             case EAST:
                 BIN_AABB = new AxisAlignedBB(0.0625, 0, 0.0625 * 4, 0.0625 * 8, 0.0625 * 16, 0.0625 * 12);
                 RAIL_AABB = new AxisAlignedBB(0.0625 * 3, 0, 0, 0.0625, 0.0625 * 16, 0.0625 * 16);
-                POWER_AABB = new AxisAlignedBB(0.0625, 0, 0.0625, 0, 0.0625, 0.0625); // Not Done Yet
+                POWER_AABB = new AxisAlignedBB(-0.03125, 0.03125, 0.0625 * 2.5, 0.0625 * 1.5, 0.0625 * 16.5, 0.0625 * 13.5);
+                FIRE_EXT_AABB = new AxisAlignedBB(0, 0.0625, 0.0625 * 4, 0.0625 * 7, 0.0625 * 17, 0.0625 * 12);
                 break;
             case WEST:
                 BIN_AABB = new AxisAlignedBB(0.0625 * 15, 0, 0.0625 * 4, 0.0625 * 8, 0.0625 * 16, 0.0625 * 12);
                 RAIL_AABB = new AxisAlignedBB(0.0625 * 15, 0, 0, 0.0625 * 13, 0.0625 * 16, 0.0625 * 16);
-                POWER_AABB = new AxisAlignedBB(0.0625, 0, 0.0625, 0, 0.0625, 0.0625); // Not Done Yet
+                POWER_AABB = new AxisAlignedBB(0.0625 * 16.5, 0.03125, 0.0625 * 2.5, 0.0625 * 14.5, 0.0625 * 16.5, 0.0625 * 13.5);
+                FIRE_EXT_AABB = new AxisAlignedBB(0.0625 * 16, 0.0625, 0.0625 * 4, 0.0625 * 9, 0.0625 * 17, 0.0625 * 12);
         }
 
         if(collisSet == 1) BASE_AABB = BIN_AABB; //Bin
         if(collisSet == 2) BASE_AABB = RAIL_AABB; //Rail
         if(collisSet == 3) BASE_AABB = POWER_AABB; //Power Box
+        if(collisSet == 4) BASE_AABB = FIRE_EXT_AABB; //Fire Extinguisher
 
         return BASE_AABB;
     }
