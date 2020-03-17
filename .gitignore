@@ -20,3 +20,7 @@ build
 # other
 eclipse
 run
+
+# Visual Studio Products
+.vscode/*
+*.code-workspace
