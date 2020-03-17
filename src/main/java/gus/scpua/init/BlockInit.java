@@ -42,5 +42,9 @@ public class BlockInit {
 	public static final Block SHCZ_WALL = new BlockBase("shczwall", Material.IRON, 4);
 
 	//Cosmetics
-	public static final Block TRASH_BIN = new OrientatableBlock("trashbin", Material.WOOD, 4);
+	public static final Block TRASH_BIN = new OrientableBlock("trashbin", Material.WOOD, 3, 1);
+	public static final Block RAIL_LEFT = new OrientableBlock("railleft", Material.IRON, 3, 2);
+	public static final Block RAIL_MIDDLE = new OrientableBlock("railmiddle", Material.IRON, 3, 2);
+	public static final Block RAIL_RIGHT = new OrientableBlock("railright", Material.IRON, 3, 2);
+	public static final Block POWER_BOX = new OrientableBlock("powerbox", Material.IRON, 3, 3);
 }
