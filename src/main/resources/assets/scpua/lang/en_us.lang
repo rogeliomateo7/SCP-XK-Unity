@@ -35,6 +35,7 @@ tile.railleft.name=Rail Left
 tile.railmiddle.name=Rail Middle
 tile.railright.name=Rail Right
 tile.powerbox.name=Power Box
+tile.fireextinguixer.name=Fire Extinguisher
   //Lockdown Unity
 tile.walls1.name=Wall A1 SubLevel2
 tile.walls1a.name=Wall B1 Sublevel
@@ -170,7 +171,6 @@ entity.plaguedoctorun.name=Plague Doctor (049 U)(SAFE)
 tile.ubuttonoff.name=Button 
 entity.thestatueu.name=The Statue (173 U)
 entity.uo5.name=O5-Redacted
-tile.fireextinguixer.name=Fire Extinguixer
 tile.barrel.name=Red Barrel
 item.capofneglectlegs.name=Cap Of Neglect Leggings
 item.ufocusmaskhelmet.name=Focus Mask
