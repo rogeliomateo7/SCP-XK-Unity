@@ -68,4 +68,14 @@ public class BlockInit {
 	public static final Block FLOORS = new BlockBase("floors", Material.IRON, 1);
 	public static final Block GRID = new BlockBase("grid", Material.IRON, 1);
 	public static final Block WALLPILLOW = new BlockBase("wallpillow", Material.CLOTH, 1);
+	
+	/* Needs to be fixed, can see through block */
+	public static final Block SCP015A = new BlockBase("pipenightmare", Material.IRON, 1);
+	public static final Block SCP015B = new BlockBase("pipenightmareblock", Material.IRON, 1);
+	public static final Block SCP610A = new BlockBase("flesha", Material.CLAY, 1);
+	public static final Block SCP610B = new BlockBase("fleshb", Material.CLAY, 1);
+	public static final Block SCP0761A = new BlockBase("ableblockfloor", Material.IRON, 1);
+	public static final Block SCP0761B = new BlockBase("ableblockbottom", Material.IRON, 1);
+	public static final Block SCP0761C = new BlockBase("ableblockmiddle", Material.IRON, 1);
+	public static final Block SCP0761D = new BlockBase("ablecoffin", Material.IRON, 1);
 }
