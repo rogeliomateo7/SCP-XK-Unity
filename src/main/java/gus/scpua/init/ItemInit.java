@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gus.scpua.objects.items.ItemHidden;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemArmor;
-import net.minecraftforge.common.util.EnumHelper;
 
 public class ItemInit {
 	public static final List<Item> ITEMS = new ArrayList<Item>();

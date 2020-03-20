@@ -11,18 +11,46 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
 public class BlockBase extends Block implements IHasModel {
+	/**
+	 * Handles VERY Basic stuff like
+	 * What Inventory
+	 * Material Sounds, and hardness
+	 * and render functions.
+	 *
+	 * EVERY OTHER BLock class is based off this due to CORE aspects of all blocks
+	 */
+
 	public BlockBase(String name, Material material, int inv) {
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setHardness(2.0F);
-		setResistance(30);
 
-		//Sounds
-		if (material == Material.IRON) setSoundType(SoundType.METAL);
-		if (material == Material.ROCK) setSoundType(SoundType.STONE);
-		if (material == Material.WOOD) setSoundType(SoundType.WOOD);
-		if (material == Material.CLOTH) setSoundType(SoundType.CLOTH);
+		//Material Settings
+		if (material == Material.IRON) {
+			setSoundType(SoundType.METAL);
+			setHardness(5.0F);
+			setResistance(6);
+		}
+		if (material == Material.ROCK) {
+			setSoundType(SoundType.STONE);
+			setHardness(2.0F);
+			setResistance(2);
+		}
+		if (material == Material.WOOD) {
+			setSoundType(SoundType.WOOD);
+			setHardness(2.0F);
+			setResistance(2);
+		}
+		if (material == Material.CLOTH) {
+			setSoundType(SoundType.CLOTH);
+			setHardness(1.0F);
+			setResistance(1);
+		}
+		if (material == Material.CLAY) {
+			setSoundType(SoundType.GROUND);
+			setHardness(1.5F);
+			setResistance(2);
+		}
 
 		//Creative Tab set
 		if(inv == 1) setCreativeTab(scpua.tablockdownunitytab);

@@ -3,6 +3,8 @@ package gus.scpua.init;
 import java.util.ArrayList;
 import java.util.List;
 
+import gus.scpua.objects.blocks.rotation.NSEWBlock;
+import gus.scpua.objects.blocks.rotation.UDNSEWBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import gus.scpua.objects.blocks.*;
@@ -10,13 +12,26 @@ import gus.scpua.objects.blocks.*;
 public class BlockInit {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 
-	/*
-	public static final Block BLOCK_IN_CAPS = new BlockBase("block_in_lowcase", Material., Tab);
-	TABS
-	1 = Lockdown unity
-	2 = Tools scp
-	3 = Unity cosmetics
-	4 = Site-93
+	/**
+	 * BlockBase, handles basic things
+	 * (String name, Material.material, int tab)
+	 * ==========================================
+	 * BlockAdv, (extends BlockBase) Handles issues ralating to models, and Collision and any custom events.
+	 * (String name, Material.material, int tab, bool fullCube, int collision)
+	 *
+	 * EVERYTHING ELSE BRANCHES OFF BLOCKADV
+	 *
+	 * NSEWBlock, Player Based.
+	 * UDNSEWBlock, Block face based.
+	 *
+	 * COLLISION (more hitboxes can be found in BlockAdv)
+	 * 0 = Full-Cube Hitbox
+	 *
+	 * TABS
+	 * 1 = Lockdown unity
+	 * 2 = Tools scp
+	 * 3 = Unity cosmetics
+	 * 4 = Site-93
 	*/
 
 	//Site-98 Blocks MAJOR Discrepancy with names and files
@@ -42,12 +57,12 @@ public class BlockInit {
 	public static final Block SHCZ_WALL = new BlockBase("shczwall", Material.IRON, 4);
 
 	//Cosmetics
-	public static final Block TRASH_BIN = new OrientableBlock("trashbin", Material.WOOD, 3, 1);
-	public static final Block RAIL_LEFT = new OrientableBlock("railleft", Material.IRON, 3, 2);
-	public static final Block RAIL_MIDDLE = new OrientableBlock("railmiddle", Material.IRON, 3, 2);
-	public static final Block RAIL_RIGHT = new OrientableBlock("railright", Material.IRON, 3, 2);
-	public static final Block POWER_BOX = new OrientableBlock("powerbox", Material.IRON, 3, 3);
-  public static final Block FIRE_EXT = new OrientableBlock("fireextinguixer", Material.IRON, 3, 4);
+	public static final Block TRASH_BIN = new NSEWBlock("trashbin", Material.WOOD, 3, false, 1);
+	public static final Block RAIL_LEFT = new NSEWBlock("railleft", Material.IRON, 3, false, 2);
+	public static final Block RAIL_MIDDLE = new NSEWBlock("railmiddle", Material.IRON, 3, false,2);
+	public static final Block RAIL_RIGHT = new NSEWBlock("railright", Material.IRON, 3, false, 2);
+	public static final Block POWER_BOX = new NSEWBlock("powerbox", Material.IRON, 3, false, 3);
+  	public static final Block FIRE_EXT = new NSEWBlock("fireextinguixer", Material.IRON, 3, false,4);
 
 	//Lockdown Unity
 	// All of these hurt me inside
@@ -71,7 +86,7 @@ public class BlockInit {
 	public static final Block WALLPILLOW = new BlockBase("wallpillow", Material.CLOTH, 1);
 	
 	/* Needs to be fixed, can see through block */
-	public static final Block SCP015A = new BlockBase("pipenightmare", Material.IRON, 1);
+	public static final Block SCP015A = new UDNSEWBlock("pipenightmare", Material.IRON, 1, false, 1);
 	public static final Block SCP015B = new BlockBase("pipenightmareblock", Material.IRON, 1);
 	public static final Block SCP610A = new BlockBase("flesha", Material.CLAY, 1);
 	public static final Block SCP610B = new BlockBase("fleshb", Material.CLAY, 1);
