@@ -29,6 +29,7 @@ tile.shczfloor.name=SHCZ Floor
 tile.shczwall.name=SHCZ Bottom
 tile.shczmiddle.name=SHCZ Middle
 tile.shczupper.name=SHCZ Wall
+
   //Cosmetics
 tile.trashbin.name=Trash Bin
 tile.railleft.name=Rail Left
@@ -36,6 +37,7 @@ tile.railmiddle.name=Rail Middle
 tile.railright.name=Rail Right
 tile.powerbox.name=Power Box
 tile.fireextinguixer.name=Fire Extinguisher
+
   //Lockdown Unity
 tile.walls1.name=Wall A1 SubLevel2
 tile.walls1a.name=Wall B1 Sublevel
@@ -64,7 +66,6 @@ tile.ableblockfloor.name=076-1 Floor
 tile.ableblockbottom.name=076-1 Bottom
 tile.ableblockmiddle.name=076-1 Middle
 tile.ablecoffin.name=076-1 Coffin
-
 
 //Potions
 
@@ -166,7 +167,6 @@ item.capofneglectbody.name=Cap Of Neglect Body
 item.ufocusmasklegs.name=U Focus Mask Leggings
 item.ubrokenpipe.name=Broken Pipe
 item.cavegamedimension.name=Cave Game Dimension Portal Igniter
-tile.walls.name=Wall Sublevel
 tile.firstaidu.name=First Aid
 entity.uwithmanyvoices98.name="With Many Voices" (939-98-U)
 entity.ufleshthathatesbreeder.name=The Flesh That Hates (610 Breeder)
