@@ -47,7 +47,7 @@ public class BlockInit {
 	public static final Block RAIL_MIDDLE = new OrientableBlock("railmiddle", Material.IRON, 3, 2);
 	public static final Block RAIL_RIGHT = new OrientableBlock("railright", Material.IRON, 3, 2);
 	public static final Block POWER_BOX = new OrientableBlock("powerbox", Material.IRON, 3, 3);
-	public static final Block FIRE_EXT = new OrientableBlock("fireextinguixer", Material.IRON, 3, 4);
+  public static final Block FIRE_EXT = new OrientableBlock("fireextinguixer", Material.IRON, 3, 4);
 
 	//Lockdown Unity
 	// All of these hurt me inside
@@ -69,4 +69,14 @@ public class BlockInit {
 	public static final Block FLOORS = new BlockBase("floors", Material.IRON, 1);
 	public static final Block GRID = new BlockBase("grid", Material.IRON, 1);
 	public static final Block WALLPILLOW = new BlockBase("wallpillow", Material.CLOTH, 1);
+	
+	/* Needs to be fixed, can see through block */
+	public static final Block SCP015A = new BlockBase("pipenightmare", Material.IRON, 1);
+	public static final Block SCP015B = new BlockBase("pipenightmareblock", Material.IRON, 1);
+	public static final Block SCP610A = new BlockBase("flesha", Material.CLAY, 1);
+	public static final Block SCP610B = new BlockBase("fleshb", Material.CLAY, 1);
+	public static final Block SCP0761A = new BlockBase("ableblockfloor", Material.IRON, 1);
+	public static final Block SCP0761B = new BlockBase("ableblockbottom", Material.IRON, 1);
+	public static final Block SCP0761C = new BlockBase("ableblockmiddle", Material.IRON, 1);
+	public static final Block SCP0761D = new BlockBase("ablecoffin", Material.IRON, 1);
 }

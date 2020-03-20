@@ -1,0 +1,29 @@
+Y = yes
+N = no
+
+Block Name | Z Fighting | Bad Collision
+
+Tiny Lamp N Y
+Power Box N Y 
+Containment Box Y N 
+Toilet Y Y 
+Water Drinker N Y 
+All Lockers Y Y 
+First Aid N Y 
+Laptop N Y 
+Wall Lamp N Y 
+
+1762 Y Y 
+426 N Y 
+407 N Y 
+120 Y Y 
+015 N Y 
+789-J = Toilet
+387 N Y 
+079 N Y 
+2950 N Y 
+3671 N Y 
+80-FR Y Y 
+323 N Y (Note: texture missing under jaw, resulting in seeing through model)
+
+
