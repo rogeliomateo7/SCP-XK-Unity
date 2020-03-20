@@ -7,13 +7,16 @@ import gus.scpua.scpua;
 import gus.scpua.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.audio.Sound;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -45,6 +48,13 @@ public class OrientableBlock extends Block implements IHasModel {
 
         if (name.equals("trashbin") || name.contains("rail") || name.equals("powerbox") || name.contains("fire")) fullCube = false;
 
+        //Sounds
+        if (material == Material.IRON) setSoundType(SoundType.METAL);
+        if (material == Material.ROCK) setSoundType(SoundType.STONE);
+        if (material == Material.WOOD) setSoundType(SoundType.WOOD);
+        if (material == Material.CLOTH) setSoundType(SoundType.CLOTH);
+
+        //Creative Tab set
         if(inv == 1) setCreativeTab(scpua.tablockdownunitytab);
         if(inv == 2) setCreativeTab(scpua.tabweaponsscp);
         if(inv == 3) setCreativeTab(scpua.tablockdownunitycosmetics);
