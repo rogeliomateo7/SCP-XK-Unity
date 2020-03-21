@@ -93,5 +93,5 @@ public class BlockInit {
 	public static final Block SCP0761A = new BlockBase("ableblockfloor", Material.IRON, 1);
 	public static final Block SCP0761B = new BlockBase("ableblockbottom", Material.IRON, 1);
 	public static final Block SCP0761C = new BlockBase("ableblockmiddle", Material.IRON, 1);
-	public static final Block SCP0761D = new BlockBase("ablecoffin", Material.IRON, 1);
+	public static final Block SCP0761D = new NSEWBlock("ablecoffin", Material.IRON, 1, false, 1);
 }
