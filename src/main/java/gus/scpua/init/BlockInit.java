@@ -94,4 +94,51 @@ public class BlockInit {
 	public static final Block SCP0761B = new BlockBase("ableblockbottom", Material.IRON, 1);
 	public static final Block SCP0761C = new BlockBase("ableblockmiddle", Material.IRON, 1);
 	public static final Block SCP0761D = new NSEWBlock("ablecoffin", Material.IRON, 1, false, 1);
+
+	//Site-78
+	//Office Blocks
+	//Top
+	public static final Block PURPLE_OFFICE_TOP = new BlockBase("purple_office_top", Material.ROCK,5);
+	public static final Block RED_OFFICE_TOP = new BlockBase("red_office_top", Material.ROCK,5);
+	public static final Block YELLOW_OFFICE_TOP = new BlockBase("yellow_office_top", Material.ROCK,5);
+	public static final Block GREEN_OFFICE_TOP = new BlockBase("green_office_top", Material.ROCK,5);
+	public static final Block DARK_GREEN_OFFICE_TOP = new BlockBase("dark_green_office_top", Material.ROCK,5);
+	public static final Block LIGHT_BLUE_OFFICE_TOP = new BlockBase("light_blue_office_top", Material.ROCK,5);
+	public static final Block BLUE_OFFICE_TOP = new BlockBase("blue_office_top", Material.ROCK,5);
+	public static final Block GREY_OFFICE_TOP = new BlockBase("grey_office_top", Material.ROCK,5);
+	public static final Block BLACK_OFFICE_TOP = new BlockBase("black_office_top", Material.ROCK,5);
+	//Line
+	public static final Block PURPLE_OFFICE_LINE = new BlockBase("purple_office_line", Material.ROCK,5);
+	public static final Block RED_OFFICE_LINE = new BlockBase("red_office_line", Material.ROCK,5);
+	public static final Block YELLOW_OFFICE_LINE = new BlockBase("yellow_office_line", Material.ROCK,5);
+	public static final Block GREEN_OFFICE_LINE = new BlockBase("green_office_line", Material.ROCK,5);
+	public static final Block DARK_GREEN_OFFICE_LINE = new BlockBase("dark_green_office_line", Material.ROCK,5);
+	public static final Block LIGHT_BLUE_OFFICE_LINE = new BlockBase("light_blue_office_line", Material.ROCK,5);
+	public static final Block BLUE_OFFICE_LINE = new BlockBase("blue_office_line", Material.ROCK,5);
+	public static final Block GREY_OFFICE_LINE = new BlockBase("grey_office_line", Material.ROCK,5);
+	public static final Block BLACK_OFFICE_LINE = new BlockBase("black_office_line", Material.ROCK,5);
+	//Bottom
+	public static final Block PURPLE_OFFICE_BOTTOM = new BlockBase("purple_office_bottom", Material.ROCK,5);
+	public static final Block RED_OFFICE_BOTTOM = new BlockBase("red_office_bottom", Material.ROCK,5);
+	public static final Block YELLOW_OFFICE_BOTTOM = new BlockBase("yellow_office_bottom", Material.ROCK,5);
+	public static final Block GREEN_OFFICE_BOTTOM = new BlockBase("green_office_bottom", Material.ROCK,5);
+	public static final Block DARK_GREEN_OFFICE_BOTTOM = new BlockBase("dark_green_office_bottom", Material.ROCK,5);
+	public static final Block LIGHT_BLUE_OFFICE_BOTTOM = new BlockBase("light_blue_office_bottom", Material.ROCK,5);
+	public static final Block BLUE_OFFICE_BOTTOM = new BlockBase("blue_office_bottom", Material.ROCK,5);
+	public static final Block GREY_OFFICE_BOTTOM = new BlockBase("grey_office_bottom", Material.ROCK,5);
+	public static final Block BLACK_OFFICE_BOTTOM = new BlockBase("black_office_bottom", Material.ROCK,5);
+
+	//Orange block cos it doesn't fit F
+	public static final Block ORANGE_OFFICE_TOP = new BlockBase("orange_office_top", Material.ROCK,5);
+	public static final Block ORANGE_OFFICE_LINE = new BlockBase("orange_office_line", Material.ROCK,5);
+	public static final Block ORANGE_OFFICE_BOTTOM = new BlockBase("orange_office_bottom", Material.ROCK,5);
+
+	//Tesla Blocks
+	//Frame (NL= No Line, L= Line)
+	public static final Block TFRAME_TOP_NL = new NSEWBlock("tframe_top_nl", Material.ROCK,5, true, 0);
+	public static final Block TFRAME_MIDDLE_NL = new NSEWBlock("tframe_middle_nl", Material.ROCK,5, true, 0);
+	public static final Block TFRAME_BOTTOM_NL = new NSEWBlock("tframe_bottom_nl", Material.ROCK,5, true, 0);
+	public static final Block TFRAME_TOP_L = new NSEWBlock("tframe_top_l", Material.ROCK,5, true, 0);
+	public static final Block TFRAME_MIDDLE_L = new NSEWBlock("tframe_middle_l", Material.ROCK,5, true, 0);
+	public static final Block TFRAME_BOTTOM_L = new NSEWBlock("tframe_bottom_l", Material.ROCK,5, true, 0);
 }

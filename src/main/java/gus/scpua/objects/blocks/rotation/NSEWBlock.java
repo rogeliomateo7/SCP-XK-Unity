@@ -60,14 +60,12 @@ public class NSEWBlock extends BlockAdv {
         return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
     }
 
-
-
     //Collision
-    public static AxisAlignedBB BASE_AABB = new AxisAlignedBB(0.0625 * 16, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16); //Returns Solid Block if something went wrong
-    public static AxisAlignedBB BIN_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
-    public static AxisAlignedBB RAIL_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
-    public static AxisAlignedBB POWER_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
-    public static AxisAlignedBB FIRE_EXT_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0);
+    public static AxisAlignedBB BASE_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0); //used for returns
+    public static AxisAlignedBB BIN_AABB;
+    public static AxisAlignedBB RAIL_AABB;
+    public static AxisAlignedBB POWER_AABB;
+    public static AxisAlignedBB FIRE_EXT_AABB;
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
@@ -97,6 +95,7 @@ public class NSEWBlock extends BlockAdv {
                 FIRE_EXT_AABB = new AxisAlignedBB(0.0625 * 16, 0.0625, 0.0625 * 4, 0.0625 * 9, 0.0625 * 17, 0.0625 * 12);
         }
 
+        if(collisSet == 0) return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
         if(collisSet == 1) BASE_AABB = BIN_AABB; //Bin
         if(collisSet == 2) BASE_AABB = RAIL_AABB; //Rail
         if(collisSet == 3) BASE_AABB = POWER_AABB; //Power Box

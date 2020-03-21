@@ -20,6 +20,7 @@ public class Tabs extends CreativeTabs {
 		if (icon == 2) tabIcon = new ItemStack(ItemInit.LOGO_ORANGE);
 		if (icon == 3) tabIcon = new ItemStack(ItemInit.LOGO_GREEN);
 		if (icon == 4) tabIcon = new ItemStack(ItemInit.LOGO_RED);
+		if (icon == 5) tabIcon = new ItemStack(ItemInit.LOGO_BLUE);
 		return tabIcon;
 	}
 }

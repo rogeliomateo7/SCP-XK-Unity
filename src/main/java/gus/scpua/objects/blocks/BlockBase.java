@@ -57,6 +57,7 @@ public class BlockBase extends Block implements IHasModel {
 		if(inv == 2) setCreativeTab(scpua.tabweaponsscp);
 		if(inv == 3) setCreativeTab(scpua.tablockdownunitycosmetics);
 		if(inv == 4) setCreativeTab(scpua.tabsite93blocks);
+		if(inv == 5) setCreativeTab(scpua.tabsite78);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
