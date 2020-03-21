@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "scpua:tframe_top_l" },
+        "facing=west": { "model": "scpua:tframe_top_l", "y": 90 },
+        "facing=south": { "model": "scpua:tframe_top_l", "y": 180 },
+        "facing=east": { "model": "scpua:tframe_top_l", "y": 270 }
+    }
+} 

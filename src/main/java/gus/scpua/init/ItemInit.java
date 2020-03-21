@@ -18,4 +18,5 @@ public class ItemInit {
 	public static final Item LOGO_ORANGE = new ItemHidden("logoo");
 	public static final Item LOGO_GREEN = new ItemHidden("logog");
 	public static final Item LOGO_RED = new ItemHidden("logor");
+	public static final Item LOGO_BLUE = new ItemHidden("logob");
 }

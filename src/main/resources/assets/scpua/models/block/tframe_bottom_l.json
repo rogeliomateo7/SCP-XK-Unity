@@ -1,0 +1,12 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+        "particle": "scpua:blocks/tframe_bottom_l",
+        "up": "scpua:blocks/tframe_middle_l",
+        "down": "scpua:blocks/tframe_middle_l",
+        "north": "scpua:blocks/tframe_bottom_l",
+        "east": "scpua:blocks/tframe_bottom_nl",
+        "south": "scpua:blocks/tframe_bottom_l",
+        "west": "scpua:blocks/tframe_bottom_nl"
+   }
+}
