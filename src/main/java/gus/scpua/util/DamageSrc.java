@@ -16,26 +16,28 @@ public class DamageSrc extends DamageSource {
     private boolean isUnblockable;
     public String damageType;
 
-    public boolean isUnblockable()
-    {
+    public boolean isUnblockable() {
         return this.isUnblockable;
     }
 
-    public DamageSource setDamageBypassesArmor()
-    {
+    public DamageSource setDamageBypassesArmor() {
         this.isUnblockable = true;
         return this;
     }
 
     //This is the thing that puts "death.attack.electrocution" in chat for all i know
-    public ITextComponent getDeathMessage(EntityLivingBase entityLivingBaseIn)
-    {
+    public ITextComponent getDeathMessage(EntityLivingBase entityLivingBaseIn) {
         EntityLivingBase entitylivingbase = entityLivingBaseIn.getAttackingEntity();
         String s = "death.attack." + this.damageType;
         String s1 = s + ".player";
-        return entitylivingbase != null && I18n.canTranslate(s1) ? new TextComponentTranslation(s1, new Object[] {entityLivingBaseIn.getDisplayName(), entitylivingbase.getDisplayName()}) : new TextComponentTranslation(s, new Object[] {entityLivingBaseIn.getDisplayName()});
+        return entitylivingbase != null && I18n.canTranslate(s1) ? new TextComponentTranslation(s1, new Object[]{entityLivingBaseIn.getDisplayName(), entitylivingbase.getDisplayName()}) : new TextComponentTranslation(s, new Object[]{entityLivingBaseIn.getDisplayName()});
     }
-    public String getDamageType() { return this.damageType; }
 
-    public boolean isMagicDamage() { return this.electrocution; }
+    public String getDamageType() {
+        return this.damageType;
+    }
+
+    public boolean isMagicDamage() {
+        return this.electrocution;
+    }
 }

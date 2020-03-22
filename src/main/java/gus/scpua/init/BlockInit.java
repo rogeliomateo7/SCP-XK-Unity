@@ -3,9 +3,11 @@ package gus.scpua.init;
 import java.util.ArrayList;
 import java.util.List;
 
+import gus.scpua.objects.blocks.custom.Coffin076;
 import gus.scpua.objects.blocks.rotation.NSEWBlock;
 import gus.scpua.objects.blocks.rotation.UDNSEWBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import gus.scpua.objects.blocks.*;
 
@@ -93,9 +95,7 @@ public class BlockInit {
 	public static final Block SCP0761A = new BlockBase("ableblockfloor", Material.IRON, 1);
 	public static final Block SCP0761B = new BlockBase("ableblockbottom", Material.IRON, 1);
 	public static final Block SCP0761C = new BlockBase("ableblockmiddle", Material.IRON, 1);
-	public static final Block SCP0761D = new NSEWBlock("ablecoffin", Material.IRON, 1, false, 1);
-
-
+	public static final Block SCP0761COFFIN = new Coffin076("ablecoffin", Material.IRON, 1, false, 5);
 
 	//Site-78
 	//Office Blocks

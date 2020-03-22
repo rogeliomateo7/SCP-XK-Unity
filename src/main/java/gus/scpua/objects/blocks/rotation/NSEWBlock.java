@@ -20,6 +20,7 @@ import net.minecraft.world.World;
 public class NSEWBlock extends BlockAdv {
 
     public int collisSet;
+
     public NSEWBlock(String name, Material material, int inv, boolean fullcube, int collision) {
         super(name, material, inv, fullcube, collision);
         collisSet = collision;
@@ -42,7 +43,7 @@ public class NSEWBlock extends BlockAdv {
 
     @Override
     public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
-        return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue(FACING)));
+        return state.withRotation(mirrorIn.toRotation((EnumFacing) state.getValue(FACING)));
     }
 
     @Override
@@ -61,46 +62,50 @@ public class NSEWBlock extends BlockAdv {
     }
 
     //Collision
-    public static AxisAlignedBB BASE_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0); //used for returns
     public static AxisAlignedBB BIN_AABB;
     public static AxisAlignedBB RAIL_AABB;
     public static AxisAlignedBB POWER_AABB;
     public static AxisAlignedBB FIRE_EXT_AABB;
+    public static AxisAlignedBB SCP_076_1_AABB;
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        switch ((EnumFacing) state.getValue(BlockHorizontal.FACING)){
+        switch ((EnumFacing) state.getValue(BlockHorizontal.FACING)) {
             case NORTH:
                 BIN_AABB = new AxisAlignedBB(0.0625 * 4, 0, 0.0625 * 8, 0.0625 * 12, 0.0625 * 16, 0.0625 * 15);
                 RAIL_AABB = new AxisAlignedBB(0.0625 * 16, 0, 0.0625 * 13, 0, 0.0625 * 16, 0.0625 * 15);
                 POWER_AABB = new AxisAlignedBB(0.0625 * 2.5, 0.03125, 0.0625 * 14.5, 0.0625 * 13.5, 0.0625 * 16.5, 0.0625 * 16.5);
                 FIRE_EXT_AABB = new AxisAlignedBB(0.0625 * 12, 0.0625, 0.0625 * 9, 0.0625 * 4, 0.0625 * 17, 0.0625 * 16);
+                SCP_076_1_AABB = new AxisAlignedBB(0.0625 * 25, 0, 0, -0.0625 * 9, 0.0625 * 16, 0.0625 * 16);
                 break;
             case SOUTH:
                 BIN_AABB = new AxisAlignedBB(0.0625 * 4, 0, 0.0625, 0.0625 * 12, 0.0625 * 16, 0.0625 * 8);
                 RAIL_AABB = new AxisAlignedBB(0.0625 * 16, 0, 0.0625, 0, 0.0625 * 16, 0.0625 * 3);
                 POWER_AABB = new AxisAlignedBB(0.0625 * 2.5, 0.03125, 0.0625 * 1.5, 0.0625 * 13.5, 0.0625 * 16.5, -0.03125);
                 FIRE_EXT_AABB = new AxisAlignedBB(0.0625 * 4, 0.0625, 0, 0.0625 * 12, 0.0625 * 17, 0.0625 * 7);
+                SCP_076_1_AABB = new AxisAlignedBB(0.0625 * 25, 0, 0, -0.0625 * 9, 0.0625 * 16, 0.0625 * 16);
                 break;
             case EAST:
                 BIN_AABB = new AxisAlignedBB(0.0625, 0, 0.0625 * 4, 0.0625 * 8, 0.0625 * 16, 0.0625 * 12);
                 RAIL_AABB = new AxisAlignedBB(0.0625 * 3, 0, 0, 0.0625, 0.0625 * 16, 0.0625 * 16);
                 POWER_AABB = new AxisAlignedBB(-0.03125, 0.03125, 0.0625 * 2.5, 0.0625 * 1.5, 0.0625 * 16.5, 0.0625 * 13.5);
                 FIRE_EXT_AABB = new AxisAlignedBB(0, 0.0625, 0.0625 * 4, 0.0625 * 7, 0.0625 * 17, 0.0625 * 12);
+                SCP_076_1_AABB = new AxisAlignedBB(0, 0, 0.0625 * 25, 0.0625 * 16, 0.0625 * 16, -0.0625 * 9);
                 break;
             case WEST:
                 BIN_AABB = new AxisAlignedBB(0.0625 * 15, 0, 0.0625 * 4, 0.0625 * 8, 0.0625 * 16, 0.0625 * 12);
                 RAIL_AABB = new AxisAlignedBB(0.0625 * 15, 0, 0, 0.0625 * 13, 0.0625 * 16, 0.0625 * 16);
                 POWER_AABB = new AxisAlignedBB(0.0625 * 16.5, 0.03125, 0.0625 * 2.5, 0.0625 * 14.5, 0.0625 * 16.5, 0.0625 * 13.5);
                 FIRE_EXT_AABB = new AxisAlignedBB(0.0625 * 16, 0.0625, 0.0625 * 4, 0.0625 * 9, 0.0625 * 17, 0.0625 * 12);
+                SCP_076_1_AABB = new AxisAlignedBB(0, 0, 0.0625 * 25, 0.0625 * 16, 0.0625 * 16, -0.0625 * 9);
         }
 
-        if(collisSet == 0) return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
-        if(collisSet == 1) BASE_AABB = BIN_AABB; //Bin
-        if(collisSet == 2) BASE_AABB = RAIL_AABB; //Rail
-        if(collisSet == 3) BASE_AABB = POWER_AABB; //Power Box
-        if(collisSet == 4) BASE_AABB = FIRE_EXT_AABB; //Fire Extinguisher
+        if (collisSet == 1) return BIN_AABB; //Bin
+        if (collisSet == 2) return RAIL_AABB; //Rail
+        if (collisSet == 3) return POWER_AABB; //Power Box
+        if (collisSet == 4) return FIRE_EXT_AABB; //Fire Extinguisher
+        if (collisSet == 5) return SCP_076_1_AABB; //076 Coffin
 
-        return BASE_AABB;
+        return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D); //Returns block if something went wrong
     }
 }

@@ -12,41 +12,45 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
 public class RegtistryHandler {
-	//Item Register
-	@SubscribeEvent
-	public static void onItemRegtister(RegistryEvent.Register<Item> event) {
-		event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
-	}
-	//Block Register
-	@SubscribeEvent
-	public static void onBlockRegtister(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
-	}
-	
-	@SubscribeEvent
-	public static void onModelRegister(ModelRegistryEvent event) {
-		for(Item item : ItemInit.ITEMS) {
-			if(item instanceof IHasModel) {
-				((IHasModel)item).registerModels();
-			}
-		}
-		
-		for(Block block : BlockInit.BLOCKS) {
-			if(block instanceof IHasModel) {
-				((IHasModel)block).registerModels();
-			}
-		}
-	}
-	//preInit Registries
-	public static void preInitRegistries() {} 
-	
-	//Init Registries
-	public static void initRegistries() {
-		new SoundsHandler();
-		new EventHandler();
-	} 
-	
-	//PostInit Registries
-	public static void postInitRegistries() {} 
+    //Item Register
+    @SubscribeEvent
+    public static void onItemRegtister(RegistryEvent.Register<Item> event) {
+        event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
+    }
+
+    //Block Register
+    @SubscribeEvent
+    public static void onBlockRegtister(RegistryEvent.Register<Block> event) {
+        event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
+    }
+
+    @SubscribeEvent
+    public static void onModelRegister(ModelRegistryEvent event) {
+        for (Item item : ItemInit.ITEMS) {
+            if (item instanceof IHasModel) {
+                ((IHasModel) item).registerModels();
+            }
+        }
+
+        for (Block block : BlockInit.BLOCKS) {
+            if (block instanceof IHasModel) {
+                ((IHasModel) block).registerModels();
+            }
+        }
+    }
+
+    //preInit Registries
+    public static void preInitRegistries() {
+    }
+
+    //Init Registries
+    public static void initRegistries() {
+        new SoundsHandler();
+        new EventHandler();
+    }
+
+    //PostInit Registries
+    public static void postInitRegistries() {
+    }
 
 }

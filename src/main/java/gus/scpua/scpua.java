@@ -27,14 +27,19 @@ public class scpua {
     //PreInit
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent event) {
-        RegtistryHandler.preInitRegistries();}
+        RegtistryHandler.preInitRegistries();
+    }
+
     //Init
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event) {
         RegtistryHandler.initRegistries();
         proxy.clientInit();
     }
+
     //PostInit
     @Mod.EventHandler
-    public static void postInit(FMLPostInitializationEvent event) {RegtistryHandler.postInitRegistries();}
+    public static void postInit(FMLPostInitializationEvent event) {
+        RegtistryHandler.postInitRegistries();
+    }
 }

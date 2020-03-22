@@ -24,56 +24,50 @@ public class BlockTesla extends BlockBase {
 
     //Allows transparency
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
-    {
+    public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.CUTOUT;
     }
 
     //Removes X-ray effect
     @Override
-    public boolean isOpaqueCube(IBlockState state)
-    {
+    public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
 
     //Removes in block shadows
     @Override
-    public boolean isFullCube(IBlockState state)
-    {
+    public boolean isFullCube(IBlockState state) {
         return false;
     }
 
     //Hides that weird 2 faced inside thing
     @SideOnly(Side.CLIENT)
-    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
-    {
+    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side) {
         IBlockState iblockstate = blockAccess.getBlockState(pos.offset(side));
         Block block = iblockstate.getBlock();
 
         //Bad excuse to have 2 returns on the same block
-        if (this == BlockInit.TESLA_BLOCK) { if (block == this) { return false; } }
+        if (this == BlockInit.TESLA_BLOCK) {
+            if (block == this) {
+                return false;
+            }
+        }
 
         return block == this ? false : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
     }
 
     //The rest of this code is Collision Damage
-    public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
-    {
+    public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn) {
         entityIn.attackEntityFrom(DamageSrc.ELECTROCUTED, 100.0F);
     }
 
-    //Make its walkThrough able but still causes damage
-    protected static final AxisAlignedBB TESLA_COLLISION_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.0D, 0.0D, 0.0D);
-    protected static final AxisAlignedBB TESLA_AABB = new AxisAlignedBB(0.0d, 0.0D, 0.0D, 0.0D, 0.0D, 0.0D);
-
-    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
-    {
-        return TESLA_COLLISION_AABB;
+    //Collision
+    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
+        return NULL_AABB;
     }
 
     @SideOnly(Side.CLIENT)
-    public AxisAlignedBB getSelectedBoundingBox(IBlockState state, World worldIn, BlockPos pos)
-    {
-        return TESLA_AABB.offset(pos);
+    public AxisAlignedBB getSelectedBoundingBox(IBlockState state, World worldIn, BlockPos pos) {
+        return new AxisAlignedBB(0, 0, 0, 1D, 1D, 1D).offset(pos);
     }
 }

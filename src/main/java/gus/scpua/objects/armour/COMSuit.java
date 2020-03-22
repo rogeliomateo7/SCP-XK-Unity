@@ -30,7 +30,9 @@ public class COMSuit extends ItemArmor implements IHasModel {
     }
 
     @Override
-    public void registerModels() { scpua.proxy.registerItemRenderer(this, 0, "inventory"); }
+    public void registerModels() {
+        scpua.proxy.registerItemRenderer(this, 0, "inventory");
+    }
 
     //Logic Section
     public static boolean keyToggle = false;
@@ -50,7 +52,7 @@ public class COMSuit extends ItemArmor implements IHasModel {
         }
 
         //if toggle on and suit on...
-        if (checkInv(player) && keyToggle){
+        if (checkInv(player) && keyToggle) {
             player.addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 20, 0, false, false)); //Add Potion Effect
 
             //May need to send packet to server
@@ -64,11 +66,13 @@ public class COMSuit extends ItemArmor implements IHasModel {
     @Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {
-        if (keyToggle){
-            if (textureName.equals("coms_helmet") || textureName.equals("coms_chestplate") || textureName.equals("coms_boots")) texture = "scpua:textures/models/armor/coms_layer_3.png";
+        if (keyToggle) {
+            if (textureName.equals("coms_helmet") || textureName.equals("coms_chestplate") || textureName.equals("coms_boots"))
+                texture = "scpua:textures/models/armor/coms_layer_3.png";
             if (textureName.equals("coms_leggings")) texture = "scpua:textures/models/armor/coms_layer_4.png";
         } else {
-            if (textureName.equals("coms_helmet") || textureName.equals("coms_chestplate") || textureName.equals("coms_boots")) texture = "scpua:textures/models/armor/coms_layer_1.png";
+            if (textureName.equals("coms_helmet") || textureName.equals("coms_chestplate") || textureName.equals("coms_boots"))
+                texture = "scpua:textures/models/armor/coms_layer_1.png";
             if (textureName.equals("coms_leggings")) texture = "scpua:textures/models/armor/coms_layer_2.png";
         }
         return texture;

@@ -21,16 +21,19 @@ public class BlockAdv extends BlockBase {
 
     //Removes X-ray effect
     @Override
-    public boolean isOpaqueCube(IBlockState state) { return fullCube; }
+    public boolean isOpaqueCube(IBlockState state) {
+        return fullCube;
+    }
 
     //Removes in block shadows
     @Override
-    public boolean isFullCube(IBlockState state) { return fullCube; }
+    public boolean isFullCube(IBlockState state) {
+        return fullCube;
+    }
 
     //Allows transparency
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
-    {
+    public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.CUTOUT;
     }
 

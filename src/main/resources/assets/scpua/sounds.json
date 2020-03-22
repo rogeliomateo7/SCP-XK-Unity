@@ -1,1496 +1,249 @@
 {
-  "Beethoven": {
+  "001-prototype-shriek": {
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/001prototype/shriek", "stream": false}]
+  },
+
+  "035-idle1":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/035/idle1", "stream": false}]
+  },
+  "035-idle2":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/035/idle2", "stream": false}]
+  },
+  "035-idle3":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/035/idle3", "stream": false}]
+  },
+  "035-idle4":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/035/idle4", "stream": false}]
+  },
+  "035-kill":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/035/kill", "stream": false}]
+  },
+  "035-use":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/035/use", "stream": false}]
+  },
+
+  "049-breathing":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/049/breathing", "stream": false}]
+  },
+  "049-chase":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/049/chase", "stream": false}]
+  },
+  "049-cure1":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/049/cure1", "stream": false}]
+  },
+  "049-cure2":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/049/cure2", "stream": false}]
+  },
+  "049-idle":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/049/idle", "stream": false}]
+  },
+  "049-resist":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/049/resist", "stream": false}]
+  },
+  "049-spot":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/049/spot", "stream": false}]
+  },
+
+  "058-heartbeat":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/058/heartbeat", "stream": false}]
+  },
+  "058-voice1":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/058/voice1", "stream": false}]
+  },
+  "058-voice2":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/058/voice2", "stream": false}]
+  },
+  "058-voice3":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/058/voice3", "stream": false}]
+  },
+  "058-voice4":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/058/voice4", "stream": false}]
+  },
+  "058-voice5":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/058/voice5", "stream": false}]
+  },
+
+  "079-intercom1":{
+    "category": "ambient",
+    "sounds": [{"name": "scpua:scp/079/intercom1", "stream": false}]
+  },
+  "079-intercom2":{
+    "category": "ambient",
+    "sounds": [{"name": "scpua:scp/079/intercom2", "stream": false}]
+  },
+  "079-intercom3":{
+    "category": "ambient",
+    "sounds": [{"name": "scpua:scp/079/intercom3", "stream": false}]
+  },
+  "079-intercom4":{
+    "category": "ambient",
+    "sounds": [{"name": "scpua:scp/079/intercom4", "stream": false}]
+  },
+  "079-intercom5":{
+    "category": "ambient",
+    "sounds": [{"name": "scpua:scp/079/intercom5", "stream": false}]
+  },
+  "079-intercom6":{
+    "category": "ambient",
+    "sounds": [{"name": "scpua:scp/079/intercom6", "stream": false}]
+  },
+
+  "106-breathing":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/106/breathing", "stream": false}]
+  },
+  "106-laugh":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/106/laugh", "stream": false}]
+  },
+
+  "173-rattle1":{
+  "category": "hostile",
+  "sounds": [{"name": "scpua:scp/173/rattle1", "stream": false}]
+},
+  "173-rattle2":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/173/rattle2", "stream": false}]
+  },
+  "173-rattle3":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/173/rattle3", "stream": false}]
+  },
+  "173-snapneck1":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/173/snapneck1", "stream": false}]
+  },
+  "173-snapneck2":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/173/snapneck2", "stream": false}]
+  },
+  "173-snapneck3":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/173/snapneck3", "stream": false}]
+  },
+
+  "372-movement":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/372/movement", "stream": false}]
+  },
+
+  "457-voice1":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/457/voice1", "stream": false}]
+  },
+  "457-voice2":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/457/voice2", "stream": false}]
+  },
+  "457-voice3":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/457/voice3", "stream": false}]
+  },
+  "457-voice4":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/457/voice4", "stream": false}]
+  },
+
+  "745-death":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/745/death", "stream": false}]
+  },
+  "745-hurt":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/745/hurt", "stream": false}]
+  },
+  "745-idle":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/745/idle", "stream": false}]
+  },
+
+  "939-death":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/death", "stream": false}]
+  },
+  "939-found1":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/found1", "stream": false}]
+  },
+  "939-found2":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/found2", "stream": false}]
+  },
+  "939-found3":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/found3", "stream": false}]
+  },
+  "939-hurt":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/hurt", "stream": false}]
+  },
+  "939-lure1":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/lure1", "stream": false}]
+  },
+  "939-lure2":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/lure2", "stream": false}]
+  },
+  "939-lure3":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/lure3", "stream": false}]
+  },
+  "939-lure4":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/lure4", "stream": false}]
+  },
+  "939-lure5":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/lure5", "stream": false}]
+  },
+  "939-lure6":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/lure6", "stream": false}]
+  },
+  "939-lure7":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/lure7", "stream": false}]
+  },
+  "939-lure8":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/lure8", "stream": false}]
+  },
+  "939-lure9":{
+    "category": "hostile",
+    "sounds": [{"name": "scpua:scp/939/lure9", "stream": false}]
+  },
+
+  "999-death":{
     "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:beethoven",
-        "stream": false
-      }
-    ]
+    "sounds": [{"name": "scpua:scp/999/death", "stream": false}]
   },
-  "GroanBig": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:groan big",
-        "stream": false
-      }
-    ]
-  },
-  "Groan": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:groan",
-        "stream": false
-      }
-    ]
-  },
-  "GroanHit": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:hit",
-        "stream": false
-      }
-    ]
-  },
-  "Heart": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:heart (online-audio-converter.com)",
-        "stream": false
-      }
-    ]
-  },
-  "049Breathing": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:049",
-        "stream": false
-      }
-    ]
-  },
-  "999Chirp": {
+  "999-hit":{
     "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:999chirp",
-        "stream": false
-      }
-    ]
+    "sounds": [{"name": "scpua:scp/999/hit", "stream": false}]
   },
-  "999Hit": {
+  "999-idle":{
     "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:999hit",
-        "stream": false
-      }
-    ]
-  },
-  "999Death": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:999death",
-        "stream": false
-      }
-    ]
-  },
-  "DeedsBell": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:belldeeds",
-        "stream": false
-      }
-    ]
-  },
-  "pipenightmare": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:pipenightmare",
-        "stream": false
-      }
-    ]
-  },
-  "TeslaShock": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:teslashock",
-        "stream": false
-      }
-    ]
-  },
-  "p90shoot": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:p90shoot",
-        "stream": false
-      }
-    ]
-  },
-  "glockshoot": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:glockshoot",
-        "stream": false
-      }
-    ]
-  },
-  "TeslaCharge": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:tesla gate windup",
-        "stream": false
-      }
-    ]
-  },
-  "Carnivore": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:carnivore",
-        "stream": false
-      }
-    ]
-  },
-  "Herbivore": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:herbivore",
-        "stream": false
-      }
-    ]
-  },
-  "Pigeon": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:pigeon",
-        "stream": false
-      }
-    ]
-  },
-  "Dove": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:dove",
-        "stream": false
-      }
-    ]
-  },
-  "3660Sound": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:3660sound",
-        "stream": false
-      }
-    ]
-  },
-  "SongOfGenesis": {
-    "category": "record",
-    "sounds": [
-      {
-        "name": "scpua:genesis",
-        "stream": true
-      }
-    ]
-  },
-  "BirthdaySong": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:birthdaysong",
-        "stream": false
-      }
-    ]
-  },
-  "peripheralsound": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:372sound",
-        "stream": false
-      }
-    ]
-  },
-  "wendigohit": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:wendigohit",
-        "stream": false
-      }
-    ]
-  },
-  "wendigoidle": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:wendigoidle",
-        "stream": false
-      }
-    ]
-  },
-  "wendigoon": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:wendigoon",
-        "stream": false
-      }
-    ]
-  },
-  "buttghost": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:ubuttghost",
-        "stream": false
-      }
-    ]
-  },
-  "prototypeshriek": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:001shriek",
-        "stream": false
-      }
-    ]
-  },
-  "wmvdeath": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939death",
-        "stream": false
-      }
-    ]
-  },
-  "wmvhurt": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939hurt",
-        "stream": false
-      }
-    ]
-  },
-  "maskkill": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:035kill",
-        "stream": false
-      }
-    ]
-  },
-  "maskuse": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:035use",
-        "stream": false
-      }
-    ]
-  },
-  "mask1": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:035idle1",
-        "stream": false
-      }
-    ]
-  },
-  "mask2": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:035idle2",
-        "stream": false
-      }
-    ]
-  },
-  "mask3": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:035idle3",
-        "stream": false
-      }
-    ]
-  },
-  "mask5": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:035idle4",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure2": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure2",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure3": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure3",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure4": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure4",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure5": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure5",
-        "stream": false
-      }
-    ]
-  },
-  "GroanSpeed": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:groan speed",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure6": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure6",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure7": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure7",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure1": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure8": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure8",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure9": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure9",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure10": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure10",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure11": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure11",
-        "stream": false
-      }
-    ]
-  },
-  "wmvlure12": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:939lure12",
-        "stream": false
-      }
-    ]
-  },
-  "breathing106": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:106breathing",
-        "stream": false
-      }
-    ]
-  },
-  "laugh106": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:106laugh",
-        "stream": false
-      }
-    ]
-  },
-  "revive0491": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:049revive1",
-        "stream": false
-      }
-    ]
-  },
-  "revive0492": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:049revive2",
-        "stream": false
-      }
-    ]
-  },
-  "revive0493": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:049revive3",
-        "stream": false
-      }
-    ]
-  },
-  "revive0494": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:049revive4",
-        "stream": false
-      }
-    ]
-  },
-  "revive0495": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:049revive5",
-        "stream": false
-      }
-    ]
-  },
-  "revive0496": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:049revive6",
-        "stream": false
-      }
-    ]
-  },
-  "elevator": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:elevator",
-        "stream": false
-      }
-    ]
-  },
-  "femurbreaker": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:femurbreaker",
-        "stream": false
-      }
-    ]
-  },
-  "neck1": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:neck1",
-        "stream": false
-      }
-    ]
-  },
-  "neck2": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:neck2",
-        "stream": false
-      }
-    ]
-  },
-  "neck3": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:neck3",
-        "stream": false
-      }
-    ]
-  },
-  "spawn": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:spawn",
-        "stream": false
-      }
-    ]
-  },
-  "spectator": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:spectator",
-        "stream": false
-      }
-    ]
-  },
-  "alarm": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:alarm",
-        "stream": false
-      }
-    ]
-  },
-  "tppocket": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:tppocket",
-        "stream": false
-      }
-    ]
-  },
-  "rattle1": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:rattle1",
-        "stream": false
-      }
-    ]
-  },
-  "rattle2": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:rattle2",
-        "stream": false
-      }
-    ]
-  },
-  "rattle3": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:rattle3",
-        "stream": false
-      }
-    ]
-  },
-  "hitbite": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:hitbite",
-        "stream": false
-      }
-    ]
-  },
-  "sound0791": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:079sound1",
-        "stream": false
-      }
-    ]
-  },
-  "sound0792": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:079sound2",
-        "stream": false
-      }
-    ]
-  },
-  "sound0793": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:079sound3",
-        "stream": false
-      }
-    ]
-  },
-  "sound0794": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:079sound4",
-        "stream": false
-      }
-    ]
-  },
-  "sound0795": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:079sound5",
-        "stream": false
-      }
-    ]
-  },
-  "sound0796": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:079sound6",
-        "stream": false
-      }
-    ]
-  },
-  "sound0797": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:079sound7",
-        "stream": false
-      }
-    ]
-  },
-  "wcanceled": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:cancealed",
-        "stream": false
-      }
-    ]
-  },
-  "wdetonation": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:detonation",
-        "stream": false
-      }
-    ]
-  },
-  "matchstart": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:matchstart",
-        "stream": false
-      }
-    ]
-  },
-  "dclassleft": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:dclass",
-        "stream": false
-      }
-    ]
-  },
-  "teslaidel": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:teslaidle",
-        "stream": false
-      }
-    ]
-  },
-  "sinkholeambience": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:sinkhole",
-        "stream": false
-      }
-    ]
-  },
-  "sinkholefall": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:sinkholefall",
-        "stream": false
-      }
-    ]
-  },
-  "spawnannounce": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:spawnannouce",
-        "stream": false
-      }
-    ]
-  },
-  "wresumed": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "scpua:resumed",
-        "stream": false
-      }
-    ]
-  },
-  "gotoportal": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:gotoporta",
-        "stream": false
-      }
-    ]
-  },
-  "spawnportal": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:spawnportal",
-        "stream": false
-      }
-    ]
-  },
-  "tune": {
-    "category": "record",
-    "sounds": [
-      {
-        "name": "scpua:tune",
-        "stream": true
-      }
-    ]
-  },
-  "alarmbutton1": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton1",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton2": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton2",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton3": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton3",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton4": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton4",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton5": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton5",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton6": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton6",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton7": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton7",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton8": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton8",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton9": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton9",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton10": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton10",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton11": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton11",
-        "stream": false
-      }
-    ]
-  },
-  "alarmbutton12": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:alarmbutton12",
-        "stream": false
-      }
-    ]
-  },
-  "voice0531": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:053voice1",
-        "stream": false
-      }
-    ]
-  },
-  "voice0532": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:053voice2",
-        "stream": false
-      }
-    ]
-  },
-  "voice0533": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:053voice3",
-        "stream": false
-      }
-    ]
-  },
-  "voice0534": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:053voice4",
-        "stream": false
-      }
-    ]
-  },
-  "voice0535": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:053voice5",
-        "stream": false
-      }
-    ]
-  },
-  "voice4571": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:457voice1",
-        "stream": false
-      }
-    ]
-  },
-  "voice4572": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:457voice2",
-        "stream": false
-      }
-    ]
-  },
-  "voice4573": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:457voice3",
-        "stream": false
-      }
-    ]
-  },
-  "voice4574": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:457voice4",
-        "stream": false
-      }
-    ]
-  },
-  "eric1": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:eric1",
-        "stream": false
-      }
-    ]
-  },
-  "eric2": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:eric2",
-        "stream": false
-      }
-    ]
-  },
-  "eric3": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:eric3",
-        "stream": false
-      }
-    ]
-  },
-  "notes1": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:notes1",
-        "stream": false
-      }
-    ]
-  },
-  "notes2": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:notes2",
-        "stream": false
-      }
-    ]
-  },
-  "notes3": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:notes3",
-        "stream": false
-      }
-    ]
-  },
-  "notes4": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:notes4",
-        "stream": false
-      }
-    ]
-  },
-  "notes5": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:notes5",
-        "stream": false
-      }
-    ]
-  },
-  "notes6": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:notes6",
-        "stream": false
-      }
-    ]
-  },
-  "rolling": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:rolling",
-        "stream": false
-      }
-    ]
-  },
-  "living6821": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living6821",
-        "stream": false
-      }
-    ]
-  },
-  "living6822": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living6822",
-        "stream": false
-      }
-    ]
-  },
-  "living6823": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living6823",
-        "stream": false
-      }
-    ]
-  },
-  "living6825": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living6825",
-        "stream": false
-      }
-    ]
-  },
-  "living6824": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living6824",
-        "stream": false
-      }
-    ]
-  },
-  "living6826": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living6826",
-        "stream": false
-      }
-    ]
-  },
-  "living6827": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living6827",
-        "stream": false
-      }
-    ]
-  },
-  "living6828": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living6828",
-        "stream": false
-      }
-    ]
-  },
-  "living6829": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living6829",
-        "stream": false
-      }
-    ]
-  },
-  "living68210": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living68210",
-        "stream": false
-      }
-    ]
-  },
-  "living68211": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:living68211",
-        "stream": false
-      }
-    ]
-  },
-  "death682": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:death682",
-        "stream": false
-      }
-    ]
-  },
-  "hurt682": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:hurt682",
-        "stream": false
-      }
-    ]
-  },
-  "button": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:button",
-        "stream": false
-      }
-    ]
-  },
-  "death745": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:745death",
-        "stream": false
-      }
-    ]
-  },
-  "hurt745": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:745hurt",
-        "stream": false
-      }
-    ]
-  },
-  "sound745": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:745sound",
-        "stream": false
-      }
-    ]
-  },
-  "death3199": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:3199death",
-        "stream": false
-      }
-    ]
-  },
-  "hurt3199": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:3199hurt",
-        "stream": false
-      }
-    ]
-  },
-  "sound43199": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:3199sound4",
-        "stream": false
-      }
-    ]
-  },
-  "sound33199": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:3199sound3",
-        "stream": false
-      }
-    ]
-  },
-  "sound23199": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:3199sound2",
-        "stream": false
-      }
-    ]
-  },
-  "sound13199": {
-    "category": "hostile",
-    "sounds": [
-      {
-        "name": "scpua:3199sound1",
-        "stream": false
-      }
-    ]
-  },
-  "humanoof": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:humanoof",
-        "stream": false
-      }
-    ]
-  },
-  "scare1": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare1",
-        "stream": false
-      }
-    ]
-  },
-  "scare2": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare2",
-        "stream": false
-      }
-    ]
-  },
-  "scare3": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare3",
-        "stream": false
-      }
-    ]
-  },
-  "scare4": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare4",
-        "stream": false
-      }
-    ]
-  },
-  "scare5": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare5",
-        "stream": false
-      }
-    ]
-  },
-  "scare6": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare6",
-        "stream": false
-      }
-    ]
-  },
-  "scare7": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare7",
-        "stream": false
-      }
-    ]
-  },
-  "scare8": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare8",
-        "stream": false
-      }
-    ]
-  },
-  "scare9": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare9",
-        "stream": false
-      }
-    ]
-  },
-  "scare10": {
-    "category": "ambient",
-    "sounds": [
-      {
-        "name": "scpua:scare10",
-        "stream": false
-      }
-    ]
-  },
-  "idle1370_1": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:idle1370_1",
-        "stream": false
-      }
-    ]
-  },
-  "idle1370_2": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:idle1370_2",
-        "stream": false
-      }
-    ]
-  },
-  "idle1370_3": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:idle1370_3",
-        "stream": false
-      }
-    ]
-  },
-  "idle1370_4": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:idle1370_4",
-        "stream": false
-      }
-    ]
-  },
-  "idle1370_5": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:idle1370_5",
-        "stream": false
-      }
-    ]
-  },
-  "idle1370_6": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:idle1370_6",
-        "stream": false
-      }
-    ]
-  },
-  "idle1370_7": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:idle1370_7",
-        "stream": false
-      }
-    ]
-  },
-  "idle1370_8": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:idle1370_8",
-        "stream": false
-      }
-    ]
-  },
-  "idle1370_9": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:idle1370_9",
-        "stream": false
-      }
-    ]
-  },
-  "death1370": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:death1370",
-        "stream": false
-      }
-    ]
-  },
-  "hurt1370": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:hurt1370",
-        "stream": false
-      }
-    ]
-  },
-  "spawn1370": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "scpua:spawn1370",
-        "stream": false
-      }
-    ]
+    "sounds": [{"name": "scpua:scp/999/idle", "stream": false}]
   }
 }
