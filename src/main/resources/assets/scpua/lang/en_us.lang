@@ -3,6 +3,7 @@ itemGroup.tablockdownunitytab=SCP Lockdown Unity
 itemGroup.tabweaponsscp=Tools SCP
 itemGroup.tablockdownunitycosmetics=Lockdown Unity Cosmetics
 itemGroup.tabsite93blocks=Site-93 Blocks
+itemGroup.tabsite78=Site-78
 item.logoy.name=Logo Yellow
 item.logoo.name=Logo Orange
 item.logog.name=Logo Green
@@ -10,6 +11,12 @@ item.logor.name=Logo Red
 item.logob.name=Logo Blue
 
 //Items
+  //Site-78
+item.coms_helmet.name=COMSuit Helmet
+item.coms_chestplate.name=COMSuit Chestplate
+item.coms_leggings.name=COMSuit Leggings
+item.coms_boots.name=COMSuit Boots
+
 
 //Blocks
   //Site98 Blocks
@@ -67,52 +74,39 @@ tile.ableblockfloor.name=076-1 Floor
 tile.ableblockbottom.name=076-1 Bottom
 tile.ableblockmiddle.name=076-1 Middle
 tile.ablecoffin.name=076-1 Coffin
-
-//Potions
-
-//Entity's
-
-
-//ITEMS
-item.coms_helmet.name=COMSuit Helmet
-item.coms_chestplate.name=COMSuit Chestplate
-item.coms_leggings.name=COMSuit Leggings
-item.coms_boots.name=COMSuit Boots
-
-//BLOCKS
+  //Site-78
 //Office Blocks
-tile.purple_office_bottom.name=Purple Office Bottom
-tile.purple_office_line.name=Purple Office Line
-tile.purple_office_top.name=Purple Office Top
-tile.blue_office_bottom.name=Blue Office Bottom
-tile.blue_office_line.name=Blue Office Line
-tile.blue_office_top.name=Blue Office Top
-tile.grey_office_bottom.name=Grey Office Bottom
-tile.grey_office_line.name=Grey Office Line
-tile.grey_office_top.name=Grey Office Top
-tile.light_blue_office_top.name=Light Blue Office Top
-tile.light_blue_office_line.name=Light Blue Office Line
-tile.light_blue_office_bottom.name=Light Blue Office Bottom
-tile.red_office_top.name=Red Office Top
-tile.red_office_line.name=Red Office Line
-tile.red_office_bottom.name=Red Office Bottom
-tile.black_office_top.name=Black Office Top
-tile.black_office_line.name=Black Office Line
-tile.black_office_bottom.name=Black Office Bottom
-tile.yellow_office_top.name=Yellow Office Top
-tile.yellow_office_line.name=Yellow Office Line
-tile.yellow_office_bottom.name=Yellow Office Bottom
-tile.green_office_top.name=Green Office Top
-tile.green_office_line.name=Green Office Line
-tile.green_office_bottom.name=Green Office Bottom
-tile.dark_green_office_top.name=Dark Green Office Top
-tile.dark_green_office_line.name=Dark Green Office Line
-tile.dark_green_office_bottom.name=Dark Green Office Bottom
-tile.orange_office_top.name=Orange Office Top
-tile.orange_office_line.name=Orange Office Line
-tile.orange_office_bottom.name=Orange Office Bottom
-
-//Misc
+tile.office_purple_bottom.name=Purple Office Bottom
+tile.office_purple_line.name=Purple Office Line
+tile.office_purple_top.name=Purple Office Top
+tile.office_blue_bottom.name=Blue Office Bottom
+tile.office_blue_line.name=Blue Office Line
+tile.office_blue_top.name=Blue Office Top
+tile.office_grey_bottom.name=Grey Office Bottom
+tile.office_grey_line.name=Grey Office Line
+tile.office_grey_top.name=Grey Office Top
+tile.office_light_blue_top.name=Light Blue Office Top
+tile.office_light_blue_line.name=Light Blue Office Line
+tile.office_light_blue_bottom.name=Light Blue Office Bottom
+tile.office_red_top.name=Red Office Top
+tile.office_red_line.name=Red Office Line
+tile.office_red_bottom.name=Red Office Bottom
+tile.office_black_top.name=Black Office Top
+tile.office_black_line.name=Black Office Line
+tile.office_black_bottom.name=Black Office Bottom
+tile.office_yellow_top.name=Yellow Office Top
+tile.office_yellow_line.name=Yellow Office Line
+tile.office_yellow_bottom.name=Yellow Office Bottom
+tile.office_green_top.name=Green Office Top
+tile.office_green_line.name=Green Office Line
+tile.office_green_bottom.name=Green Office Bottom
+tile.office_dark_green_top.name=Dark Green Office Top
+tile.office_dark_green_line.name=Dark Green Office Line
+tile.office_dark_green_bottom.name=Dark Green Office Bottom
+tile.office_orange_top.name=Orange Office Top
+tile.office_orange_line.name=Orange Office Line
+tile.office_orange_bottom.name=Orange Office Bottom
+//Other
 tile.tesla_block.name=Tesla Block
 
 tile.tframe_top_nl.name=Tesla Frame Top No Line
@@ -122,25 +116,20 @@ tile.tframe_middle_l.name=Tesla Frame Middle Line
 tile.tframe_bottom_nl.name=Tesla Frame Bottom No Line
 tile.tframe_bottom_l.name=Tesla Frame Bottom Line
 
-//Lights
 tile.flat_light_off.name=Flat Light
 tile.flat_light_on.name=Flat Light On
 
 
+//Potions
+
+//Entity's
+
 //Death Message
 death.attack.electrocuted=%1$s had a Shocking experience
 
-//TABS
-itemGroup.tabsite78=Site-78
-
-//Keybinds
+//Keybinds (have to change soon)
 keys.s78.category=Site-78
 key.coms.desc=COMSuit Toggle
-
-
-
-
-
 
 
 //Unorganized crap
