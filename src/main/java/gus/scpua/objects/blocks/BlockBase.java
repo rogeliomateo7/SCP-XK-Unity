@@ -47,7 +47,7 @@ public class BlockBase extends Block implements IHasModel {
 			setResistance(1);
 		}
 		if (material == Material.CLAY) {
-			setSoundType(SoundType.GROUND);
+			setSoundType(SoundType.SLIME);
 			setHardness(1.5F);
 			setResistance(2);
 		}
