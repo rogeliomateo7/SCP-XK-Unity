@@ -1,0 +1,12 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+        "particle": "scpua:blocks/wall",
+        "up": "scpua:blocks/wall",
+        "down": "scpua:blocks/wall",
+        "north": "scpua:blocks/office_purple_top",
+        "east": "scpua:blocks/office_purple_top",
+        "south": "scpua:blocks/office_purple_top",
+        "west": "scpua:blocks/office_purple_top"
+   }
+}
