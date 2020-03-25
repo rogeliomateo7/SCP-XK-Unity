@@ -8,10 +8,14 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class SoundsHandler {
     public static SoundsHandler instance;
 
+    public static SoundEvent STEAM_015;
+
     public SoundsHandler() {
         instance = this;
         //SCP's
         registerSound("001-prototype-shriek");
+
+        STEAM_015 = registerSound("015-steam");
 
         registerSound("035-idle1");
         registerSound("035-idle2");

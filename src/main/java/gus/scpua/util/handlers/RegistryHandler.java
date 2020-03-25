@@ -6,12 +6,14 @@ import gus.scpua.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
-public class RegtistryHandler {
+public class RegistryHandler {
     //Item Register
     @SubscribeEvent
     public static void onItemRegtister(RegistryEvent.Register<Item> event) {
@@ -46,11 +48,11 @@ public class RegtistryHandler {
     //Init Registries
     public static void initRegistries() {
         new SoundsHandler();
-        new EventHandler();
     }
 
     //PostInit Registries
     public static void postInitRegistries() {
+        MinecraftForge.EVENT_BUS.register(new ScpEventHandler());
     }
 
 }

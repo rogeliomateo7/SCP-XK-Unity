@@ -3,7 +3,7 @@ package gus.scpua;
 import gus.scpua.proxy.CommonProxy;
 import gus.scpua.tabs.Tabs;
 import gus.scpua.util.Reference;
-import gus.scpua.util.handlers.RegtistryHandler;
+import gus.scpua.util.handlers.RegistryHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -27,19 +27,19 @@ public class scpua {
     //PreInit
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent event) {
-        RegtistryHandler.preInitRegistries();
+        RegistryHandler.preInitRegistries();
     }
 
     //Init
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event) {
-        RegtistryHandler.initRegistries();
+        RegistryHandler.initRegistries();
         proxy.clientInit();
     }
 
     //PostInit
     @Mod.EventHandler
     public static void postInit(FMLPostInitializationEvent event) {
-        RegtistryHandler.postInitRegistries();
+        RegistryHandler.postInitRegistries();
     }
 }

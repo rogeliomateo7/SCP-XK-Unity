@@ -1,11 +1,15 @@
 package gus.scpua.objects.blocks;
 
+import gus.scpua.init.BlockInit;
+import gus.scpua.util.handlers.ScpEventHandler;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -40,8 +44,7 @@ public class BlockAdv extends BlockBase {
     /**
      * Collision Sector
      */
-
-    public static AxisAlignedBB BASE_AABB = new AxisAlignedBB(0.0625 * 16, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16); //Returns Solid Block if something went wrong
+    public static AxisAlignedBB BASE_AABB = new AxisAlignedBB(0, 0, 0, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16); //Returns Solid Block if something went wrong
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
@@ -52,5 +55,19 @@ public class BlockAdv extends BlockBase {
         //if(collisSet == 1) BASE_AABB = BLOCK_AABB;
 
         return BASE_AABB;
+    }
+
+    /**
+     * Custom Code Section
+     */
+    @Override
+    public void onBlockClicked(World worldIn, BlockPos pos, EntityPlayer playerIn) {
+        //Pipe Nightmare
+        if (this == BlockInit.SCP015B || this == BlockInit.SCP015A) {
+            ScpEventHandler.pnHit = true;
+            ScpEventHandler.worldIn = worldIn;
+            ScpEventHandler.blockPos = pos;
+            ScpEventHandler.playerIn = playerIn;
+        }
     }
 }

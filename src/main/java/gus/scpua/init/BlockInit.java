@@ -11,6 +11,8 @@ import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import gus.scpua.objects.blocks.*;
 
+import javax.jws.Oneway;
+
 public class BlockInit {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 
@@ -89,7 +91,7 @@ public class BlockInit {
 	
 	/* Needs to be fixed, can see through block */
 	public static final Block SCP015A = new UDNSEWBlock("pipenightmare", Material.IRON, 1, false, 1);
-	public static final Block SCP015B = new BlockBase("pipenightmareblock", Material.IRON, 1);
+	public static final Block SCP015B = new BlockAdv("pipenightmareblock", Material.IRON, 1, true, 0);
 	public static final Block SCP610A = new BlockBase("flesha", Material.CLAY, 1);
 	public static final Block SCP610B = new BlockBase("fleshb", Material.CLAY, 1);
 	public static final Block SCP0761A = new BlockBase("ableblockfloor", Material.IRON, 1);

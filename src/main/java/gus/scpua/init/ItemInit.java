@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gus.scpua.objects.armour.COMSuit;
-import gus.scpua.objects.items.ItemHidden;
+import gus.scpua.objects.items.*;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -24,6 +24,8 @@ public class ItemInit {
     public static final Item LOGO_GREEN = new ItemHidden("logog");
     public static final Item LOGO_RED = new ItemHidden("logor");
     public static final Item LOGO_BLUE = new ItemHidden("logob");
+
+    public static final Item CROWBAR = new ItemBase("ucrowbar");
 
     //COM Suit
     public static final Item COMS_HELMET = new COMSuit("coms_helmet", ARMOR_MATERIAL_COMS, EntityEquipmentSlot.HEAD);

@@ -4,6 +4,11 @@
     "sounds": [{"name": "scpua:scp/001prototype/shriek", "stream": false}]
   },
 
+  "015-steam": {
+    "category": "ambient",
+    "sounds": [{"name": "scpua:scp/015/steam", "stream": false}]
+  },
+
   "035-idle1":{
     "category": "hostile",
     "sounds": [{"name": "scpua:scp/035/idle1", "stream": false}]
