@@ -2,7 +2,9 @@ package gus.scpua.util.handlers;
 
 import gus.scpua.init.BlockInit;
 import gus.scpua.init.ItemInit;
+import gus.scpua.scpua;
 import gus.scpua.util.IHasModel;
+import gus.scpua.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -10,10 +12,15 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+import java.io.File;
+
 @EventBusSubscriber
-public class RegistryHandler {
+public class XKRegistryHandler {
     //Item Register
     @SubscribeEvent
     public static void onItemRegtister(RegistryEvent.Register<Item> event) {
@@ -42,17 +49,18 @@ public class RegistryHandler {
     }
 
     //preInit Registries
-    public static void preInitRegistries() {
+    public static void preInitRegistries(FMLPreInitializationEvent event) {
+        XKConfigHandler.registerConfig(event);
     }
 
     //Init Registries
-    public static void initRegistries() {
-        new SoundsHandler();
+    public static void initRegistries(FMLInitializationEvent event) {
+        new XKSoundsHandler();
     }
 
     //PostInit Registries
-    public static void postInitRegistries() {
-        MinecraftForge.EVENT_BUS.register(new ScpEventHandler());
+    public static void postInitRegistries(FMLPostInitializationEvent event) {
+        MinecraftForge.EVENT_BUS.register(new XKEventHandler());
     }
 
 }

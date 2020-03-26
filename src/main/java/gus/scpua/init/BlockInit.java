@@ -3,15 +3,13 @@ package gus.scpua.init;
 import java.util.ArrayList;
 import java.util.List;
 
+import gus.scpua.objects.blocks.custom.Block610;
 import gus.scpua.objects.blocks.custom.Coffin076;
 import gus.scpua.objects.blocks.rotation.NSEWBlock;
 import gus.scpua.objects.blocks.rotation.UDNSEWBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import gus.scpua.objects.blocks.*;
-
-import javax.jws.Oneway;
 
 public class BlockInit {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
@@ -92,12 +90,14 @@ public class BlockInit {
 	/* Needs to be fixed, can see through block */
 	public static final Block SCP015A = new UDNSEWBlock("pipenightmare", Material.IRON, 1, false, 1);
 	public static final Block SCP015B = new BlockAdv("pipenightmareblock", Material.IRON, 1, true, 0);
-	public static final Block SCP610A = new BlockBase("flesha", Material.CLAY, 1);
-	public static final Block SCP610B = new BlockBase("fleshb", Material.CLAY, 1);
+	public static final Block SCP610A = new Block610("flesha", Material.CLAY, 1);
+	public static final Block SCP610B = new Block610("fleshb", Material.CLAY, 1);
 	public static final Block SCP0761A = new BlockBase("ableblockfloor", Material.IRON, 1);
 	public static final Block SCP0761B = new BlockBase("ableblockbottom", Material.IRON, 1);
 	public static final Block SCP0761C = new BlockBase("ableblockmiddle", Material.IRON, 1);
 	public static final Block SCP0761COFFIN = new Coffin076("ablecoffin", Material.IRON, 1, false, 5);
+
+
 
 	//Site-78
 	//Office Blocks

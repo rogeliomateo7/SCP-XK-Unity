@@ -1,7 +1,7 @@
 package gus.scpua.objects.blocks;
 
 import gus.scpua.init.BlockInit;
-import gus.scpua.util.handlers.ScpEventHandler;
+import gus.scpua.util.handlers.XKEventHandler;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
@@ -64,10 +64,10 @@ public class BlockAdv extends BlockBase {
     public void onBlockClicked(World worldIn, BlockPos pos, EntityPlayer playerIn) {
         //Pipe Nightmare
         if (this == BlockInit.SCP015B || this == BlockInit.SCP015A) {
-            ScpEventHandler.pnHit = true;
-            ScpEventHandler.worldIn = worldIn;
-            ScpEventHandler.blockPos = pos;
-            ScpEventHandler.playerIn = playerIn;
+            XKEventHandler.pnHit = true;
+            XKEventHandler.worldIn = worldIn;
+            XKEventHandler.blockPos = pos;
+            XKEventHandler.playerIn = playerIn;
         }
     }
 }

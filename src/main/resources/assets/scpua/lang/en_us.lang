@@ -126,6 +126,7 @@ tile.flat_light_on.name=Flat Light On
 
 //Death Message
 death.attack.electrocuted=%1$s had a Shocking experience
+death.attack.pipenightmare=%1$s got Steamed to death
 
 //Keybinds (have to change soon)
 keys.s78.category=Site-78

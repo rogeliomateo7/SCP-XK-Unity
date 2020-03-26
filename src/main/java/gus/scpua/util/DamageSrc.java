@@ -12,6 +12,7 @@ public class DamageSrc extends DamageSource {
     }
 
     public static final DamageSource ELECTROCUTED = (new DamageSource("electrocuted")).setDamageBypassesArmor();
+    public static final DamageSource PIPENIGHT = (new DamageSource("pipenightmare")).setDamageBypassesArmor();
     private boolean electrocution;
     private boolean isUnblockable;
     public String damageType;

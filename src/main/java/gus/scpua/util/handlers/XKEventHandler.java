@@ -1,5 +1,6 @@
 package gus.scpua.util.handlers;
 
+import gus.scpua.util.DamageSrc;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
@@ -12,7 +13,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 @Mod.EventBusSubscriber
-public class ScpEventHandler {
+public class XKEventHandler {
 //Used for Events that are handled by Multiple Objects
 
     private int tick = 0; // What tick the game is on
@@ -37,16 +38,16 @@ public class ScpEventHandler {
          */
 
         //Pipe Nightmare
-        //int pnTimes;
+        int pnAmp = 1;
         if (pnHit) {
             if (tick == 20) {
-                if (!playerIn.isSwingInProgress) { pnHit = false; return; }
+                if (!playerIn.isSwingInProgress) { pnHit = false; return; } //Reset
                 if (playerIn.isCreative()) { pnHit = false; return; }
                 if (playerIn.isDead) { pnHit = false; return; }
                 //System.out.println("Damaging Player");
                 playerIn.addPotionEffect(new PotionEffect(MobEffects.POISON, 100, 2)); //Add Damage increase element
-                playerIn.attackEntityFrom(DamageSource.MAGIC, 1); //Change Damage Source
-                worldIn.playSound((EntityPlayer) null, blockPos, SoundsHandler.STEAM_015, SoundCategory.AMBIENT, 1F, 1F);
+                playerIn.attackEntityFrom(DamageSrc.PIPENIGHT, 2); //Change Damage Source
+                worldIn.playSound((EntityPlayer) null, blockPos, XKSoundsHandler.STEAM_015, SoundCategory.AMBIENT, 1F, 1F);
             }
         }
 
