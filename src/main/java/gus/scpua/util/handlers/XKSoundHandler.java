@@ -5,17 +5,19 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
-public class XKSoundsHandler {
-    public static XKSoundsHandler instance;
+public class XKSoundHandler {
+    public static XKSoundHandler instance;
 
-    public static SoundEvent STEAM_015;
+    public static SoundEvent SCP015_STEAM;
 
-    public XKSoundsHandler() {
+    public static SoundEvent SCP049_BREATHING, SCP049_CHASE, SCP049_CURE1, SCP049_CURE2, SCP049_IDLE, SCP049_RESIST, SCP049_SPOT;
+
+    public XKSoundHandler() {
         instance = this;
         //SCP's
         registerSound("001-prototype-shriek");
 
-        STEAM_015 = registerSound("015-steam");
+        SCP015_STEAM = registerSound("015-steam");
 
         registerSound("035-idle1");
         registerSound("035-idle2");
@@ -24,13 +26,13 @@ public class XKSoundsHandler {
         registerSound("035-kill");
         registerSound("035-use");
 
-        registerSound("049-breathing");
-        registerSound("049-chase");
-        registerSound("049-cure1");
-        registerSound("049-cure2");
-        registerSound("049-idle");
-        registerSound("049-resist");
-        registerSound("049-spot");
+        SCP049_BREATHING = registerSound("049-breathing");
+        SCP049_CHASE = registerSound("049-chase");
+        SCP049_CURE1 = registerSound("049-cure1");
+        SCP049_CURE2 = registerSound("049-cure2");
+        SCP049_IDLE = registerSound("049-idle");
+        SCP049_RESIST = registerSound("049-resist");
+        SCP049_SPOT = registerSound("049-spot");
 
         registerSound("058-heartbeat");
         registerSound("058-voice1");

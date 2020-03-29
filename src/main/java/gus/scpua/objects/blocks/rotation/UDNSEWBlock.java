@@ -1,5 +1,6 @@
 package gus.scpua.objects.blocks.rotation;
 
+import gus.scpua.init.BlockInit;
 import gus.scpua.objects.blocks.BlockAdv;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.material.Material;
@@ -62,34 +63,41 @@ public class UDNSEWBlock extends BlockAdv {
     }
 
     //Collision
-    public static AxisAlignedBB BASE_AABB = new AxisAlignedBB(0, 0, 0, 0, 0, 0); //Used for returns
     public static AxisAlignedBB PN_AABB; // Pipe Nightmare
+    public static AxisAlignedBB TINY_LAMP_AABB; // Pipe Nightmare
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         switch ((EnumFacing) state.getValue(BlockDirectional.FACING)) {
             case UP:
                 PN_AABB = new AxisAlignedBB(0.0625 * 2, 0, 0.0625 * 2, 0.0625 * 14, 0.0625 * 16, 0.0625 * 14);
+                TINY_LAMP_AABB = new AxisAlignedBB(0.0625 * 5.5, 0, 0.0625 * 5.5, 0.0625 * 10.5, 0.0625, 0.0625 * 10.5);
                 break;
             case DOWN:
                 PN_AABB = new AxisAlignedBB(0.0625 * 2, 0, 0.0625 * 2, 0.0625 * 14, 0.0625 * 16, 0.0625 * 14);
+                TINY_LAMP_AABB = new AxisAlignedBB(0.0625 * 5.5, 0.0625 * 15, 0.0625 * 5.5, 0.0625 * 10.5, 0.0625 * 16, 0.0625 * 10.5);
                 break;
             case NORTH:
                 PN_AABB = new AxisAlignedBB(0.0625 * 2, 0.0625 * 2, 0, 0.0625 * 14, 0.0625 * 14, 0.0625 * 16);
+                TINY_LAMP_AABB = new AxisAlignedBB(0.0625 * 5.5, 0.0625 * 5.5, 0.0625 * 15, 0.0625 * 10.5, 0.0625 * 10.5, 0.0625 * 16);
                 break;
             case SOUTH:
                 PN_AABB = new AxisAlignedBB(0.0625 * 2, 0.0625 * 2, 0, 0.0625 * 14, 0.0625 * 14, 0.0625 * 16);
+                TINY_LAMP_AABB = new AxisAlignedBB(0.0625 * 5.5, 0.0625 * 5.5, 0.0625 * 0, 0.0625 * 10.5, 0.0625 * 10.5, 0.0625);
                 break;
             case EAST:
                 PN_AABB = new AxisAlignedBB(0, 0.0625 * 2, 0.0625 * 2, 0.0625 * 16, 0.0625 * 14, 0.0625 * 14);
+                TINY_LAMP_AABB = new AxisAlignedBB(0, 0.0625 * 5.5, 0.0625 * 5.5, 0.0625, 0.0625 * 10.5, 0.0625 * 10.5);
                 break;
             case WEST:
                 PN_AABB = new AxisAlignedBB(0, 0.0625 * 2, 0.0625 * 2, 0.0625 * 16, 0.0625 * 14, 0.0625 * 14);
+                TINY_LAMP_AABB = new AxisAlignedBB(0.0625 * 16, 0.0625 * 5.5, 0.0625 * 5.5, 0.0625 * 15, 0.0625 * 10.5, 0.0625 * 10.5);
         }
 
         if (collisSet == 0) return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
-        if (collisSet == 1) BASE_AABB = PN_AABB; //Pipe Nightmare
+        if (collisSet == 1) return PN_AABB; //Pipe Nightmare
+        if (collisSet == 2) return TINY_LAMP_AABB;
 
-        return BASE_AABB;
+        return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
     }
 }

@@ -3,6 +3,7 @@ package gus.scpua.objects.blocks.custom;
 import gus.scpua.init.BlockInit;
 import gus.scpua.objects.blocks.BlockBase;
 import gus.scpua.util.handlers.XKConfigHandler;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -15,6 +16,10 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Block610 extends BlockBase {
     public Block610(String name, Material material, int inv) {
         super(name, material, inv);
+
+        setHarvestLevel("shovel", 1);
+
+        //Enable Spread based on config
         if (XKConfigHandler.SPREAD_610) setTickRandomly(true);
         else setTickRandomly(false);
     }
@@ -23,49 +28,47 @@ public class Block610 extends BlockBase {
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
         if (!worldIn.isAreaLoaded(pos, 1)) return;
 
-        //System.out.println("Tick called");
-        if (!XKConfigHandler.SPREAD_610) return; //Stops before anything happens
-        //System.out.println("Passed Config Check");
-
         //Random Number On what face to do
         int whatFace = ThreadLocalRandom.current().nextInt(0, 5 + 1);
 
-        //System.out.println(whatFace);
-
-        BlockPos face = pos.up();
-
+        BlockPos face;
 
         int attempt = 0;
-        boolean canPlace = false;
-        while (!canPlace) { //It says its always true but its not, ignore it
-            if (!state.isNormalCube()) return;
+        while (true) {
+            if (!state.isNormalCube()) return; //Avoids Loop if block already destroyed
 
-            if (whatFace == 0) { face = pos.up(); } //Up
-            if (whatFace == 1) { face = pos.down(); }  //Down
-            if (whatFace == 2) { face = pos.north(); } //North
-            if (whatFace == 3) { face = pos.south(); } //South
-            if (whatFace == 4) { face = pos.east(); } //East
-            if (whatFace == 5) { face = pos.west(); } //West
-
-            if (worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.DIRT.getStateFromMeta(0).getBlock() || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.GRASS.getStateFromMeta(0).getBlock()) {
-                canPlace = true;
-                break;
+            switch (whatFace) {
+                case 0: default: face = pos.up(); break;
+                case 1: face = pos.down(); break;
+                case 2: face = pos.north(); break;
+                case 3: face = pos.south(); break;
+                case 4: face = pos.east(); break;
+                case 5: face = pos.west();
             }
+
+            //Correct Block
+            if (worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.DIRT.getDefaultState().getBlock()
+                    || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.GRASS.getDefaultState().getBlock()
+                    || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.GRASS_PATH.getDefaultState().getBlock()
+                    || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.COBBLESTONE.getDefaultState().getBlock()
+                    || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.MOSSY_COBBLESTONE.getDefaultState().getBlock()
+                    || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.LOG.getDefaultState().getBlock()
+                    || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.PLANKS.getDefaultState().getBlock()) break;
+
+            //Incorrect Block
             whatFace = ThreadLocalRandom.current().nextInt(0, 5 + 1);
-           // System.out.println("face not correct, retrying with " + whatFace);
-            //System.out.println("attempt " + attempt);
             attempt = attempt + 1;
-            if (attempt == 10) {
-                //System.out.println("Unable to place Block");
-                return;
-            }
+            if (attempt == 10) return;
         }
 
-        IBlockState whatBlock;
-        whatBlock = new Random().nextBoolean() ? BlockInit.SCP610A.getDefaultState() : BlockInit.SCP610B.getDefaultState();
+        //worldIn.setBlockState(face, new Random().nextBoolean() ? BlockInit.SCP610A.getDefaultState() : BlockInit.SCP610B.getDefaultState());
 
-        worldIn.setBlockState(face, whatBlock);
-        //System.out.println("Placed 610");
-        canPlace = false;
+        IBlockState Block = BlockInit.SCP610A.getDefaultState();
+        double spawnChance = Math.random() * 100;
+
+        if (spawnChance > 30) Block = BlockInit.SCP610A.getDefaultState();
+        if (spawnChance < 30) Block = BlockInit.SCP610B.getDefaultState();
+
+        worldIn.setBlockState(face, Block);
     }
 }

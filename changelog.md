@@ -4,6 +4,7 @@
 # Additions! (No need to worry about these)
 + Merged with Site-78 Mod
 + Added Config Option for 610 Block Spread
++ 610 actually spreads now yay!
 
 # Major Changes! (If your world had any thing related to the things in red, you might want to check it out)
 - Removed safe Variant of 610 Blocks

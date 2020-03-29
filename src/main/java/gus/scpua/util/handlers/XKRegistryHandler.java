@@ -1,23 +1,19 @@
 package gus.scpua.util.handlers;
 
 import gus.scpua.init.BlockInit;
+import gus.scpua.init.EntityInit;
 import gus.scpua.init.ItemInit;
-import gus.scpua.scpua;
 import gus.scpua.util.IHasModel;
-import gus.scpua.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
-import java.io.File;
 
 @EventBusSubscriber
 public class XKRegistryHandler {
@@ -51,11 +47,14 @@ public class XKRegistryHandler {
     //preInit Registries
     public static void preInitRegistries(FMLPreInitializationEvent event) {
         XKConfigHandler.registerConfig(event);
+
+        EntityInit.registerEntities();
+        XKRenderHandler.registerEntityRenders();
     }
 
     //Init Registries
     public static void initRegistries(FMLInitializationEvent event) {
-        new XKSoundsHandler();
+        new XKSoundHandler();
     }
 
     //PostInit Registries

@@ -4,7 +4,6 @@ import gus.scpua.util.DamageSrc;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -47,7 +46,7 @@ public class XKEventHandler {
                 //System.out.println("Damaging Player");
                 playerIn.addPotionEffect(new PotionEffect(MobEffects.POISON, 100, 2)); //Add Damage increase element
                 playerIn.attackEntityFrom(DamageSrc.PIPENIGHT, 2); //Change Damage Source
-                worldIn.playSound((EntityPlayer) null, blockPos, XKSoundsHandler.STEAM_015, SoundCategory.AMBIENT, 1F, 1F);
+                worldIn.playSound((EntityPlayer) null, blockPos, XKSoundHandler.SCP015_STEAM, SoundCategory.AMBIENT, 1F, 1F);
             }
         }
 

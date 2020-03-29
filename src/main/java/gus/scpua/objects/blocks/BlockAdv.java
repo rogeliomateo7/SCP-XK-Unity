@@ -44,17 +44,13 @@ public class BlockAdv extends BlockBase {
     /**
      * Collision Sector
      */
-    public static AxisAlignedBB BASE_AABB = new AxisAlignedBB(0, 0, 0, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16); //Returns Solid Block if something went wrong
+    public static AxisAlignedBB BARREL_AABB = new AxisAlignedBB(0.0625 * 2, 0, 0.0625 * 2, 0.0625 * 14, 0.0625 * 18, 0.0625 * 14);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+        if(collisSet == 1) return BARREL_AABB;
 
-        //Non Directional BB's
-        //BLOCK_AABB = new AxisAlignedBB(1.0D, 1.0D, 1.0D, 1.0D, 1.0D, 1.0D);
-
-        //if(collisSet == 1) BASE_AABB = BLOCK_AABB;
-
-        return BASE_AABB;
+        return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
     }
 
     /**

@@ -10,6 +10,7 @@ public class Crowbar extends ItemBase {
         super(name);
     }
 
+    /* I dont think the crowbar does anything special
     @Override
     public void onPlayerStoppedUsing(ItemStack stack, World worldIn, EntityLivingBase entityLiving, int timeLeft) {
         System.out.println("STOPPED USING CROWBAR");
@@ -21,4 +22,6 @@ public class Crowbar extends ItemBase {
         System.out.println("USING CROWBAR");
         super.onUsingTick(stack, player, count);
     }
+
+     */
 }

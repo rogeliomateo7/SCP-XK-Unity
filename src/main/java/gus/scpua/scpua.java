@@ -18,6 +18,10 @@ public class scpua {
 
     public static File config;
 
+    @Mod.Instance
+    public static scpua instance;
+
+
     //Creative Tabs
     public static final CreativeTabs tablockdownunitytab = new Tabs("tablockdownunitytab", 1); //Main Tab
     public static final CreativeTabs tabweaponsscp = new Tabs("tabweaponsscp", 2); //Tools Tab

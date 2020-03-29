@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gus.scpua.objects.blocks.custom.Block610;
+import gus.scpua.objects.blocks.custom.BlockLamp;
 import gus.scpua.objects.blocks.custom.Coffin076;
 import gus.scpua.objects.blocks.rotation.NSEWBlock;
 import gus.scpua.objects.blocks.rotation.UDNSEWBlock;
@@ -65,6 +66,12 @@ public class BlockInit {
 	public static final Block RAIL_RIGHT = new NSEWBlock("railright", Material.IRON, 3, false, 2);
 	public static final Block POWER_BOX = new NSEWBlock("powerbox", Material.IRON, 3, false, 3);
   	public static final Block FIRE_EXT = new NSEWBlock("fireextinguixer", Material.IRON, 3, false,4);
+  	public static final Block TINY_LAMP = new BlockLamp("tinylamp", Material.IRON, 3 ,false, 2);
+	public static final Block SHELF_LEFT = new NSEWBlock("shelfleft", Material.WOOD, 3 ,false, 6);
+	public static final Block SHELF_MIDDLE = new NSEWBlock("shelfmiddle", Material.WOOD, 3,false, 6);
+	public static final Block SHELF_RIGHT = new NSEWBlock("shelfright", Material.WOOD, 3,false, 6);
+	public static final Block BARREL_RED = new BlockAdv("barrel", Material.IRON, 3,false, 1);
+	public static final Block BARREL_YELLOW = new BlockAdv("ybarrel", Material.IRON, 3,false, 1);
 
 	//Lockdown Unity
 	// All of these hurt me inside

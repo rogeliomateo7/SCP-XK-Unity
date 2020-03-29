@@ -18,7 +18,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class BlockTesla extends BlockBase {
     public BlockTesla(String name, Material material, int inv) {
         super(name, material, inv);
-        setLightLevel(6.0F);
+        setLightLevel(0.5F);
         setLightOpacity(1);
     }
 
