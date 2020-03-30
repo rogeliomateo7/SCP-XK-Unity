@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/redbarrel",
-  "textures": {
-    "all": "scpua:blocks/barrels",
-    "particle": "scpua:blocks/barrels",
-    "0": "scpua:blocks/barrels"
-  }
-}

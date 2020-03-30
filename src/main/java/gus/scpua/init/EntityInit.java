@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 public class EntityInit {
 
     public static void registerEntities() {
-        registerEntity("scp049", EntitySCP049.class, Reference.ENTITY_049, 1, 808080, 404040);
+        registerEntity("scp049", EntitySCP049.class, 1, 1, 808080, 404040);
     }
 
     private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2) {

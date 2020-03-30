@@ -1,5 +1,11 @@
 {
-    "variants": {
-        "normal": { "model": "scpua:flat_light_off" }
-    }
+  "variants": {
+    "normal": {"model": "scpua:flat_light_off"},
+    "facing=north": {"model": "scpua:flat_light_off","x": -90},
+    "facing=east": {"model": "scpua:flat_light_off","y": 90,"x": -90},
+    "facing=south": {"model": "scpua:flat_light_off","x": 90},
+    "facing=west": {"model": "scpua:flat_light_off","y": 90,"x": 90},
+    "facing=up": {"model": "scpua:flat_light_off","x": 180},
+    "facing=down": {"model": "scpua:flat_light_off"}
+  }
 }

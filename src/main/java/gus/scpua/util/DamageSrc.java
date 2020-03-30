@@ -13,7 +13,6 @@ public class DamageSrc extends DamageSource {
 
     public static final DamageSource ELECTROCUTED = (new DamageSource("electrocuted")).setDamageBypassesArmor();
     public static final DamageSource PIPENIGHT = (new DamageSource("pipenightmare")).setDamageBypassesArmor();
-    private boolean electrocution;
     private boolean isUnblockable;
     public String damageType;
 
@@ -26,19 +25,12 @@ public class DamageSrc extends DamageSource {
         return this;
     }
 
-    //This is the thing that puts "death.attack.electrocution" in chat for all i know
     public ITextComponent getDeathMessage(EntityLivingBase entityLivingBaseIn) {
-        EntityLivingBase entitylivingbase = entityLivingBaseIn.getAttackingEntity();
-        String s = "death.attack." + this.damageType;
-        String s1 = s + ".player";
-        return entitylivingbase != null && I18n.canTranslate(s1) ? new TextComponentTranslation(s1, new Object[]{entityLivingBaseIn.getDisplayName(), entitylivingbase.getDisplayName()}) : new TextComponentTranslation(s, new Object[]{entityLivingBaseIn.getDisplayName()});
+        String deathMessage = "death.attack." + this.damageType;
+        return new TextComponentTranslation(deathMessage);
     }
 
     public String getDamageType() {
         return this.damageType;
-    }
-
-    public boolean isMagicDamage() {
-        return this.electrocution;
     }
 }

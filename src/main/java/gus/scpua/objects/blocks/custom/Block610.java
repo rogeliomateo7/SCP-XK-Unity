@@ -3,7 +3,6 @@ package gus.scpua.objects.blocks.custom;
 import gus.scpua.init.BlockInit;
 import gus.scpua.objects.blocks.BlockBase;
 import gus.scpua.util.handlers.XKConfigHandler;
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -60,8 +59,6 @@ public class Block610 extends BlockBase {
             attempt = attempt + 1;
             if (attempt == 10) return;
         }
-
-        //worldIn.setBlockState(face, new Random().nextBoolean() ? BlockInit.SCP610A.getDefaultState() : BlockInit.SCP610B.getDefaultState());
 
         IBlockState Block = BlockInit.SCP610A.getDefaultState();
         double spawnChance = Math.random() * 100;

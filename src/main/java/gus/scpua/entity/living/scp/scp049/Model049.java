@@ -10,21 +10,21 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
 public class Model049 extends ModelBase {
-    private final ModelRenderer Head;
-    private final ModelRenderer Beak1;
-    private final ModelRenderer Beak2;
-    private final ModelRenderer Tunic;
-    private final ModelRenderer Neck;
-    private final ModelRenderer Mask;
-    private final ModelRenderer Body;
-    private final ModelRenderer TunicBody;
-    private final ModelRenderer RArm;
-    private final ModelRenderer RTunicArm;
-    private final ModelRenderer Knife;
-    private final ModelRenderer LArm;
-    private final ModelRenderer LTunicArm;
-    private final ModelRenderer RLeg;
-    private final ModelRenderer LLeg;
+    ModelRenderer Head;
+    ModelRenderer Beak1;
+    ModelRenderer Beak2;
+    ModelRenderer Tunic;
+    ModelRenderer Neck;
+    ModelRenderer Mask;
+    ModelRenderer Body;
+    ModelRenderer TunicBody;
+    ModelRenderer RArm;
+    ModelRenderer RTunicArm;
+    ModelRenderer Knife;
+    ModelRenderer LArm;
+    ModelRenderer LTunicArm;
+    ModelRenderer RLeg;
+    ModelRenderer LLeg;
 
     public Model049() {
         textureWidth = 90;
@@ -102,7 +102,7 @@ public class Model049 extends ModelBase {
         LLeg.setRotationPoint(-2.0F, 12.0F, 0.0F);
         LLeg.cubeList.add(new ModelBox(LLeg, 40, 46, -2.0F, 0.0F, -2.0F, 4, 12, 4, 0.0F, false));
     }
-
+/*
     @Override
     public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
         Head.render(f5);
@@ -112,6 +112,8 @@ public class Model049 extends ModelBase {
         RLeg.render(f5);
         LLeg.render(f5);
     }
+
+ */
 
     private void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
         modelRenderer.rotateAngleX = x;

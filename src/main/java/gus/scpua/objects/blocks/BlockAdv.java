@@ -44,7 +44,7 @@ public class BlockAdv extends BlockBase {
     /**
      * Collision Sector
      */
-    public static AxisAlignedBB BARREL_AABB = new AxisAlignedBB(0.0625 * 2, 0, 0.0625 * 2, 0.0625 * 14, 0.0625 * 18, 0.0625 * 14);
+    public static AxisAlignedBB BARREL_AABB = new AxisAlignedBB(0.0625 * 3, 0, 0.0625 * 3, 0.0625 * 13, 0.0625 * 16, 0.0625 * 13);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
