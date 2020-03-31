@@ -9,7 +9,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "2.0.0-20w14a"
+version = "2.0.0-20w14b"
 group = "gus.scpua"
 archivesBaseName = "scpua"
 
