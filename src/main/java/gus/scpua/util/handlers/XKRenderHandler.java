@@ -2,6 +2,7 @@ package gus.scpua.util.handlers;
 
 import gus.scpua.entity.living.scp.scp049.EntitySCP049;
 import gus.scpua.entity.living.scp.scp049.Render049;
+import gus.scpua.entity.living.scp.EntitySCP999;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
@@ -13,10 +14,21 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class XKRenderHandler {
 
     public static void registerEntityRenders() {
-        RenderingRegistry.registerEntityRenderingHandler(EntitySCP049.class, new IRenderFactory<EntitySCP049>() {
+        RenderingRegistry.registerEntityRenderingHandler(EntitySCP049.class, new IRenderFactory<EntitySCP049>()
+        {
             @Override
-            public Render<? super EntitySCP049> createRenderFor(RenderManager manager) {
+            public Render<? super EntitySCP049> createRenderFor(RenderManager manager)
+            {
                 return new Render049(manager);
+            }
+        });
+
+        RenderingRegistry.registerEntityRenderingHandler(EntitySCP999.class, new IRenderFactory<EntitySCP999>()
+        {
+            @Override
+            public Render<? super EntitySCP999> createRenderFor(RenderManager manager)
+            {
+                return new EntitySCP999.Render999(manager);
             }
         });
     }

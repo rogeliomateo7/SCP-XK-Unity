@@ -5,10 +5,14 @@ import gus.scpua.objects.blocks.BlockBase;
 import gus.scpua.util.handlers.XKConfigHandler;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -68,4 +72,15 @@ public class Block610 extends BlockBase {
 
         worldIn.setBlockState(face, Block);
     }
+
+    @Nullable
+    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) { return new AxisAlignedBB(0, 0, 0, 0.0625 * 16, 0.0625 * 14.5, 0.0625 * 16); }
+
+    @Override
+    public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn) {
+        entityIn.motionX *= 0.4D;
+        entityIn.motionZ *= 0.4D;
+    }
+
+
 }

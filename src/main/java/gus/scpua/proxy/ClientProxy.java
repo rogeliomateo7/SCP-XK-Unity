@@ -30,4 +30,8 @@ public class ClientProxy extends CommonProxy {
             ClientRegistry.registerKeyBinding(keyBindings[i]);
         }
     }
+
+    @Override
+    public void render() {
+    }
 }

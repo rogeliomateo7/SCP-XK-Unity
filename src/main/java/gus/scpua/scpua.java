@@ -43,7 +43,6 @@ public class scpua {
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event) {
         XKRegistryHandler.initRegistries(event);
-        proxy.clientInit();
     }
 
     //PostInit

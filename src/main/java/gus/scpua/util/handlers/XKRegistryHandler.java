@@ -14,6 +14,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 @EventBusSubscriber
 public class XKRegistryHandler {
@@ -30,7 +32,9 @@ public class XKRegistryHandler {
     }
 
     @SubscribeEvent
+    @SideOnly(Side.CLIENT)
     public static void onModelRegister(ModelRegistryEvent event) {
+        XKRenderHandler.registerEntityRenders();
         for (Item item : ItemInit.ITEMS) {
             if (item instanceof IHasModel) {
                 ((IHasModel) item).registerModels();
@@ -47,9 +51,7 @@ public class XKRegistryHandler {
     //preInit Registries
     public static void preInitRegistries(FMLPreInitializationEvent event) {
         XKConfigHandler.registerConfig(event);
-
         EntityInit.registerEntities();
-        XKRenderHandler.registerEntityRenders();
     }
 
     //Init Registries

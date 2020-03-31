@@ -10,21 +10,21 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
 public class Model049 extends ModelBase {
-    ModelRenderer Head;
-    ModelRenderer Beak1;
-    ModelRenderer Beak2;
-    ModelRenderer Tunic;
-    ModelRenderer Neck;
-    ModelRenderer Mask;
-    ModelRenderer Body;
-    ModelRenderer TunicBody;
-    ModelRenderer RArm;
-    ModelRenderer RTunicArm;
-    ModelRenderer Knife;
-    ModelRenderer LArm;
-    ModelRenderer LTunicArm;
-    ModelRenderer RLeg;
-    ModelRenderer LLeg;
+    public ModelRenderer Head;
+    public ModelRenderer Beak1;
+    public ModelRenderer Beak2;
+    public ModelRenderer Tunic;
+    public ModelRenderer Neck;
+    public ModelRenderer Mask;
+    public ModelRenderer Body;
+    public ModelRenderer TunicBody;
+    public ModelRenderer RArm;
+    public ModelRenderer RTunicArm;
+    public ModelRenderer Knife;
+    public ModelRenderer LArm;
+    public ModelRenderer LTunicArm;
+    public ModelRenderer RLeg;
+    public ModelRenderer LLeg;
 
     public Model049() {
         textureWidth = 90;
@@ -102,7 +102,8 @@ public class Model049 extends ModelBase {
         LLeg.setRotationPoint(-2.0F, 12.0F, 0.0F);
         LLeg.cubeList.add(new ModelBox(LLeg, 40, 46, -2.0F, 0.0F, -2.0F, 4, 12, 4, 0.0F, false));
     }
-/*
+
+
     @Override
     public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
         Head.render(f5);
@@ -113,8 +114,6 @@ public class Model049 extends ModelBase {
         LLeg.render(f5);
     }
 
- */
-
     private void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
         modelRenderer.rotateAngleX = x;
         modelRenderer.rotateAngleY = y;
@@ -124,8 +123,8 @@ public class Model049 extends ModelBase {
     @Override
     public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) {
         this.LLeg.rotateAngleX = MathHelper.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
-        this.Head.rotateAngleY = ageInTicks / (180F / (float) Math.PI);
-        this.Head.rotateAngleX = netHeadYaw / (180F / (float) Math.PI);
+        //this.Head.rotateAngleY = ageInTicks / (180F / (float) Math.PI);
+        //this.Head.rotateAngleX = netHeadYaw / (180F / (float) Math.PI);
         this.RArm.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
         this.LArm.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * limbSwingAmount;
         this.RLeg.rotateAngleX = MathHelper.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
