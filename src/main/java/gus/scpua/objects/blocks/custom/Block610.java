@@ -58,6 +58,7 @@ public class Block610 extends BlockBase {
                     || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.LOG.getDefaultState().getBlock()
                     || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.PLANKS.getDefaultState().getBlock()) break;
 
+
             //Incorrect Block
             whatFace = ThreadLocalRandom.current().nextInt(0, 5 + 1);
             attempt = attempt + 1;

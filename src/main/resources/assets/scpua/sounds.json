@@ -243,9 +243,9 @@
     "category": "neutral",
     "sounds": [{"name": "scpua:scp/999/death", "stream": false}]
   },
-  "999-hit":{
+  "999-hurt":{
     "category": "neutral",
-    "sounds": [{"name": "scpua:scp/999/hit", "stream": false}]
+    "sounds": [{"name": "scpua:scp/999/hurt", "stream": false}]
   },
   "999-idle":{
     "category": "neutral",

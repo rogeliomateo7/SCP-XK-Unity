@@ -18,6 +18,7 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 
 public class COMSuit extends ItemArmor implements IHasModel {
+
     public String textureName;
 
     public COMSuit(String name, ItemArmor.ArmorMaterial material, EntityEquipmentSlot equipmentSlotIn) {

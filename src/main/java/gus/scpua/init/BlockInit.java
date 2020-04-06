@@ -5,6 +5,7 @@ import java.util.List;
 
 import gus.scpua.objects.blocks.custom.Block610;
 import gus.scpua.objects.blocks.custom.BlockLamp;
+import gus.scpua.objects.blocks.custom.BlockTesla;
 import gus.scpua.objects.blocks.custom.Coffin076;
 import gus.scpua.objects.blocks.rotation.NSEWBlock;
 import gus.scpua.objects.blocks.rotation.UDNSEWBlock;

@@ -12,6 +12,8 @@ public class XKSoundHandler {
 
     public static SoundEvent SCP049_BREATHING, SCP049_CHASE, SCP049_CURE1, SCP049_CURE2, SCP049_IDLE, SCP049_RESIST, SCP049_SPOT;
 
+    public static SoundEvent SCP999_DEATH, SCP999_IDLE, SCP999_HURT;
+
     public XKSoundHandler() {
         instance = this;
         //SCP's
@@ -84,9 +86,9 @@ public class XKSoundHandler {
         registerSound("939-lure8");
         registerSound("939-lure9");
 
-        registerSound("999-death");
-        registerSound("999-hit");
-        registerSound("999-idle");
+        SCP999_DEATH = registerSound("999-death");
+        SCP999_HURT = registerSound("999-hurt");
+        SCP999_IDLE = registerSound("999-idle");
     }
 
     private SoundEvent registerSound(String name) {

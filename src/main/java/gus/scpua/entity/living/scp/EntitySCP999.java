@@ -1,6 +1,7 @@
 package gus.scpua.entity.living.scp;
 
 import gus.scpua.util.Reference;
+import gus.scpua.util.handlers.XKSoundHandler;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
@@ -15,10 +16,14 @@ import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
+import javax.annotation.Nullable;
 
 public class EntitySCP999 extends EntityCreature {
 
@@ -41,23 +46,22 @@ public class EntitySCP999 extends EntityCreature {
         this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(10.0D);
     }
 
-    /*
     @Override
     protected SoundEvent getDeathSound() {
-        return XKSoundHandler.SCP049_BREATHING;
+        return XKSoundHandler.SCP999_DEATH;
     }
 
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return XKSoundHandler.SCP049_BREATHING;
+        return XKSoundHandler.SCP999_IDLE;
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-        return XKSoundHandler.SCP049_RESIST;
+        return XKSoundHandler.SCP999_HURT;
     }
-     */
+
 
     @SideOnly(Side.CLIENT)
     public static class Model999 extends ModelBase {

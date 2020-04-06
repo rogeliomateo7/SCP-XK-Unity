@@ -1,6 +1,5 @@
 package gus.scpua.objects.blocks.rotation;
 
-import gus.scpua.init.BlockInit;
 import gus.scpua.objects.blocks.BlockAdv;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.material.Material;
