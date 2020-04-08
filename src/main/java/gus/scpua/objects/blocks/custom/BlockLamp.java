@@ -19,12 +19,12 @@ import java.util.Random;
 
 public class BlockLamp extends UDNSEWBlock {
 
-    private boolean isPowered = false;
+    private boolean isPowered;
 
-    public BlockLamp(String name, Material material, int inv, boolean fullcube, int collision) {
+    public BlockLamp(String name, Material material, int inv, boolean fullcube, int collision, boolean isOn) {
         super(name, material, inv, fullcube, collision);
 
-        if (this == BlockInit.FLAT_LIGHT_ON) isPowered = true;
+        isPowered = isOn;
     }
 
 
@@ -34,15 +34,17 @@ public class BlockLamp extends UDNSEWBlock {
     @Override
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
     {
+        EnumFacing facing = state.getValue(FACING);
+
         if (!worldIn.isRemote)
         {
             if (this.isPowered && !worldIn.isBlockPowered(pos))
             {
-                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_OFF.getDefaultState(), 2);
+                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_OFF.getDefaultState().withProperty(FACING, facing));
             }
             else if (!this.isPowered && worldIn.isBlockPowered(pos))
             {
-                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_ON.getDefaultState(), 2);
+                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_ON.getDefaultState().withProperty(FACING, facing));
             }
         }
     }
@@ -56,6 +58,9 @@ public class BlockLamp extends UDNSEWBlock {
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
     {
         if (this == BlockInit.TINY_LAMP) return; // Currently This doesnt have a off function
+
+        EnumFacing facing = state.getValue(FACING);
+
         if (!worldIn.isRemote)
         {
             if (isPowered && !worldIn.isBlockPowered(pos))
@@ -64,7 +69,7 @@ public class BlockLamp extends UDNSEWBlock {
             }
             else if (!isPowered && worldIn.isBlockPowered(pos))
             {
-                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_ON.getDefaultState(), 2);
+                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_ON.getDefaultState().withProperty(FACING, facing));
             }
         }
     }
@@ -73,11 +78,14 @@ public class BlockLamp extends UDNSEWBlock {
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
         if (this == BlockInit.TINY_LAMP) return; // Currently This doesnt have a off function
+
+        EnumFacing facing = state.getValue(FACING);
+
         if (!worldIn.isRemote)
         {
             if (this.isPowered && !worldIn.isBlockPowered(pos))
             {
-                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_OFF.getDefaultState(), 2);
+                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_OFF.getDefaultState().withProperty(FACING, facing));
             }
         }
     }

@@ -69,6 +69,7 @@ public class NSEWBlock extends BlockAdv {
     public static AxisAlignedBB SCP_076_1_AABB;
     public static AxisAlignedBB SHELFS_AABB;
     public static AxisAlignedBB WET_FLOOR_SIGN_AABB;
+    public static AxisAlignedBB BARREL_AABB = new AxisAlignedBB(0.0625 * 3, 0, 0.0625 * 3, 0.0625 * 13, 0.0625 * 16, 0.0625 * 13);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
@@ -117,6 +118,7 @@ public class NSEWBlock extends BlockAdv {
         if (collisSet == 5) return SCP_076_1_AABB; //076 Coffin
         if (collisSet == 6) return SHELFS_AABB;
         if (collisSet == 7) return WET_FLOOR_SIGN_AABB;
+        if (collisSet == 8) return BARREL_AABB;
 
         return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D); //Returns block if something went wrong
     }

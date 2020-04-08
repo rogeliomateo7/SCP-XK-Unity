@@ -68,12 +68,12 @@ public class BlockInit {
 	public static final Block RAIL_RIGHT = new NSEWBlock("railright", Material.IRON, 3, false, 2);
 	public static final Block POWER_BOX = new NSEWBlock("powerbox", Material.IRON, 3, false, 3);
   	public static final Block FIRE_EXT = new NSEWBlock("fireextinguixer", Material.IRON, 3, false,4);
-  	public static final Block TINY_LAMP = new BlockLamp("tinylamp", Material.IRON, 3 ,false, 2).setLightLevel(1.0F);
+  	public static final Block TINY_LAMP = new BlockLamp("tinylamp", Material.IRON, 3 ,false, 2, true).setLightLevel(1.0F);
 	public static final Block SHELF_LEFT = new NSEWBlock("shelfleft", Material.WOOD, 3 ,false, 6);
 	public static final Block SHELF_MIDDLE = new NSEWBlock("shelfmiddle", Material.WOOD, 3,false, 6);
 	public static final Block SHELF_RIGHT = new NSEWBlock("shelfright", Material.WOOD, 3,false, 6);
-	public static final Block BARRELA = new BlockAdv("barrela", Material.IRON, 3,false, 1);
-	public static final Block BARRELB = new BlockAdv("barrelb", Material.IRON, 3,false, 1);
+	public static final Block BARRELA = new NSEWBlock("barrela", Material.IRON, 3,false, 8);
+	public static final Block BARRELB = new NSEWBlock("barrelb", Material.IRON, 3,false, 8);
 	public static final Block WET_FLOOR_SIGN = new NSEWBlock("wetfloorsign", Material.WOOD, 3,false, 7);
 
 	//Lockdown Unity
@@ -157,6 +157,6 @@ public class BlockInit {
 	public static final Block TFRAME_MIDDLE_L = new NSEWBlock("tframe_middle_l", Material.IRON,5, true, 0);
 	public static final Block TFRAME_BOTTOM_L = new NSEWBlock("tframe_bottom_l", Material.IRON,5, true, 0);
 
-	public static final Block FLAT_LIGHT_ON = new BlockLamp("flat_light_on", Material.REDSTONE_LIGHT, 5, false, 1).setLightLevel(1.0F);
-	public static final Block FLAT_LIGHT_OFF = new BlockLamp("flat_light_off", Material.REDSTONE_LIGHT, 5, false, 1).setCreativeTab(scpua.tabsite78);
+	public static final Block FLAT_LIGHT_ON = new BlockLamp("flat_light_on", Material.REDSTONE_LIGHT, 5, false, 1, true).setLightLevel(1.0F);
+	public static final Block FLAT_LIGHT_OFF = new BlockLamp("flat_light_off", Material.REDSTONE_LIGHT, 5, false, 1, false).setCreativeTab(scpua.tabsite78);
 }

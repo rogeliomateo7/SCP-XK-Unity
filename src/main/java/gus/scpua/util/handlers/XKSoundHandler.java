@@ -8,14 +8,19 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class XKSoundHandler {
     public static XKSoundHandler instance;
 
+    public static SoundEvent MEDKIT, HLMEDKIT;
+
     public static SoundEvent SCP015_STEAM;
-
     public static SoundEvent SCP049_BREATHING, SCP049_CHASE, SCP049_CURE1, SCP049_CURE2, SCP049_IDLE, SCP049_RESIST, SCP049_SPOT;
-
     public static SoundEvent SCP999_DEATH, SCP999_IDLE, SCP999_HURT;
 
     public XKSoundHandler() {
         instance = this;
+        //Items
+        MEDKIT = registerSound("medkit");
+        HLMEDKIT = registerSound("hlmedkit");
+
+
         //SCP's
         registerSound("001-prototype-shriek");
 

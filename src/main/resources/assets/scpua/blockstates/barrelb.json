@@ -2,6 +2,21 @@
   "variants": {
     "normal": {
       "model": "scpua:barrelb"
+    },
+    "facing=north": {
+      "model": "scpua:barrelb"
+    },
+    "facing=east": {
+      "model": "scpua:barrelb",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "scpua:barrelb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "scpua:barrelb",
+      "y": 270
     }
   }
 }

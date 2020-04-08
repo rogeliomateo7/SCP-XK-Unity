@@ -1,4 +1,13 @@
 {
+  "medkit": {
+    "category": "player",
+    "sounds": [{"name": "scpua:items/medical/medkit", "stream": false}]
+  },
+  "hlmedkit": {
+  "category": "player",
+  "sounds": [{"name": "scpua:items/medical/hlmedkit", "stream": false}]
+  },
+
   "001-prototype-shriek": {
     "category": "hostile",
     "sounds": [{"name": "scpua:scp/001prototype/shriek", "stream": false}]
