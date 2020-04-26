@@ -1,5 +1,6 @@
 package gus.scpua.objects.blocks.rotation;
 
+import gus.scpua.init.BlockInit;
 import gus.scpua.objects.blocks.BlockAdv;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
@@ -8,14 +9,13 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.Mirror;
-import net.minecraft.util.Rotation;
+import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class NSEWBlock extends BlockAdv {
 
@@ -70,6 +70,7 @@ public class NSEWBlock extends BlockAdv {
     public static AxisAlignedBB SHELFS_AABB;
     public static AxisAlignedBB WET_FLOOR_SIGN_AABB;
     public static AxisAlignedBB BARREL_AABB = new AxisAlignedBB(0.0625 * 3, 0, 0.0625 * 3, 0.0625 * 13, 0.0625 * 16, 0.0625 * 13);
+    public static AxisAlignedBB CZGLASS_AABB = new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
@@ -119,6 +120,7 @@ public class NSEWBlock extends BlockAdv {
         if (collisSet == 6) return SHELFS_AABB;
         if (collisSet == 7) return WET_FLOOR_SIGN_AABB;
         if (collisSet == 8) return BARREL_AABB;
+        if (collisSet == 9) return CZGLASS_AABB;
 
         return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D); //Returns block if something went wrong
     }

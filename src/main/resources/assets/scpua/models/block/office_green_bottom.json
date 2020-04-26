@@ -1,12 +1,7 @@
 {
-   "parent": "block/cube_all",
-   "textures": {
-        "particle": "scpua:blocks/wall",
-        "up": "scpua:blocks/wall",
-        "down": "scpua:blocks/wall",
-        "north": "scpua:blocks/office_green_bottom",
-        "east": "scpua:blocks/office_green_bottom",
-        "south": "scpua:blocks/office_green_bottom",
-        "west": "scpua:blocks/office_green_bottom"
-   }
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "scpua:blocks/site78/wall",
+    "side": "scpua:blocks/site78/office_green_bottom"
+  }
 }

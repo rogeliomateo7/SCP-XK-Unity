@@ -3,7 +3,6 @@ package gus.scpua.objects.items.tools;
 import com.google.common.collect.Multimap;
 import gus.scpua.init.ItemInit;
 import gus.scpua.scpua;
-import gus.scpua.util.IHasModel;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
@@ -15,8 +14,7 @@ import java.util.Collection;
 import java.util.Optional;
 import java.util.UUID;
 
-public class ToolSword extends ItemSword implements IHasModel {
-
+public class ToolSword extends ItemSword {
     public ToolSword(String name, ToolMaterial material) {
         super(material);
         setUnlocalizedName(name);
@@ -25,12 +23,6 @@ public class ToolSword extends ItemSword implements IHasModel {
 
         ItemInit.ITEMS.add(this);
     }
-
-    @Override
-    public void registerModels() {
-        scpua.proxy.registerItemRenderer(this, 0, "inventory");
-    }
-
 
     /**
      * ngl i got this section from stack overflow (well majority of it)

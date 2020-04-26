@@ -1,28 +1,25 @@
-package gus.scpua.entity.living.scp.scp049;
+package gus.scpua.entity.living.scp.scp999;
 
 import gus.scpua.util.handlers.XKSoundHandler;
+import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWander;
-import net.minecraft.entity.monster.EntityMob;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 
-public class EntitySCP049 extends EntityMob {
+public class EntitySCP999 extends EntityCreature {
 
-    public EntitySCP049(World worldIn) {
+    public EntitySCP999(World worldIn) {
         super(worldIn);
-        this.setSize(0.9F, 2F);
+        this.setSize(1F, 0.9F);
     }
 
     @Override
     protected void initEntityAI() {
-        this.tasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityPlayerMP.class, true, true));
         this.tasks.addTask(2, new EntityAISwimming(this));
         this.tasks.addTask(2, new EntityAIWander(this, 1D));
     }
@@ -32,23 +29,22 @@ public class EntitySCP049 extends EntityMob {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(15D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.2001D);
-        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(1000000000);
         this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(10.0D);
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return XKSoundHandler.SCP049_BREATHING;
+        return XKSoundHandler.SCP999_DEATH;
     }
 
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return XKSoundHandler.SCP049_BREATHING;
+        return XKSoundHandler.SCP999_IDLE;
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-        return XKSoundHandler.SCP049_RESIST;
+        return XKSoundHandler.SCP999_HURT;
     }
 }

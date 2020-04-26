@@ -1,12 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "scpua:blocks/metallichydrogen",
-    "up": "scpua:blocks/metallichydrogen",
-    "north": "scpua:blocks/metallichydrogen",
-    "east": "scpua:blocks/metallichydrogen",
-    "south": "scpua:blocks/metallichydrogen",
-    "west": "scpua:blocks/metallichydrogen",
-    "particle": "scpua:blocks/metallichydrogen"
+    "all": "scpua:blocks/metallichydrogen"
   }
 }

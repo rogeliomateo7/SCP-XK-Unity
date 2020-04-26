@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "scpua:blocks/heavymid",
-    "up": "scpua:blocks/heavymid",
-    "north": "scpua:blocks/heavyhigh",
-    "east": "scpua:blocks/heavyhigh",
-    "south": "scpua:blocks/heavyhigh",
-    "west": "scpua:blocks/heavyhigh",
-    "particle": "scpua:blocks/heavymid"
+    "down": "scpua:blocks/site93/heavymid",
+    "up": "scpua:blocks/site93/heavymid",
+    "north": "scpua:blocks/site93/heavyhigh",
+    "east": "scpua:blocks/site93/heavyhigh",
+    "south": "scpua:blocks/site93/heavyhigh",
+    "west": "scpua:blocks/site93/heavyhigh",
+    "particle": "scpua:blocks/site93/heavymid"
   }
 }

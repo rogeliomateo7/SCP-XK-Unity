@@ -1,12 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "scpua:blocks/eczmid",
-    "up": "scpua:blocks/eczmid",
-    "north": "scpua:blocks/eczmid",
-    "east": "scpua:blocks/eczmid",
-    "south": "scpua:blocks/eczmid",
-    "west": "scpua:blocks/eczmid",
-    "particle": "scpua:blocks/eczmid"
+    "all": "scpua:blocks/site93/eczmid"
   }
 }

@@ -1,12 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "scpua:blocks/grid1",
-    "up": "scpua:blocks/grid1",
-    "north": "scpua:blocks/grid1",
-    "east": "scpua:blocks/grid1",
-    "south": "scpua:blocks/grid1",
-    "west": "scpua:blocks/grid1",
-    "particle": "scpua:blocks/grid1"
+    "all": "scpua:blocks/grid1"
   }
 }

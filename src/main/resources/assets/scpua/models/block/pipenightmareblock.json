@@ -1,12 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "scpua:blocks/rustymetal",
-    "up": "scpua:blocks/rustymetal",
-    "north": "scpua:blocks/rustymetal",
-    "east": "scpua:blocks/rustymetal",
-    "south": "scpua:blocks/rustymetal",
-    "west": "scpua:blocks/rustymetal",
-    "particle": "scpua:blocks/rustymetal"
+    "all": "scpua:blocks/rustymetal"
   }
 }

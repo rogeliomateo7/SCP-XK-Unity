@@ -1,12 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "scpua:blocks/grasscavegame",
-    "up": "scpua:blocks/grasscavegame",
-    "north": "scpua:blocks/grasscavegame",
-    "east": "scpua:blocks/grasscavegame",
-    "south": "scpua:blocks/grasscavegame",
-    "west": "scpua:blocks/grasscavegame",
-    "particle": "scpua:blocks/grasscavegame"
+    "all": "scpua:blocks/grasscavegame"
   }
 }

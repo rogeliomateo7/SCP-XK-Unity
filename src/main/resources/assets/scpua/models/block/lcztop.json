@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "scpua:blocks/lczceiling",
-    "up": "scpua:blocks/lczceiling",
-    "north": "scpua:blocks/lcztop",
-    "east": "scpua:blocks/lcztop",
-    "south": "scpua:blocks/lcztop",
-    "west": "scpua:blocks/lcztop",
-    "particle": "scpua:blocks/lczceiling"
+    "end": "scpua:blocks/site93/lczceiling",
+    "side": "scpua:blocks/site93/lcztop"
   }
 }

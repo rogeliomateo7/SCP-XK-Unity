@@ -1,12 +1,12 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "particle": "scpua:blocks/tframe_top_nl",
-    "up": "scpua:blocks/tframe_middle_nl",
-    "down": "scpua:blocks/tframe_middle_nl",
-    "north": "scpua:blocks/tframe_top_nl",
-    "east": "scpua:blocks/tframe_top_nl",
-    "south": "scpua:blocks/tframe_top_nl",
-    "west": "scpua:blocks/tframe_top_nl"
+    "particle": "scpua:blocks/site78/tframe_top_nl",
+    "up": "scpua:blocks/site78/tframe_middle_nl",
+    "down": "scpua:blocks/site78/tframe_middle_nl",
+    "north": "scpua:blocks/site78/tframe_top_nl",
+    "east": "scpua:blocks/site78/tframe_top_nl",
+    "south": "scpua:blocks/site78/tframe_top_nl",
+    "west": "scpua:blocks/site78/tframe_top_nl"
   }
 }

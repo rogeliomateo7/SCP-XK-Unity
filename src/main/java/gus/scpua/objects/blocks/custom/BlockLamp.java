@@ -34,6 +34,8 @@ public class BlockLamp extends UDNSEWBlock {
     @Override
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
     {
+        if (this == BlockInit.TINY_LAMP) return; // Currently This doesnt have a off function
+
         EnumFacing facing = state.getValue(FACING);
 
         if (!worldIn.isRemote)
@@ -101,11 +103,6 @@ public class BlockLamp extends UDNSEWBlock {
         if (this == BlockInit.TINY_LAMP) drop = Item.getItemFromBlock(BlockInit.TINY_LAMP);
 
         return drop;
-    }
-
-    @Override
-    public void registerModels() {
-        scpua.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 
     //Collision

@@ -1,7 +1,7 @@
 package gus.scpua.init;
 
 import gus.scpua.entity.living.scp.scp049.EntitySCP049;
-import gus.scpua.entity.living.scp.EntitySCP999;
+import gus.scpua.entity.living.scp.scp999.EntitySCP999;
 import gus.scpua.scpua;
 import gus.scpua.util.Reference;
 import net.minecraft.entity.Entity;

@@ -17,6 +17,8 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Block610 extends BlockBase {
+    @Override public boolean canSustainLeaves(IBlockState state, net.minecraft.world.IBlockAccess world, BlockPos pos){ return true; }
+
     public Block610(String name, Material material, int inv) {
         super(name, material, inv);
 
@@ -33,7 +35,6 @@ public class Block610 extends BlockBase {
 
         //Random Number On what face to do
         int whatFace = ThreadLocalRandom.current().nextInt(0, 5 + 1);
-
         BlockPos face;
 
         int attempt = 0;
@@ -56,19 +57,19 @@ public class Block610 extends BlockBase {
                     || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.COBBLESTONE.getDefaultState().getBlock()
                     || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.MOSSY_COBBLESTONE.getDefaultState().getBlock()
                     || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.LOG.getDefaultState().getBlock()
+                    || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.LEAVES.getDefaultState().getBlock()
+                    || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.LEAVES2.getDefaultState().getBlock()
                     || worldIn.getBlockState(new BlockPos(face)).getBlock() == Blocks.PLANKS.getDefaultState().getBlock()) break;
 
 
             //Incorrect Block
             whatFace = ThreadLocalRandom.current().nextInt(0, 5 + 1);
-            attempt = attempt + 1;
+            attempt++;
             if (attempt == 10) return;
         }
 
-        IBlockState Block = BlockInit.SCP610A.getDefaultState();
         double spawnChance = Math.random() * 100;
-
-        if (spawnChance > 30) Block = BlockInit.SCP610A.getDefaultState();
+        IBlockState Block = BlockInit.SCP610A.getDefaultState();
         if (spawnChance < 30) Block = BlockInit.SCP610B.getDefaultState();
 
         worldIn.setBlockState(face, Block);
@@ -82,6 +83,4 @@ public class Block610 extends BlockBase {
         entityIn.motionX *= 0.4D;
         entityIn.motionZ *= 0.4D;
     }
-
-
 }

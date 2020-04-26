@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "scpua:blocks/076bottom",
-    "up": "scpua:blocks/076floor",
-    "north": "scpua:blocks/076middle",
-    "east": "scpua:blocks/076middle",
-    "south": "scpua:blocks/076middle",
-    "west": "scpua:blocks/076middle",
-    "particle": "scpua:blocks/076bottom"
+    "end": "scpua:blocks/076floor",
+    "side": "scpua:blocks/076middle"
   }
 }

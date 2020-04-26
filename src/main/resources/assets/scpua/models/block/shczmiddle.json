@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "scpua:blocks/sheavywall",
-    "up": "scpua:blocks/sheavywall",
-    "north": "scpua:blocks/sheavymid",
-    "east": "scpua:blocks/sheavymid",
-    "south": "scpua:blocks/sheavymid",
-    "west": "scpua:blocks/sheavymid",
-    "particle": "scpua:blocks/sheavywall"
+    "end": "scpua:blocks/site93/sheavywall",
+    "side": "scpua:blocks/site93/sheavymid"
   }
 }

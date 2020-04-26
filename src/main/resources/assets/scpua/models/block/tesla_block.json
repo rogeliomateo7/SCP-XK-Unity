@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-       "all": "scpua:blocks/tesla_block"
+       "all": "scpua:blocks/site78/tesla_block"
    }
 }

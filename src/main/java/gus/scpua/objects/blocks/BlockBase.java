@@ -3,19 +3,16 @@ package gus.scpua.objects.blocks;
 import gus.scpua.scpua;
 import gus.scpua.init.BlockInit;
 import gus.scpua.init.ItemInit;
-import gus.scpua.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class BlockBase extends Block implements IHasModel {
+public class BlockBase extends Block {
 	/**
 	 * Handles VERY Basic stuff like
 	 * What Inventory
-	 * Material Sounds, and hardness
-	 * and render functions.
+	 * Material Sounds and hardness
 	 *
 	 * EVERY OTHER BLock class is based off this due to CORE aspects of all blocks
 	 */
@@ -24,7 +21,6 @@ public class BlockBase extends Block implements IHasModel {
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		getDefaultState();
 
 		//Material Settings
 		if (material == Material.IRON) {
@@ -54,18 +50,13 @@ public class BlockBase extends Block implements IHasModel {
 		}
 
 		//Creative Tab set
-		if(inv == 1) setCreativeTab(scpua.tablockdownunitytab);
+		if(inv == 1) setCreativeTab(scpua.tabxkunitytab);
 		if(inv == 2) setCreativeTab(scpua.tabweaponsscp);
-		if(inv == 3) setCreativeTab(scpua.tablockdownunitycosmetics);
-		if(inv == 4) setCreativeTab(scpua.tabsite93blocks);
+		if(inv == 3) setCreativeTab(scpua.tabxkunitycosmetics);
+		if(inv == 4) setCreativeTab(scpua.tabsite93);
 		if(inv == 5) setCreativeTab(scpua.tabsite78);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-	}
-
-	@Override
-	public void registerModels() {
-		scpua.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 }

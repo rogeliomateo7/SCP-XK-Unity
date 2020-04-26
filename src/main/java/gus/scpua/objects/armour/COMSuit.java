@@ -3,7 +3,6 @@ package gus.scpua.objects.armour;
 import gus.scpua.scpua;
 import gus.scpua.init.ItemInit;
 import gus.scpua.proxy.ClientProxy;
-import gus.scpua.util.IHasModel;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,7 +16,7 @@ import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 
-public class COMSuit extends ItemArmor implements IHasModel {
+public class COMSuit extends ItemArmor {
 
     public String textureName;
 
@@ -28,11 +27,6 @@ public class COMSuit extends ItemArmor implements IHasModel {
         setRegistryName(name);
 
         ItemInit.ITEMS.add(this);
-    }
-
-    @Override
-    public void registerModels() {
-        scpua.proxy.registerItemRenderer(this, 0, "inventory");
     }
 
     //Logic Section

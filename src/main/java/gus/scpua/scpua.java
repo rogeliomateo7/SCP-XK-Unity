@@ -23,11 +23,11 @@ public class scpua {
 
 
     //Creative Tabs
-    public static final CreativeTabs tablockdownunitytab = new Tabs("tablockdownunitytab", 1); //Main Tab
+    public static final CreativeTabs tabxkunitytab = new Tabs("tabxkunitytab", 1); //Main Tab
     public static final CreativeTabs tabweaponsscp = new Tabs("tabweaponsscp", 2); //Tools Tab
-    public static final CreativeTabs tablockdownunitycosmetics = new Tabs("tablockdownunitycosmetics", 3); //Cosmetics
-    public static final CreativeTabs tabsite93blocks = new Tabs("tabsite93blocks", 4); //Site-93
-    public static final CreativeTabs tabsite78 = new Tabs("tabsite78", 5); //Site-93
+    public static final CreativeTabs tabxkunitycosmetics = new Tabs("tabxkunitycosmetics", 3); //Cosmetics
+    public static final CreativeTabs tabsite93 = new Tabs("tabsite93", 4); //Site-93
+    public static final CreativeTabs tabsite78 = new Tabs("tabsite78", 5); //Site-78
 
     //Proxy
     @SidedProxy(clientSide = "gus.scpua.proxy.ClientProxy", serverSide = "gus.scpua.proxy.CommonProxy")

@@ -1,11 +1,9 @@
 package gus.scpua.objects.items;
 
-import gus.scpua.scpua;
 import gus.scpua.init.ItemInit;
-import gus.scpua.util.IHasModel;
 import net.minecraft.item.Item;
 
-public class ItemHidden extends Item implements IHasModel {
+public class ItemHidden extends Item {
 
     public ItemHidden(String name) {
         setUnlocalizedName(name);
@@ -13,10 +11,4 @@ public class ItemHidden extends Item implements IHasModel {
 
         ItemInit.ITEMS.add(this);
     }
-
-    @Override
-    public void registerModels() {
-        scpua.proxy.registerItemRenderer(this, 0, "inventory");
-    }
-
 }

@@ -1,8 +1,8 @@
-//Creative Tabs
-itemGroup.tablockdownunitytab=SCP Lockdown Unity
+#Creative Tabs
+itemGroup.tabxkunitytab=SCP:XK Unity
 itemGroup.tabweaponsscp=Tools SCP
-itemGroup.tablockdownunitycosmetics=Lockdown Unity Cosmetics
-itemGroup.tabsite93blocks=Site-93 Blocks
+itemGroup.tabxkunitycosmetics=Lockdown Unity Cosmetics
+itemGroup.tabsite93=Site-93
 itemGroup.tabsite78=Site-78
 item.logoy.name=Logo Yellow
 item.logoo.name=Logo Orange
@@ -10,14 +10,14 @@ item.logog.name=Logo Green
 item.logor.name=Logo Red
 item.logob.name=Logo Blue
 
-//Items
-  //Site-78
+#Items
+#  Site-78
 item.coms_helmet.name=COMSuit Helmet
 item.coms_chestplate.name=COMSuit Chestplate
 item.coms_leggings.name=COMSuit Leggings
 item.coms_boots.name=COMSuit Boots
 
-//Tools
+#  Tools
 item.ucrowbar.name=Crowbar
 item.ubrokenpipe.name=Broken Pipe
 item.ucombatknife.name=Combat Knife
@@ -31,8 +31,8 @@ item.uadrenaline.name=Adrenaline
 item.ubandage.name=Bandage
 
 
-//Blocks
-  //Site98 Blocks
+#Blocks
+#  Site98 Blocks
 tile.lczfloora.name=LCZ FloorA
 tile.lczfloorb.name=LCZ FloorB
 tile.lczbase.name=LCZ Base
@@ -51,7 +51,7 @@ tile.shczwall.name=SHCZ Bottom
 tile.shczmiddle.name=SHCZ Middle
 tile.shczupper.name=SHCZ Wall
 
-  //Cosmetics
+#  Cosmetics
 tile.trashbin.name=Trash Bin
 tile.railleft.name=Rail Left
 tile.railmiddle.name=Rail Middle
@@ -67,7 +67,7 @@ tile.barrelb.name=Barrel Red
 tile.wetfloorsign.name=Wet Floor Sign
 
 
-  //Lockdown Unity
+#  Lockdown Unity
 tile.walls1.name=Wall A1 SubLevel2
 tile.walls1a.name=Wall B1 Sublevel
 tile.walls1b.name=Wall C1 Sublevel
@@ -95,8 +95,8 @@ tile.ableblockfloor.name=076-1 Floor
 tile.ableblockbottom.name=076-1 Bottom
 tile.ableblockmiddle.name=076-1 Middle
 tile.ablecoffin.name=076-1 Coffin
-  //Site-78
-//Office Blocks
+#  Site-78
+#  Office Blocks
 tile.office_purple_bottom.name=Purple Office Bottom
 tile.office_purple_line.name=Purple Office Line
 tile.office_purple_top.name=Purple Office Top
@@ -127,7 +127,7 @@ tile.office_dark_green_bottom.name=Dark Green Office Bottom
 tile.office_orange_top.name=Orange Office Top
 tile.office_orange_line.name=Orange Office Line
 tile.office_orange_bottom.name=Orange Office Bottom
-//Other
+#  Other
 tile.tesla_block.name=Tesla Block
 
 tile.tframe_top_nl.name=Tesla Frame Top No Line
@@ -141,20 +141,20 @@ tile.flat_light_off.name=Flat Light
 tile.flat_light_on.name=Flat Light On
 
 
-//Potions
+#Potions
 
-//Entity's
+#Entity's
 
-//Death Message
+#Death Message
 death.attack.electrocuted=%1$s had a Shocking experience
 death.attack.pipenightmare=%1$s got Steamed to death
 
-//Keybinds (have to change soon)
+#Keybinds (have to change soon)
 keys.s78.category=Site-78
 key.coms.desc=COMSuit Toggle
 
 
-//Unorganized crap
+#Unorganized crap
 
 
 entity.corrosivesnail.name=Corrosive Snail (075)

@@ -1,12 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "scpua:blocks/teslashock",
-    "up": "scpua:blocks/teslashock",
-    "north": "scpua:blocks/teslashock",
-    "east": "scpua:blocks/teslashock",
-    "south": "scpua:blocks/teslashock",
-    "west": "scpua:blocks/teslashock",
-    "particle": "scpua:blocks/teslashock"
+    "all": "scpua:blocks/teslashock"
   }
 }
