@@ -30,6 +30,9 @@ item.painkillerpill.name=Pain Killer Pill
 item.uadrenaline.name=Adrenaline
 item.ubandage.name=Bandage
 
+#  Scp items
+item.uselfreplicatingcake.name=Self Replicating Cake (871)
+
 
 #Blocks
 #  Site98 Blocks
@@ -79,13 +82,15 @@ tile.walls2.name=Wall A2 SubLevel2
 tile.walls2b.name=Wall C2 Sublevel
 tile.walls2d.name=Wall C2 Sublevel
 tile.walls2f.name=Wall E2 Sublevel
-
 tile.walls3b.name=Wall C3 Sublevel
 tile.walls3d.name=Wall C3 Sublevel
 
 tile.floors.name=Floor Sublevel2
 tile.grid.name=Grid Sublevel
 tile.wallpillow.name=Wall Pillow SubLevel
+
+tile.czglass.name=CZ Glass
+tile.metallichydrogen.name=Metallic Hydrogen
 
 tile.pipenightmare.name=Pipe Nightmare (015)
 tile.pipenightmareblock.name=Pipe Nightmare Block (015)
@@ -144,6 +149,8 @@ tile.flat_light_on.name=Flat Light On
 #Potions
 
 #Entity's
+entity.plaguedoctoru.name=Plague Doctor (049 U)
+entity.ticklemonsteru.name=Tickle Monster (999)
 
 #Death Message
 death.attack.electrocuted=%1$s had a Shocking experience
@@ -224,7 +231,6 @@ item.upossessivemasklegs.name=U Possessive Mask Leggings
 item.phoneoff.name=Phone
 potion.effect.seduction=Seduction
 item.pocketcreator.name=Pocket Creator
-tile.czglass.name=CZ Glass
 entity.roomba.name=Roomba
 tile.box.name=Contaiment Box
 entity.ufleshthathatestank.name=The Flesh That Hates (610 Tanks)
@@ -263,7 +269,6 @@ entity.uredacted.name=Redacted (** / ***** / ** / * )
 item.claw.name=Claw
 tile.genesisdirt.name=Song of Genesis Dirt
 entity.smithjim.name="Smith Jim" (2058)
-tile.metallichydrogen.name=Metallic Hydrogen
 entity.herebedragonsf.name=Here Be Dragons F
 entity.thedeer.name=The Deer (2845)
 entity.cyborgchild.name=Cyborg Child (191)
@@ -278,7 +283,6 @@ tile.storageshelfleft.name=Storage Shelf Left
 lingering_potion.effect.radiation=Lingering Radiation .P
 entity.ugpd.name=GPD
 item.ubulletp90.name=Bullet P90
-entity.ticklemonsteru.name=Tickle Monster (999)
 effect.sedutive=Sedutive
 entity.herebedragonsd.name=Here Be Dragons D
 entity.udarkform.name=Dark Form (080)
@@ -296,7 +300,6 @@ entity.spikebotr.name=Red Spike Bot
 item.adminsword.name=Admin Tool
 entity.theheartofdarkness.name=The Heart of Darkness (058)
 potion.effect.bananainfection=Banana Infection
-item.uselfreplicatingcake.name=Self Replicating Cake (871)
 entity.daughterofshadows.name=Daughter Of Shadows (029)
 potion.effect.radiation=Radiation .P
 entity.aquatichorroru.name=The Aquatic Horror (1128)
@@ -327,7 +330,6 @@ entity.humansrefutedn.name=Human Refuted (3199)(SAFE)
 item.bdaycandy.name=Birthday Candy
 item.uncleanland.name=Red Sea Object (093)
 item.capofneglectboots.name=Cap Of Neglect Boots
-entity.plaguedoctoru.name=Plague Doctor (049 U)
 entity.humansrefuted.name=Human Refuted (3199)
 tile.cgcobblestone.name=Cave Game Cobblestone
 entity.uhuman.name=Human

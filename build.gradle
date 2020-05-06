@@ -9,7 +9,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "2.0.0-20w17a"
+version = "2.0.0-20w19a"
 group = "gus.scpua"
 archivesBaseName = "scpua"
 
@@ -23,7 +23,7 @@ minecraft {
     runDir = "run"
 
     replace "@VERSION@", project.version
-    replaceIn "Reference.java"
+    replaceIn "scpua.java"
     
     // the mappings can be changed at any time, and must be in the following format.
     // snapshot_YYYYMMDD   snapshot are built nightly.

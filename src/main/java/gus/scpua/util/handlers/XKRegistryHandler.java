@@ -1,11 +1,13 @@
 package gus.scpua.util.handlers;
 
-import gus.scpua.init.BlockInit;
 import gus.scpua.init.EntityInit;
 import gus.scpua.init.ItemInit;
+import gus.scpua.init.blocks.Cosmetics;
+import gus.scpua.init.blocks.Site78;
+import gus.scpua.init.blocks.Site93;
+import gus.scpua.init.blocks.XKUnity;
 import gus.scpua.scpua;
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,7 +31,10 @@ public class XKRegistryHandler {
     //Block Register
     @SubscribeEvent
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
-        event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
+        event.getRegistry().registerAll(Cosmetics.COSMETICBLOCKS.toArray(new Block[0]));
+        event.getRegistry().registerAll(Site78.S78BLOCKS.toArray(new Block[0]));
+        event.getRegistry().registerAll(Site93.S93BLOCKS.toArray(new Block[0]));
+        event.getRegistry().registerAll(XKUnity.XKUNITYBLOCKS.toArray(new Block[0]));
     }
 
     @SubscribeEvent
@@ -40,9 +45,10 @@ public class XKRegistryHandler {
             scpua.proxy.registerItemRenderer(item, 0 ,"inventory");
         }
 
-        for (Block block : BlockInit.BLOCKS) {
-            scpua.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
-        }
+        for (Block block : Cosmetics.COSMETICBLOCKS) { scpua.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory"); }
+        for (Block block : Site78.S78BLOCKS) { scpua.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory"); }
+        for (Block block : Site93.S93BLOCKS) { scpua.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory"); }
+        for (Block block : XKUnity.XKUNITYBLOCKS) { scpua.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory"); }
     }
 
     //preInit Registries
@@ -60,18 +66,4 @@ public class XKRegistryHandler {
     public static void postInitRegistries(FMLPostInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(new XKEventHandler());
     }
-
-    @SubscribeEvent
-    public static void remapBlocks(RegistryEvent.MissingMappings<Block> event) {
-        for (RegistryEvent.MissingMappings.Mapping<Block> miss : event.getAllMappings()) {
-            String block = miss.key.toString();
-
-            System.out.println("FUCK " + block);
-
-            if (block.equals("scpua:testblock")) {
-                miss.remap(BlockInit.BARRELA);
-            }
-        }
-    }
-
 }

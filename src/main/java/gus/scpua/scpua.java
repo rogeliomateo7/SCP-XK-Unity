@@ -2,7 +2,6 @@ package gus.scpua;
 
 import gus.scpua.proxy.CommonProxy;
 import gus.scpua.tabs.Tabs;
-import gus.scpua.util.Reference;
 import gus.scpua.util.handlers.XKRegistryHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -13,14 +12,16 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import java.io.File;
 
-@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = "[1.12.2]")
+@Mod(modid = scpua.MODID, name = scpua.NAME, version = scpua.VERSION, acceptedMinecraftVersions = "[1.12.2]")
 public class scpua {
+    public static final String MODID = "scpua";
+    public static final String NAME = "SCP lockdown XK Unity addon";
+    public static final String VERSION = "@VERSION@";
 
     public static File config;
 
     @Mod.Instance
     public static scpua instance;
-
 
     //Creative Tabs
     public static final CreativeTabs tabxkunitytab = new Tabs("tabxkunitytab", 1); //Main Tab

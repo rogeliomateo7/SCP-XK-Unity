@@ -1,10 +1,12 @@
 package gus.scpua.objects.blocks;
 
-import gus.scpua.init.BlockInit;
+import gus.scpua.init.blocks.XKUnity;
 import gus.scpua.util.handlers.XKEventHandler;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -13,15 +15,17 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import java.util.Random;
+
 public class BlockAdv extends BlockBase {
-    public BlockAdv(String name, Material material, int inv, boolean fullcube, int collision) {
-        super(name, material, inv);
+    public BlockAdv(int whatClass, String name, Material material, int inv, boolean fullcube, Collision collision) {
+        super(whatClass, name, material, inv);
         fullCube = fullcube;
-        collisSet = collision;
+        this.collision = collision;
     }
 
-    public boolean fullCube = true;
-    public int collisSet;
+    private boolean fullCube = true;
+    private Collision collision;
 
     //Removes X-ray effect
     @Override
@@ -44,12 +48,10 @@ public class BlockAdv extends BlockBase {
     /**
      * Collision Sector
      */
-    public static AxisAlignedBB BARREL_AABB = new AxisAlignedBB(0.0625 * 3, 0, 0.0625 * 3, 0.0625 * 13, 0.0625 * 16, 0.0625 * 13);
+    //public static AxisAlignedBB BARREL_AABB = new AxisAlignedBB(0.0625 * 3, 0, 0.0625 * 3, 0.0625 * 13, 0.0625 * 16, 0.0625 * 13);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        if(collisSet == 1) return BARREL_AABB;
-
         return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
     }
 
@@ -59,11 +61,29 @@ public class BlockAdv extends BlockBase {
     @Override
     public void onBlockClicked(World worldIn, BlockPos pos, EntityPlayer playerIn) {
         //Pipe Nightmare
-        if (this == BlockInit.SCP015B || this == BlockInit.SCP015A) {
+        if (this == XKUnity.SCP015B || this == XKUnity.SCP015A) {
             XKEventHandler.pnHit = true;
             XKEventHandler.worldIn = worldIn;
             XKEventHandler.blockPos = pos;
             XKEventHandler.playerIn = playerIn;
         }
+
+        if (this == XKUnity.METALICHYD) {
+            boolean executeMetalicExp;
+            executeMetalicExp = !playerIn.isCreative();
+            if (executeMetalicExp) {
+                worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
+                worldIn.createExplosion(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, 2F, true);
+                worldIn.playSound(null, pos, SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.BLOCKS, 1, 1);
+            }
+        }
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+        if (this != XKUnity.METALICHYD) return;
+
+        worldIn.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, pos.getX() + 0.5,pos.getY() + 1,pos.getZ() + 0.5,0,0,0);
     }
 }

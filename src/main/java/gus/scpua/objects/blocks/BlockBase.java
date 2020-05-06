@@ -1,7 +1,10 @@
 package gus.scpua.objects.blocks;
 
+import gus.scpua.init.blocks.Cosmetics;
+import gus.scpua.init.blocks.Site78;
+import gus.scpua.init.blocks.Site93;
+import gus.scpua.init.blocks.XKUnity;
 import gus.scpua.scpua;
-import gus.scpua.init.BlockInit;
 import gus.scpua.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -17,7 +20,7 @@ public class BlockBase extends Block {
 	 * EVERY OTHER BLock class is based off this due to CORE aspects of all blocks
 	 */
 
-	public BlockBase(String name, Material material, int inv) {
+	public BlockBase(int whatClass, String name, Material material, int inv) {
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
@@ -51,12 +54,17 @@ public class BlockBase extends Block {
 
 		//Creative Tab set
 		if(inv == 1) setCreativeTab(scpua.tabxkunitytab);
-		if(inv == 2) setCreativeTab(scpua.tabweaponsscp);
-		if(inv == 3) setCreativeTab(scpua.tabxkunitycosmetics);
-		if(inv == 4) setCreativeTab(scpua.tabsite93);
-		if(inv == 5) setCreativeTab(scpua.tabsite78);
-		
-		BlockInit.BLOCKS.add(this);
+		else if(inv == 2) setCreativeTab(scpua.tabweaponsscp);
+		else if(inv == 3) setCreativeTab(scpua.tabxkunitycosmetics);
+		else if(inv == 4) setCreativeTab(scpua.tabsite93);
+		else if(inv == 5) setCreativeTab(scpua.tabsite78);
+
+		//Add block to list
+		if (whatClass == 1) Cosmetics.COSMETICBLOCKS.add(this);
+		else if (whatClass == 2) Site78.S78BLOCKS.add(this);
+		else if (whatClass == 3) Site93.S93BLOCKS.add(this);
+		else if (whatClass == 4) XKUnity.XKUNITYBLOCKS.add(this);
+
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 }

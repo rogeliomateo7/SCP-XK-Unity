@@ -1,9 +1,9 @@
 package gus.scpua.objects.armour;
 
-import gus.scpua.scpua;
 import gus.scpua.init.ItemInit;
 import gus.scpua.proxy.ClientProxy;
 import net.minecraft.client.settings.KeyBinding;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -28,6 +28,10 @@ public class COMSuit extends ItemArmor {
 
         ItemInit.ITEMS.add(this);
     }
+
+    @Nullable
+    @Override
+    public CreativeTabs getCreativeTab() { return null; }
 
     //Logic Section
     public static boolean keyToggle = false;

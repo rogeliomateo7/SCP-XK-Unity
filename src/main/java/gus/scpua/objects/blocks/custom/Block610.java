@@ -1,6 +1,6 @@
 package gus.scpua.objects.blocks.custom;
 
-import gus.scpua.init.BlockInit;
+import gus.scpua.init.blocks.XKUnity;
 import gus.scpua.objects.blocks.BlockBase;
 import gus.scpua.util.handlers.XKConfigHandler;
 import net.minecraft.block.material.Material;
@@ -19,8 +19,8 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Block610 extends BlockBase {
     @Override public boolean canSustainLeaves(IBlockState state, net.minecraft.world.IBlockAccess world, BlockPos pos){ return true; }
 
-    public Block610(String name, Material material, int inv) {
-        super(name, material, inv);
+    public Block610(int whatClass, String name, Material material, int inv) {
+        super(whatClass, name, material, inv);
 
         setHarvestLevel("shovel", 1);
 
@@ -69,8 +69,8 @@ public class Block610 extends BlockBase {
         }
 
         double spawnChance = Math.random() * 100;
-        IBlockState Block = BlockInit.SCP610A.getDefaultState();
-        if (spawnChance < 30) Block = BlockInit.SCP610B.getDefaultState();
+        IBlockState Block = XKUnity.SCP610A.getDefaultState();
+        if (spawnChance < 30) Block = XKUnity.SCP610B.getDefaultState();
 
         worldIn.setBlockState(face, Block);
     }

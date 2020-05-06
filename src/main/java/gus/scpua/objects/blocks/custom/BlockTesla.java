@@ -1,6 +1,5 @@
 package gus.scpua.objects.blocks.custom;
 
-import gus.scpua.init.BlockInit;
 import gus.scpua.objects.blocks.BlockBase;
 import gus.scpua.util.DamageSrc;
 import net.minecraft.block.Block;
@@ -17,8 +16,8 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockTesla extends BlockBase {
-    public BlockTesla(String name, Material material, int inv) {
-        super(name, material, inv);
+    public BlockTesla(int whatClass, String name, Material material, int inv) {
+        super(whatClass, name, material, inv);
         setLightLevel(0.5F);
         setLightOpacity(1);
     }
@@ -47,14 +46,11 @@ public class BlockTesla extends BlockBase {
         IBlockState iblockstate = blockAccess.getBlockState(pos.offset(side));
         Block block = iblockstate.getBlock();
 
-        //Bad excuse to have 2 returns on the same block
-        if (this == BlockInit.TESLA_BLOCK) {
-            if (block == this) {
-                return false;
-            }
+        if (block == this) {
+            return false;
         }
 
-        return block == this ? false : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+        return super.shouldSideBeRendered(blockState, blockAccess, pos, side);
     }
 
     //The rest of this code is Collision Damage

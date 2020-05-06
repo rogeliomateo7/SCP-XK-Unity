@@ -1,6 +1,6 @@
 package gus.scpua.util.handlers;
 
-import gus.scpua.util.Reference;
+import gus.scpua.scpua;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
@@ -97,7 +97,7 @@ public class XKSoundHandler {
     }
 
     private SoundEvent registerSound(String name) {
-        ResourceLocation location = new ResourceLocation(Reference.MODID, name);
+        ResourceLocation location = new ResourceLocation(scpua.MODID, name);
         SoundEvent event = new SoundEvent(location);
         event.setRegistryName(location);
         ForgeRegistries.SOUND_EVENTS.register(event);

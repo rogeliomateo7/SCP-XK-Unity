@@ -1,8 +1,9 @@
 package gus.scpua.objects.blocks.custom;
 
-import gus.scpua.init.BlockInit;
+import gus.scpua.init.blocks.Cosmetics;
+import gus.scpua.init.blocks.Site78;
+import gus.scpua.objects.blocks.Collision;
 import gus.scpua.objects.blocks.rotation.UDNSEWBlock;
-import gus.scpua.scpua;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.material.Material;
@@ -18,12 +19,13 @@ import net.minecraft.world.World;
 import java.util.Random;
 
 public class BlockLamp extends UDNSEWBlock {
-
     private boolean isPowered;
+    private Collision collision;
 
-    public BlockLamp(String name, Material material, int inv, boolean fullcube, int collision, boolean isOn) {
-        super(name, material, inv, fullcube, collision);
+    public BlockLamp(int whatClass, String name, Material material, int inv, boolean fullcube, Collision collision, boolean isOn) {
+        super(whatClass, name, material, inv, fullcube, collision);
 
+        this.collision = collision;
         isPowered = isOn;
     }
 
@@ -34,7 +36,7 @@ public class BlockLamp extends UDNSEWBlock {
     @Override
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
     {
-        if (this == BlockInit.TINY_LAMP) return; // Currently This doesnt have a off function
+        if (this == Cosmetics.TINY_LAMP) return; // Currently This doesnt have a off function
 
         EnumFacing facing = state.getValue(FACING);
 
@@ -42,11 +44,11 @@ public class BlockLamp extends UDNSEWBlock {
         {
             if (this.isPowered && !worldIn.isBlockPowered(pos))
             {
-                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_OFF.getDefaultState().withProperty(FACING, facing));
+                worldIn.setBlockState(pos, Site78.FLAT_LIGHT_OFF.getDefaultState().withProperty(FACING, facing));
             }
             else if (!this.isPowered && worldIn.isBlockPowered(pos))
             {
-                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_ON.getDefaultState().withProperty(FACING, facing));
+                worldIn.setBlockState(pos, Site78.FLAT_LIGHT_ON.getDefaultState().withProperty(FACING, facing));
             }
         }
     }
@@ -59,7 +61,7 @@ public class BlockLamp extends UDNSEWBlock {
     @Override
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
     {
-        if (this == BlockInit.TINY_LAMP) return; // Currently This doesnt have a off function
+        if (this == Cosmetics.TINY_LAMP) return; // Currently This doesnt have a off function
 
         EnumFacing facing = state.getValue(FACING);
 
@@ -71,7 +73,7 @@ public class BlockLamp extends UDNSEWBlock {
             }
             else if (!isPowered && worldIn.isBlockPowered(pos))
             {
-                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_ON.getDefaultState().withProperty(FACING, facing));
+                worldIn.setBlockState(pos, Site78.FLAT_LIGHT_ON.getDefaultState().withProperty(FACING, facing));
             }
         }
     }
@@ -79,7 +81,7 @@ public class BlockLamp extends UDNSEWBlock {
     @Override
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
-        if (this == BlockInit.TINY_LAMP) return; // Currently This doesnt have a off function
+        if (this == Cosmetics.TINY_LAMP) return; // Currently This doesnt have a off function
 
         EnumFacing facing = state.getValue(FACING);
 
@@ -87,7 +89,7 @@ public class BlockLamp extends UDNSEWBlock {
         {
             if (this.isPowered && !worldIn.isBlockPowered(pos))
             {
-                worldIn.setBlockState(pos, BlockInit.FLAT_LIGHT_OFF.getDefaultState().withProperty(FACING, facing));
+                worldIn.setBlockState(pos, Site78.FLAT_LIGHT_OFF.getDefaultState().withProperty(FACING, facing));
             }
         }
     }
@@ -99,15 +101,15 @@ public class BlockLamp extends UDNSEWBlock {
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
         Item drop = Item.getItemFromBlock(Blocks.STONE); //Stone As Default cos it needs to initialize
-        if (this == BlockInit.FLAT_LIGHT_ON || this == BlockInit.FLAT_LIGHT_OFF) drop = Item.getItemFromBlock(BlockInit.FLAT_LIGHT_OFF);
-        if (this == BlockInit.TINY_LAMP) drop = Item.getItemFromBlock(BlockInit.TINY_LAMP);
+        if (this == Site78.FLAT_LIGHT_ON || this == Site78.FLAT_LIGHT_OFF) drop = Item.getItemFromBlock(Site78.FLAT_LIGHT_OFF);
+        if (this == Cosmetics.TINY_LAMP) drop = Item.getItemFromBlock(Cosmetics.TINY_LAMP);
 
         return drop;
     }
 
     //Collision
-    public static AxisAlignedBB S78_LAMP_AABB = new AxisAlignedBB(0.0D, 0.85D, 0.0D, 1.0D, 1.0D, 1.0D);
-    public static AxisAlignedBB TINY_LAMP_AABB; // Pipe Nightmare
+    public static AxisAlignedBB S78_LAMP_AABB;
+    public static AxisAlignedBB TINY_LAMP_AABB;
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
@@ -137,9 +139,8 @@ public class BlockLamp extends UDNSEWBlock {
                 S78_LAMP_AABB = new AxisAlignedBB(0.0625 * 16, 0.0625, 0.0625, 0.0625 * 14, 0.0625 * 15, 0.0625 * 15);
         }
 
-        if (collisSet == 0) return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
-        if (collisSet == 1) return S78_LAMP_AABB;
-        if (collisSet == 2) return TINY_LAMP_AABB;
+        if (collision == Collision.S78LIGHT) return S78_LAMP_AABB;
+        if (collision == Collision.TINYLAMP) return TINY_LAMP_AABB;
 
 
         return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);

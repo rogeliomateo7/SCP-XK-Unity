@@ -1,6 +1,7 @@
 package gus.scpua.objects.blocks.rotation;
 
 import gus.scpua.objects.blocks.BlockAdv;
+import gus.scpua.objects.blocks.Collision;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -18,12 +19,11 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class UDNSEWBlock extends BlockAdv {
+    private Collision collision;
 
-    public int collisSet;
-
-    public UDNSEWBlock(String name, Material material, int inv, boolean fullcube, int collision) {
-        super(name, material, inv, fullcube, collision);
-        collisSet = collision;
+    public UDNSEWBlock(int whatClass, String name, Material material, int inv, boolean fullcube, Collision collision) {
+        super(whatClass, name, material, inv, fullcube, collision);
+        this.collision = collision;
 
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
@@ -38,12 +38,12 @@ public class UDNSEWBlock extends BlockAdv {
 
     @Override
     public IBlockState withRotation(IBlockState state, Rotation rot) {
-        return state.withProperty(FACING, rot.rotate((EnumFacing) state.getValue(FACING)));
+        return state.withProperty(FACING, rot.rotate(state.getValue(FACING)));
     }
 
     @Override
     public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
-        return state.withRotation(mirrorIn.toRotation((EnumFacing) state.getValue(FACING)));
+        return state.withRotation(mirrorIn.toRotation(state.getValue(FACING)));
     }
 
     @Override
@@ -53,7 +53,7 @@ public class UDNSEWBlock extends BlockAdv {
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        return ((EnumFacing) state.getValue(FACING)).getIndex();
+        return state.getValue(FACING).getIndex();
     }
 
     @Override
@@ -66,7 +66,7 @@ public class UDNSEWBlock extends BlockAdv {
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        switch ((EnumFacing) state.getValue(BlockDirectional.FACING)) {
+        switch (state.getValue(BlockDirectional.FACING)) {
             case UP:
                 PN_AABB = new AxisAlignedBB(0.0625 * 2, 0, 0.0625 * 2, 0.0625 * 14, 0.0625 * 16, 0.0625 * 14);
                 break;
@@ -86,8 +86,7 @@ public class UDNSEWBlock extends BlockAdv {
                 PN_AABB = new AxisAlignedBB(0, 0.0625 * 2, 0.0625 * 2, 0.0625 * 16, 0.0625 * 14, 0.0625 * 14);
         }
 
-        if (collisSet == 0) return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
-        if (collisSet == 1) return PN_AABB; //Pipe Nightmare
+        if (collision == Collision.PIPENIGHTMARE) return PN_AABB; //Pipe Nightmare
 
         return new AxisAlignedBB(0, 0, 0, 1.0D, 1.0D, 1.0D);
     }

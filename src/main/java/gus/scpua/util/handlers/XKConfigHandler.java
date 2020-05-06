@@ -1,7 +1,6 @@
 package gus.scpua.util.handlers;
 
 import gus.scpua.scpua;
-import gus.scpua.util.Reference;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -25,8 +24,8 @@ public class XKConfigHandler {
     }
 
     public static void registerConfig(FMLPreInitializationEvent event) {
-        scpua.config = new File(event.getModConfigurationDirectory() + "/" + Reference.MODID);
+        scpua.config = new File(event.getModConfigurationDirectory() + "/" + scpua.MODID);
         scpua.config.mkdirs();
-        init(new File(scpua.config.getPath(), Reference.MODID + ".cfg"));
+        init(new File(scpua.config.getPath(), scpua.MODID + ".cfg"));
     }
 }

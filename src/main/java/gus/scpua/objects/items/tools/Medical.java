@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 
 public class Medical extends ItemBase {
     public Medical(String name, int maxStack) {
-        super(name);
+        super(name, 0);
         maxStackSize = maxStack;
     }
 
