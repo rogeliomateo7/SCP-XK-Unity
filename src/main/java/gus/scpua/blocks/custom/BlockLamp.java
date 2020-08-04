@@ -1,9 +1,9 @@
-package gus.scpua.objects.blocks.custom;
+package gus.scpua.blocks.custom;
 
 import gus.scpua.init.blocks.Cosmetics;
 import gus.scpua.init.blocks.Site78;
-import gus.scpua.objects.blocks.Collision;
-import gus.scpua.objects.blocks.rotation.UDNSEWBlock;
+import gus.scpua.blocks.Collision;
+import gus.scpua.blocks.rotation.UDNSEWBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.material.Material;

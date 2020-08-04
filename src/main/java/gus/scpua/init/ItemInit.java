@@ -46,6 +46,9 @@ public class ItemInit {
     /* SCP Items */
     public static final Item SELF_REPLECATING_CAKE = new SelfReplecatingCake("uselfreplicatingcake", 2, false);
 
+    // Misc Items \\
+    public static final Item WRENCH = new ItemBase("wrench", XKInventory.XKUnity);
+
 
     /* COM Suit */
     public static final Item COMS_HELMET = new COMSuit("coms_helmet", ARMOR_MATERIAL_COMS, EntityEquipmentSlot.HEAD);
