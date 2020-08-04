@@ -132,6 +132,9 @@ tile.office_dark_green_bottom.name=Dark Green Office Bottom
 tile.office_orange_top.name=Orange Office Top
 tile.office_orange_line.name=Orange Office Line
 tile.office_orange_bottom.name=Orange Office Bottom
+tile.office_cyan_top.name=Cyan Office Top
+tile.office_cyan_line.name=Cyan Office Line
+tile.office_cyan_bottom.name=Cyan Office Bottom
 #  Other
 tile.tesla_block.name=Tesla Block
 
