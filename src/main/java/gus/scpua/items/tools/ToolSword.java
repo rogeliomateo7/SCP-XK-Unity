@@ -1,4 +1,4 @@
-package gus.scpua.objects.items.tools;
+package gus.scpua.items.tools;
 
 import com.google.common.collect.Multimap;
 import gus.scpua.init.ItemInit;

@@ -1,12 +1,12 @@
 package gus.scpua.init.blocks;
 
-import gus.scpua.objects.blocks.BlockAdv;
-import gus.scpua.objects.blocks.BlockBase;
-import gus.scpua.objects.blocks.Collision;
-import gus.scpua.objects.blocks.custom.Block610;
-import gus.scpua.objects.blocks.custom.Coffin076;
-import gus.scpua.objects.blocks.rotation.NSEWBlock;
-import gus.scpua.objects.blocks.rotation.UDNSEWBlock;
+import gus.scpua.blocks.BlockAdv;
+import gus.scpua.blocks.BlockBase;
+import gus.scpua.blocks.Collision;
+import gus.scpua.blocks.custom.Block610;
+import gus.scpua.blocks.custom.Coffin076;
+import gus.scpua.blocks.rotation.NSEWBlock;
+import gus.scpua.blocks.rotation.UDNSEWBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -63,12 +63,15 @@ public class XKUnity {
 
     public static final Block SCP015A = new UDNSEWBlock(4,"pipenightmare", Material.IRON, 1, false, Collision.PIPENIGHTMARE);
     public static final Block SCP015B = new BlockAdv(4,"pipenightmareblock", Material.IRON, 1, true, Collision.BLOCK);
+
     public static final Block SCP610A = new Block610(4,"flesha", Material.CLAY, 1);
     public static final Block SCP610B = new Block610(4,"fleshb", Material.CLAY, 1);
+    public static final Block SCP610LOG = new Block610.Log610(4,"fleshlog", Material.CLAY, 1);
+    public static final Block SCP610GRASS = new Block610.Grass610("fleshgrass", Material.CLAY);
+
     public static final Block SCP0761A = new BlockBase(4,"ableblockfloor", Material.IRON, 1);
     public static final Block SCP0761B = new BlockBase(4,"ableblockbottom", Material.IRON, 1);
     public static final Block SCP0761C = new BlockBase(4,"ableblockmiddle", Material.IRON, 1);
     public static final Block SCP0761COFFIN = new Coffin076(4,"ablecoffin", Material.IRON, 1, false, Collision.COFFIN);
-
 
 }

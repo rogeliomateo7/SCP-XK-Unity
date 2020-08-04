@@ -1,4 +1,4 @@
-package gus.scpua.objects.blocks;
+package gus.scpua.blocks;
 
 import gus.scpua.init.blocks.Cosmetics;
 import gus.scpua.init.blocks.Site78;

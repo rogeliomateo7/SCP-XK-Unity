@@ -11,8 +11,8 @@ public class EntityInit {
 
     public static void registerEntities() {
         int entityID = 0;
-        registerEntity("scp049", EntitySCP049.class, entityID++, 15, 808080, 404040);
-        registerEntity("scp999", EntitySCP999.class, entityID++, 15, 808080, 404040);
+        registerEntity("xkscp049", EntitySCP049.class, entityID++, 15, 808080, 404040);
+        registerEntity("xkscp999", EntitySCP999.class, entityID++, 15, 808080, 404040);
     }
 
     private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2) {

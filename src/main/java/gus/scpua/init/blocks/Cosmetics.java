@@ -1,8 +1,8 @@
 package gus.scpua.init.blocks;
 
-import gus.scpua.objects.blocks.Collision;
-import gus.scpua.objects.blocks.custom.BlockLamp;
-import gus.scpua.objects.blocks.rotation.NSEWBlock;
+import gus.scpua.blocks.Collision;
+import gus.scpua.blocks.custom.BlockLamp;
+import gus.scpua.blocks.rotation.NSEWBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 

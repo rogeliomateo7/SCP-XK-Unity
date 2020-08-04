@@ -7,8 +7,11 @@ import gus.scpua.init.blocks.Site78;
 import gus.scpua.init.blocks.Site93;
 import gus.scpua.init.blocks.XKUnity;
 import gus.scpua.scpua;
+import gus.scpua.tileentity.AlbedoCL;
+import gus.scpua.tileentity.NoAlbedoCL;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -17,6 +20,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -55,6 +59,8 @@ public class XKRegistryHandler {
     public static void preInitRegistries(FMLPreInitializationEvent event) {
         XKConfigHandler.registerConfig(event);
         EntityInit.registerEntities();
+        GameRegistry.registerTileEntity(AlbedoCL.class, new ResourceLocation(scpua.MODID, "tilealbedo"));
+        GameRegistry.registerTileEntity(NoAlbedoCL.class, new ResourceLocation(scpua.MODID, "tilenoalbedo"));
     }
 
     //Init Registries

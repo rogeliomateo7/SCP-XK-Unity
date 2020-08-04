@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 public class XKEventHandler {
 //Used for Events that are handled by Multiple Objects
 
+    //FIXME, just change this when you add another block
     private int tick = 0; // What tick the game is on
     //private int ticks = 0; // How many ticks have there been? (meant for some SPC's) max number is 200
 

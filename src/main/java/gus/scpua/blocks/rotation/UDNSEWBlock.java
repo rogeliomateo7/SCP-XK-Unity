@@ -1,7 +1,7 @@
-package gus.scpua.objects.blocks.rotation;
+package gus.scpua.blocks.rotation;
 
-import gus.scpua.objects.blocks.BlockAdv;
-import gus.scpua.objects.blocks.Collision;
+import gus.scpua.blocks.BlockAdv;
+import gus.scpua.blocks.Collision;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;

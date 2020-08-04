@@ -2,25 +2,27 @@ package gus.scpua.tabs;
 
 import gus.scpua.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class Tabs extends CreativeTabs {
-    public int icon;
+
+    private final int icon;
 
     public Tabs(String label, int tab) {
         super(label);
         icon = tab;
-        //	this.setBackgroundImageName("main.png");
+        //this.setBackgroundImageName("main.png");
     }
 
     public ItemStack getTabIconItem() {
-        ItemStack tabIcon = new ItemStack(ItemInit.LOGO_GREEN);
-
-        if (icon == 1) tabIcon = new ItemStack(ItemInit.LOGO_YELLOW);
-        if (icon == 2) tabIcon = new ItemStack(ItemInit.LOGO_ORANGE);
-        if (icon == 3) tabIcon = new ItemStack(ItemInit.LOGO_GREEN);
-        if (icon == 4) tabIcon = new ItemStack(ItemInit.LOGO_RED);
-        if (icon == 5) tabIcon = new ItemStack(ItemInit.LOGO_BLUE);
-        return tabIcon;
+        Item itemIcon = ItemInit.LOGO_BLUE;
+        switch (icon) {
+            case 1: itemIcon = ItemInit.LOGO_YELLOW; break;
+            case 2: itemIcon = ItemInit.LOGO_ORANGE; break;
+            case 3: itemIcon = ItemInit.LOGO_GREEN; break;
+            case 4: itemIcon = ItemInit.LOGO_RED; break;
+        }
+        return new ItemStack(itemIcon);
     }
 }

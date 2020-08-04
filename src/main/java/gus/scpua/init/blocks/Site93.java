@@ -1,6 +1,6 @@
 package gus.scpua.init.blocks;
 
-import gus.scpua.objects.blocks.BlockBase;
+import gus.scpua.blocks.BlockBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -10,7 +10,7 @@ import java.util.List;
 public class Site93 {
     public static final List<Block> S93BLOCKS = new ArrayList<Block>();
 
-    //MAJOR Discrepancy with names and files
+    //MAJOR Inconsistency with names and files
     public static final Block LCZ_FLOOR_A = new BlockBase(3,"lczfloora", Material.IRON, 4);
     public static final Block LCZ_FLOOR_B = new BlockBase(3,"lczfloorb", Material.IRON, 4);
     public static final Block LCZ_BASE = new BlockBase(3,"lczbase", Material.IRON, 4);

@@ -1,4 +1,4 @@
-package gus.scpua.objects.armour;
+package gus.scpua.items.armour;
 
 import gus.scpua.init.ItemInit;
 import gus.scpua.proxy.ClientProxy;
@@ -41,6 +41,7 @@ public class COMSuit extends ItemArmor {
     public static String leg;
     public static String feet;
 
+    //FIXME Probably a better way to do this
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
         super.onArmorTick(world, player, itemStack);
@@ -61,7 +62,7 @@ public class COMSuit extends ItemArmor {
         }
     }
 
-    //Known bug... might change how it works
+    //FIXME Known bug... might change how it works
     @Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {

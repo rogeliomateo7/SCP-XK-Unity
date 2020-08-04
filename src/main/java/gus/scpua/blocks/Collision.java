@@ -1,4 +1,4 @@
-package gus.scpua.objects.blocks;
+package gus.scpua.blocks;
 
 public enum Collision {
     //Normal Blocks

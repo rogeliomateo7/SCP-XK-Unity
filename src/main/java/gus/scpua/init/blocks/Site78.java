@@ -1,10 +1,11 @@
 package gus.scpua.init.blocks;
 
-import gus.scpua.objects.blocks.BlockBase;
-import gus.scpua.objects.blocks.Collision;
-import gus.scpua.objects.blocks.custom.BlockLamp;
-import gus.scpua.objects.blocks.custom.BlockTesla;
-import gus.scpua.objects.blocks.rotation.NSEWBlock;
+import gus.scpua.blocks.BlockBase;
+import gus.scpua.blocks.Collision;
+import gus.scpua.blocks.custom.BlockLamp;
+import gus.scpua.blocks.custom.BlockTesla;
+import gus.scpua.blocks.custom.CLBlock;
+import gus.scpua.blocks.rotation.NSEWBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -46,10 +47,13 @@ public class Site78 {
     public static final Block GREY_OFFICE_BOTTOM = new BlockBase(2,"office_grey_bottom", Material.ROCK, 5);
     public static final Block BLACK_OFFICE_BOTTOM = new BlockBase(2,"office_black_bottom", Material.ROCK, 5);
 
-    //Orange block cos it doesn't fit F
+    //few more cos they dont fit F
     public static final Block ORANGE_OFFICE_TOP = new BlockBase(2,"office_orange_top", Material.ROCK, 5);
     public static final Block ORANGE_OFFICE_LINE = new BlockBase(2,"office_orange_line", Material.ROCK, 5);
     public static final Block ORANGE_OFFICE_BOTTOM = new BlockBase(2,"office_orange_bottom", Material.ROCK, 5);
+    public static final Block CYAN_OFFICE_TOP = new BlockBase(2,"office_cyan_top", Material.ROCK, 5);
+    public static final Block CYAN_OFFICE_LINE = new BlockBase(2,"office_cyan_line", Material.ROCK, 5);
+    public static final Block CYAN_OFFICE_BOTTOM = new BlockBase(2,"office_cyan_bottom", Material.ROCK, 5);
 
     //Tesla Blocks
     public static final Block TESLA_BLOCK = new BlockTesla(2,"tesla_block", Material.ROCK, 5);
@@ -63,4 +67,8 @@ public class Site78 {
 
     public static final Block FLAT_LIGHT_ON = new BlockLamp(2,"flat_light_on", Material.REDSTONE_LIGHT, 0, false, Collision.S78LIGHT, true).setLightLevel(1.0F);
     public static final Block FLAT_LIGHT_OFF = new BlockLamp(2,"flat_light_off", Material.REDSTONE_LIGHT, 5, false, Collision.S78LIGHT, false);
+
+    public static final Block CLON = new CLBlock(2, "coloured_light_on", Material.REDSTONE_LIGHT, 0, true);
+    public static final Block CLOFF = new CLBlock(2, "coloured_light_off", Material.REDSTONE_LIGHT, 5, false);
+
 }

@@ -12,10 +12,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import java.io.File;
 
-@Mod(modid = scpua.MODID, name = scpua.NAME, version = scpua.VERSION, acceptedMinecraftVersions = "[1.12.2]")
+@Mod(modid = scpua.MODID, name = scpua.NAME, version = scpua.VERSION, acceptedMinecraftVersions = "[1.12.2]", dependencies = "after:albedo@[0.1,)")
 public class scpua {
     public static final String MODID = "scpua";
-    public static final String NAME = "SCP lockdown XK Unity addon";
+    public static final String NAME = "SCP lockdown XK Unity";
     public static final String VERSION = "@VERSION@";
 
     public static File config;

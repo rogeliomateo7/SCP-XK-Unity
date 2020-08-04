@@ -1,4 +1,4 @@
-package gus.scpua.objects.blocks;
+package gus.scpua.blocks;
 
 import gus.scpua.init.blocks.XKUnity;
 import gus.scpua.util.handlers.XKEventHandler;
@@ -60,12 +60,14 @@ public class BlockAdv extends BlockBase {
      */
     @Override
     public void onBlockClicked(World worldIn, BlockPos pos, EntityPlayer playerIn) {
+        //FIXME Might change later on to separate classes
         //Pipe Nightmare
         if (this == XKUnity.SCP015B || this == XKUnity.SCP015A) {
             XKEventHandler.pnHit = true;
             XKEventHandler.worldIn = worldIn;
             XKEventHandler.blockPos = pos;
             XKEventHandler.playerIn = playerIn;
+            return;
         }
 
         if (this == XKUnity.METALICHYD) {
@@ -76,6 +78,7 @@ public class BlockAdv extends BlockBase {
                 worldIn.createExplosion(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, 2F, true);
                 worldIn.playSound(null, pos, SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.BLOCKS, 1, 1);
             }
+            return;
         }
     }
 

@@ -26,8 +26,8 @@ public class ClientProxy extends CommonProxy {
         //keyBindings[1] = new KeyBinding("key.coms.desc", Keyboard.KEY_G, "keys.s78.category");
 
         // Reg all the bindings
-        for (int i = 0; i < keyBindings.length; ++i) {
-            ClientRegistry.registerKeyBinding(keyBindings[i]);
+        for (KeyBinding keyBinding : keyBindings) {
+            ClientRegistry.registerKeyBinding(keyBinding);
         }
     }
 

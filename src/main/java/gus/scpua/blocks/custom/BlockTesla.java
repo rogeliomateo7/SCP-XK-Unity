@@ -1,6 +1,6 @@
-package gus.scpua.objects.blocks.custom;
+package gus.scpua.blocks.custom;
 
-import gus.scpua.objects.blocks.BlockBase;
+import gus.scpua.blocks.BlockBase;
 import gus.scpua.util.DamageSrc;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

@@ -3,11 +3,12 @@ package gus.scpua.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import gus.scpua.objects.armour.COMSuit;
-import gus.scpua.objects.items.*;
-import gus.scpua.objects.items.scp.SelfReplecatingCake;
-import gus.scpua.objects.items.tools.Medical;
-import gus.scpua.objects.items.tools.ToolSword;
+import gus.scpua.items.armour.COMSuit;
+import gus.scpua.items.*;
+import gus.scpua.items.scp.SelfReplecatingCake;
+import gus.scpua.items.tools.Medical;
+import gus.scpua.items.tools.ToolSword;
+import gus.scpua.util.enums.XKInventory;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -15,7 +16,7 @@ import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ItemInit {
-    public static final List<Item> ITEMS = new ArrayList<Item>();
+    public static final List<Item> ITEMS = new ArrayList<>();
 
     /* Material */
     public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_COMS = EnumHelper.addArmorMaterial("armor_material_coms", "scpua:coms", 7,
@@ -36,11 +37,11 @@ public class ItemInit {
     public static final Item ABLESWORD = new ToolSword("uablesword", EnumHelper.addToolMaterial("tool_ablesword", 0, 1000, 2.0F, 10.0F, 0));
 
     /* Medical */
-    public static final Item MEDKIT = new Medical("umedkit", 1);
-    public static final Item PK_CONTAINER = new Medical("painkiller", 1);
-    public static final Item PK_PILL = new Medical("painkillerpill", 5);
-    public static final Item ADRENALINE = new Medical("uadrenaline", 1);
-    public static final Item BANDAGE = new Medical("ubandage", 5);
+    public static final Item MEDKIT = new Medical("umedkit", 1, Medical.MedicalTool.MEDKIT);
+    public static final Item PK_CONTAINER = new Medical("painkiller", 1, Medical.MedicalTool.PK_CONTAINER);
+    public static final Item PK_PILL = new Medical("painkillerpill", 5, Medical.MedicalTool.PK_PILL);
+    public static final Item ADRENALINE = new Medical("uadrenaline", 1, Medical.MedicalTool.ADREN);
+    public static final Item BANDAGE = new Medical("ubandage", 5, Medical.MedicalTool.BANDAGE);
 
     /* SCP Items */
     public static final Item SELF_REPLECATING_CAKE = new SelfReplecatingCake("uselfreplicatingcake", 2, false);
