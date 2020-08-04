@@ -1,4 +1,4 @@
-package gus.scpua.objects.items.scp;
+package gus.scpua.items.scp;
 
 import gus.scpua.init.ItemInit;
 import gus.scpua.scpua;
@@ -55,11 +55,11 @@ public class SelfReplecatingCake extends ItemFood {
         if (playerIn.canEat(true))
         {
             playerIn.setActiveHand(handIn);
-            return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
+            return new ActionResult<>(EnumActionResult.SUCCESS, itemstack);
         }
         else
         {
-            return new ActionResult<ItemStack>(EnumActionResult.FAIL, itemstack);
+            return new ActionResult<>(EnumActionResult.FAIL, itemstack);
         }
     }
 }
