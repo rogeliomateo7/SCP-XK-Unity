@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=up": {"model": "scpua:fleshlog"},
+    "facing=down": {"model": "scpua:fleshlog"},
+    "facing=north": {"model": "scpua:fleshlog", "x": 90},
+    "facing=south": {"model": "scpua:fleshlog", "x": 90},
+    "facing=east": {"model": "scpua:fleshlog", "y": 90, "x": 90},
+    "facing=west": {"model": "scpua:fleshlog", "y": 90, "x": 90}
+  }
+}
