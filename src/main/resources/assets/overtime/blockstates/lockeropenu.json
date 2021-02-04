@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:lockeropenu"
+    },
+    "facing=north": {
+      "model": "overtime:lockeropenu"
+    },
+    "facing=east": {
+      "model": "overtime:lockeropenu",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:lockeropenu",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:lockeropenu",
+      "y": 270
+    }
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/ubuttghost",
-  "textures": {
-    "all": "scpua:blocks/buttghost",
-    "particle": "scpua:blocks/buttghost",
-    "0": "scpua:blocks/buttghost"
-  }
-}

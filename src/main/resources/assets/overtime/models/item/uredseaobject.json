@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/redseaobject",
+  "textures": {
+    "0": "overtime:blocks/redseaobject"
+  }
+}

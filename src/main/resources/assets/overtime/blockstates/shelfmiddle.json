@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:shelfmiddle"
+    },
+    "facing=north": {
+      "model": "overtime:shelfmiddle"
+    },
+    "facing=east": {
+      "model": "overtime:shelfmiddle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:shelfmiddle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:shelfmiddle",
+      "y": 270
+    }
+  }
+}

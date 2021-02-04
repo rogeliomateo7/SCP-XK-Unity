@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:uwskull"
+    },
+    "facing=north": {
+      "model": "overtime:uwskull"
+    },
+    "facing=east": {
+      "model": "overtime:uwskull",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:uwskull",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:uwskull",
+      "y": 270
+    }
+  }
+}

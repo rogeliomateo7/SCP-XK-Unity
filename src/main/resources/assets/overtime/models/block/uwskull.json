@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/uwendigoskull",
+  "textures": {
+    "all": "overtime:blocks/uskull",
+    "particle": "overtime:blocks/uskull",
+    "0": "overtime:blocks/uskull"
+  }
+}

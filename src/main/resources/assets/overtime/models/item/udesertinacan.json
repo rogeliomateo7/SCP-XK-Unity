@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/udesertcan",
+  "textures": {
+    "0": "overtime:blocks/622"
+  }
+}

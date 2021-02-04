@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "overtime:tframe_top_l" },
+        "facing=west": { "model": "overtime:tframe_top_l", "y": 90 },
+        "facing=south": { "model": "overtime:tframe_top_l", "y": 180 },
+        "facing=east": { "model": "overtime:tframe_top_l", "y": 270 }
+    }
+} 

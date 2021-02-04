@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/alarmbuttonu",
+  "textures": {
+    "all": "overtime:blocks/alarmbutton",
+    "particle": "overtime:blocks/alarmbutton",
+    "0": "overtime:blocks/alarmbutton"
+  }
+}

@@ -1,18 +1,18 @@
 [
 {
-  "modid": "scpua",
-  "name": "SCP:XK Unity addon",
+  "modid": "overtime",
+  "name": "SCP:Overtime",
   "description": "Adds Various SCP and Blocks",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "https://www.curseforge.com/minecraft/mc-mods/scp-xk-unity-addon",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/scp-xk-unity",
   "updateUrl": "",
   "authorList": [
     "Gusutabo",
     "Icerysky"
    ],
   "credits": "ConnorTron110 for the Recode. Erin for helping out with code",
-  "logoFile": "assets/scpua/textures/unityxklogo.png",
+  "logoFile": "assets/overtime/textures/unityxklogo.png",
   "screenshots": [],
   "dependencies": []
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "overtime:blocks/407leaves",
+    "particle": "overtime:blocks/407leaves"
+  }
+}

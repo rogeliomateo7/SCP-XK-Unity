@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/uatrocityskull",
-  "textures": {
-    "all": "scpua:blocks/1123",
-    "particle": "scpua:blocks/1123",
-    "0": "scpua:blocks/1123"
-  }
-}

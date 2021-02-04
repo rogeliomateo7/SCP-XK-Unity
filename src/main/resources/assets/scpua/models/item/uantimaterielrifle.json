@@ -1,7 +1,0 @@
-{
-  "parent": "scpua:custom/uantimaterielrifle",
-  "textures": {
-    "0": "scpua:blocks/rifle",
-    "missing": "scpua:blocks/"
-  }
-}

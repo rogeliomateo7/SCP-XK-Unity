@@ -1,0 +1,86 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "overtime:blocks/trashbin",
+		"particle": "overtime:blocks/trashbin"
+	},
+	"elements": [
+		{
+			"name": "Top",
+			"from": [5, 18, 8.5],
+			"to": [11, 19, 15.5],
+			"faces": {
+				"north": {"uv": [1, 0, 4, 0.5], "texture": "#1"},
+				"east": {"uv": [5.5, 0, 9, 2.5], "texture": "#1"},
+				"south": {"uv": [5.5, 0, 9, 2.5], "texture": "#1"},
+				"west": {"uv": [5.5, 0, 9, 2.5], "texture": "#1"},
+				"up": {"uv": [5.5, 0, 9, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Middle",
+			"from": [4, 16, 8.5],
+			"to": [12, 18, 15.5],
+			"faces": {
+				"north": {"uv": [0.5, 0.5, 4.5, 1.5], "texture": "#1"},
+				"east": {"uv": [5.5, 0, 9, 2.5], "texture": "#1"},
+				"south": {"uv": [5.5, 0, 9, 2.5], "texture": "#1"},
+				"west": {"uv": [5.5, 0, 9, 2.5], "texture": "#1"},
+				"up": {"uv": [5.5, 0, 9, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Bottom",
+			"from": [3, 0, 8.5],
+			"to": [13, 16, 15.5],
+			"faces": {
+				"north": {"uv": [0, 1.5, 5, 9.5], "texture": "#1"},
+				"east": {"uv": [5.5, 1.5, 9, 9.5], "texture": "#1"},
+				"south": {"uv": [5.5, 1.5, 9, 9.5], "texture": "#1"},
+				"west": {"uv": [5.5, 1.5, 9, 9.5], "texture": "#1"},
+				"up": {"uv": [5.5, 0, 9, 2.5], "texture": "#1"},
+				"down": {"uv": [0, 10, 5, 13.5], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.32, 0.32, 0.32]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.32, 0.32, 0.32]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 2, 0],
+			"scale": [0.36, 0.36, 0.36]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, 2, 0],
+			"scale": [0.36, 0.36, 0.36]
+		},
+		"ground": {
+			"translation": [0, 0, -1.75],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [15, 146, 0],
+			"translation": [-0.75, -0.75, 0],
+			"scale": [0.54, 0.54, 0.54]
+		},
+		"head": {
+			"translation": [0, 4.75, -7.75],
+			"scale": [1.41, 1.41, 1.41]
+		},
+		"fixed": {
+			"translation": [0, 0, -1.75],
+			"scale": [0.54, 0.54, 0.54]
+		}
+	},
+	"groups": [
+		{
+			"name": "Bin",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2]
+		}
+	]
+}

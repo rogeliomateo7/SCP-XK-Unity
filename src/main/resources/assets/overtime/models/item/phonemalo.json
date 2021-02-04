@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/phonemalo",
+  "textures": {
+    "2": "overtime:blocks/malo"
+  }
+}

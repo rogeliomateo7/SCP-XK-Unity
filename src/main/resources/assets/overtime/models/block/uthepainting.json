@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/uthepainting",
+  "textures": {
+    "all": "overtime:blocks/1074",
+    "particle": "overtime:blocks/1074",
+    "0": "overtime:blocks/1074"
+  }
+}

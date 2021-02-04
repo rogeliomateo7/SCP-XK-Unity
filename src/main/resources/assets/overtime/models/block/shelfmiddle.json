@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/shelfmiddle",
+  "textures": {
+    "all": "overtime:blocks/shelf",
+    "particle": "overtime:blocks/shelf",
+    "0": "overtime:blocks/shelf"
+  }
+}

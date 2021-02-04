@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/legobox",
+  "textures": {
+    "all": "overtime:blocks/legobox",
+    "particle": "overtime:blocks/legobox",
+    "0": "overtime:blocks/legobox"
+  }
+}

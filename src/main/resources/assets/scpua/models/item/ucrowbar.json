@@ -1,6 +1,0 @@
-{
-  "parent": "scpua:custom/ucrowbar",
-  "textures": {
-    "0": "scpua:blocks/crowbar"
-  }
-}

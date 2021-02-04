@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "overtime:blocks/407grassbottom",
+    "up": "overtime:blocks/407grasstop",
+    "north": "overtime:blocks/407grassside",
+    "east": "overtime:blocks/407grassside",
+    "south": "overtime:blocks/407grassside",
+    "west": "overtime:blocks/407grassside",
+    "particle": "overtime:blocks/407grassbottom"
+  }
+}

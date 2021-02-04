@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "overtime:blocks/407logtop",
+    "up": "overtime:blocks/407logtop",
+    "north": "overtime:blocks/407log",
+    "east": "overtime:blocks/407log",
+    "south": "overtime:blocks/407log",
+    "west": "overtime:blocks/407log",
+    "particle": "overtime:blocks/407logtop"
+  }
+}

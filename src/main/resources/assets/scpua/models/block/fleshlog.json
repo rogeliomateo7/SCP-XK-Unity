@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "scpua:blocks/fleshlogtop",
-    "side": "scpua:blocks/fleshlogside"
-  }
-}

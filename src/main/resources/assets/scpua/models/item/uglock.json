@@ -1,6 +1,0 @@
-{
-  "parent": "scpua:custom/uglock",
-  "textures": {
-    "0": "scpua:blocks/glock"
-  }
-}

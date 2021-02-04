@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:railmiddle"
+    },
+    "facing=north": {
+      "model": "overtime:railmiddle"
+    },
+    "facing=east": {
+      "model": "overtime:railmiddle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:railmiddle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:railmiddle",
+      "y": 270
+    }
+  }
+}

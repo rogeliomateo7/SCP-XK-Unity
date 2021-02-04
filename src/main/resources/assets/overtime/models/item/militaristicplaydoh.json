@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/playdoug",
+  "textures": {
+    "0": "overtime:blocks/playdoug"
+  }
+}

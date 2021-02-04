@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:fireextinguixer"
+    },
+    "facing=north": {
+      "model": "overtime:fireextinguixer"
+    },
+    "facing=east": {
+      "model": "overtime:fireextinguixer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:fireextinguixer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:fireextinguixer",
+      "y": 270
+    }
+  }
+}

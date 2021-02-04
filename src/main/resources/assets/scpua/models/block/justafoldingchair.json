@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/foldingchair",
-  "textures": {
-    "all": "scpua:blocks/floor",
-    "particle": "scpua:blocks/floor",
-    "FoldingChair": "scpua:blocks/lczfloorb"
-  }
-}

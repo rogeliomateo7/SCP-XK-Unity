@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/shelfleft",
-  "textures": {
-    "all": "scpua:blocks/shelf",
-    "particle": "scpua:blocks/shelf",
-    "0": "scpua:blocks/shelf"
-  }
-}

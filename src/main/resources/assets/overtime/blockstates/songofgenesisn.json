@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:songofgenesisn"
+    },
+    "facing=north": {
+      "model": "overtime:songofgenesisn"
+    },
+    "facing=east": {
+      "model": "overtime:songofgenesisn",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:songofgenesisn",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:songofgenesisn",
+      "y": 270
+    }
+  }
+}

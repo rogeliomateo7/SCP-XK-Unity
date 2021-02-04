@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/umorphine",
+  "textures": {
+    "0": "overtime:blocks/syringe"
+  }
+}

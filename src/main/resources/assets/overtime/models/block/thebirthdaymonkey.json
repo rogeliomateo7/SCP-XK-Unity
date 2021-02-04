@@ -1,0 +1,9 @@
+{
+  "parent": "overtime:custom/bdaymonkey",
+  "textures": {
+    "all": "overtime:blocks/monkey",
+    "particle": "overtime:blocks/monkey",
+    "0": "overtime:blocks/monkey",
+    "missing": "overtime:blocks/"
+  }
+}

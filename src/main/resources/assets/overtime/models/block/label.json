@@ -1,0 +1,101 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "overtime:blocks/label frame",
+		"1": "overtime:label/058",
+		"particle": "overtime:blocks/label frame"
+	},
+	"elements": [
+		{
+			"name": "Label",
+			"from": [1, 4, 15.8],
+			"to": [15, 12, 15.8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 9.143], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 8], "texture": "#missing"},
+				"south": {"uv": [0, 0, 0.1, 0.1], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 8], "texture": "#missing"},
+				"up": {"uv": [0, 0, 14, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 14, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "Glass",
+			"from": [0, 3, 15.5],
+			"to": [16, 13, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 10], "texture": "#0"},
+				"east": {"uv": [0, 0, 0.5, 10], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 10], "texture": "#0"},
+				"west": {"uv": [0, 0, 0.5, 10], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0.5], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Pin BR",
+			"from": [0.3, 3.3, 15.3],
+			"to": [0.7, 3.7, 16.1],
+			"faces": {
+				"north": {"uv": [1, 12, 3, 14], "texture": "#0"},
+				"east": {"uv": [1, 13, 3, 14], "texture": "#0"},
+				"south": {"uv": [1, 12, 3, 14], "texture": "#0"},
+				"west": {"uv": [1, 12, 3, 13], "texture": "#0"},
+				"up": {"uv": [2, 12, 3, 14], "texture": "#0"},
+				"down": {"uv": [1, 12, 2, 14], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Pin BL",
+			"from": [15.3, 3.3, 15.3],
+			"to": [15.7, 3.7, 16.1],
+			"faces": {
+				"north": {"uv": [1, 12, 3, 14], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [1, 13, 3, 14], "texture": "#0"},
+				"south": {"uv": [1, 12, 3, 14], "texture": "#0"},
+				"west": {"uv": [1, 12, 3, 13], "texture": "#0"},
+				"up": {"uv": [2, 12, 3, 14], "texture": "#0"},
+				"down": {"uv": [1, 12, 2, 14], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Pin TR",
+			"from": [0.3, 12.3, 15.3],
+			"to": [0.7, 12.7, 16.1],
+			"faces": {
+				"north": {"uv": [1, 12, 3, 14], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [1, 13, 3, 14], "texture": "#0"},
+				"south": {"uv": [1, 12, 3, 14], "texture": "#0"},
+				"west": {"uv": [1, 12, 3, 13], "texture": "#0"},
+				"up": {"uv": [2, 12, 3, 14], "texture": "#0"},
+				"down": {"uv": [1, 12, 2, 14], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Pin TL",
+			"from": [15.3, 12.3, 15.3],
+			"to": [15.7, 12.7, 16.1],
+			"faces": {
+				"north": {"uv": [1, 12, 3, 14], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [1, 13, 3, 14], "texture": "#0"},
+				"south": {"uv": [1, 12, 3, 14], "texture": "#0"},
+				"west": {"uv": [1, 12, 3, 13], "texture": "#0"},
+				"up": {"uv": [2, 12, 3, 14], "texture": "#0"},
+				"down": {"uv": [1, 12, 2, 14], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Label",
+			"origin": [8, 8, 8],
+			"children": [0,
+				{
+					"name": "Body",
+					"origin": [8, 8, 8],
+					"children": [1, 2, 3, 4, 5]
+				}
+			]
+		}
+	]
+}

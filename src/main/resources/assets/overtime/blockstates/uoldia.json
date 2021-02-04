@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:uoldia"
+    },
+    "facing=north": {
+      "model": "overtime:uoldia"
+    },
+    "facing=east": {
+      "model": "overtime:uoldia",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:uoldia",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:uoldia",
+      "y": 270
+    }
+  }
+}

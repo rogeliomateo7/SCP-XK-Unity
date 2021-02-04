@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:ulegobox"
+    },
+    "facing=north": {
+      "model": "overtime:ulegobox"
+    },
+    "facing=east": {
+      "model": "overtime:ulegobox",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:ulegobox",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:ulegobox",
+      "y": 270
+    }
+  }
+}

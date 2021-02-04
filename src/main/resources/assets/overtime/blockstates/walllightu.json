@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:walllightu"
+    },
+    "facing=north": {
+      "model": "overtime:walllightu"
+    },
+    "facing=east": {
+      "model": "overtime:walllightu",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:walllightu",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:walllightu",
+      "y": 270
+    }
+  }
+}

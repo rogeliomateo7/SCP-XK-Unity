@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/upoolnoodle",
+  "textures": {
+    "0": "overtime:blocks/365"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "down": "overtime:blocks/wall6",
+    "up": "overtime:blocks/wall3",
+    "side": "overtime:blocks/wall16"
+  }
+}

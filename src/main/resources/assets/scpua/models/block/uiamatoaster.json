@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/uiamatoaster",
-  "textures": {
-    "all": "scpua:blocks/426",
-    "particle": "scpua:blocks/426",
-    "0": "scpua:blocks/426"
-  }
-}

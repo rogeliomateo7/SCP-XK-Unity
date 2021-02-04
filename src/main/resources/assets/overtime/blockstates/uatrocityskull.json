@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:uatrocityskull"
+    },
+    "facing=north": {
+      "model": "overtime:uatrocityskull"
+    },
+    "facing=east": {
+      "model": "overtime:uatrocityskull",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:uatrocityskull",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:uatrocityskull",
+      "y": 270
+    }
+  }
+}

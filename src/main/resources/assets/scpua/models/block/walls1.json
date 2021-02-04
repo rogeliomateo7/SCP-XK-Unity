@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "down": "scpua:blocks/wall3",
-    "up": "scpua:blocks/wall6",
-    "side": "scpua:blocks/wall1"
-  }
-}

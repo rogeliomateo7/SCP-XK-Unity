@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:waterdrinkeru"
+    },
+    "facing=north": {
+      "model": "overtime:waterdrinkeru"
+    },
+    "facing=east": {
+      "model": "overtime:waterdrinkeru",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:waterdrinkeru",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:waterdrinkeru",
+      "y": 270
+    }
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/chocolatefountain",
-  "textures": {
-    "all": "scpua:blocks/743",
-    "particle": "scpua:blocks/743",
-    "0": "scpua:blocks/743"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/uthepainting",
-  "textures": {
-    "all": "scpua:blocks/1074",
-    "particle": "scpua:blocks/1074",
-    "0": "scpua:blocks/1074"
-  }
-}

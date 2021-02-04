@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "overtime:tframe_top_nl" },
+        "facing=west": { "model": "overtime:tframe_top_nl", "y": 90 },
+        "facing=north": { "model": "overtime:tframe_top_nl", "y": 180 },
+        "facing=east": { "model": "overtime:tframe_top_nl", "y": 270 }
+    }
+} 

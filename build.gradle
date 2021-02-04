@@ -9,9 +9,9 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "2.0.0-20w19a"
-group = "gus.scpua"
-archivesBaseName = "scpua"
+version = "2.0.0-21w05a"
+group = "gus.overtime"
+archivesBaseName = "overtime"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
@@ -24,17 +24,21 @@ minecraft {
     runDir = "run"
 
     replace "@VERSION@", project.version
-    replaceIn "scpua.java"
+    replaceIn "Overtime.java"
 
     mappings = "snapshot_20171003"
 }
 
 repositories {
     maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+    maven {
+        url = "https://www.cursemaven.com"
+    }
 }
 
 dependencies {
-    deobfCompile('software.bernie.geckolib:forge-1.12.2-geckolib:2.0.0')
+    deobfCompile('software.bernie.geckolib:forge-1.12.2-geckolib:2.0.1')
+    compile('curse.maven:Albedo-275300:2714505')
 }
 
 processResources {

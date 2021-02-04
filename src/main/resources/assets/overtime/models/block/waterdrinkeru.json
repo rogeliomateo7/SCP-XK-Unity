@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/uwatercooler",
+  "textures": {
+    "all": "overtime:blocks/watercooler",
+    "particle": "overtime:blocks/watercooler",
+    "0": "overtime:blocks/watercooler"
+  }
+}

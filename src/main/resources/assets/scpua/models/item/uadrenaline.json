@@ -1,6 +1,0 @@
-{
-  "parent": "scpua:custom/umorphine",
-  "textures": {
-    "0": "scpua:blocks/syringe"
-  }
-}

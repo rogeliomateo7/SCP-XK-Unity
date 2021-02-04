@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/taperecorder",
-  "textures": {
-    "all": "scpua:blocks/taperecorder",
-    "particle": "scpua:blocks/taperecorder",
-    "0": "scpua:blocks/taperecorder"
-  }
-}

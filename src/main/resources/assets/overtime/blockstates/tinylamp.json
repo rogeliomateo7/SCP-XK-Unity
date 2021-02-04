@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": {"model": "overtime:tinylamp"},
+    "facing=north": {"model": "overtime:tinylamp"},
+    "facing=east": {"model": "overtime:tinylamp","y": 90},
+    "facing=south": {"model": "overtime:tinylamp","y": 180},
+    "facing=west": {"model": "overtime:tinylamp","y": 270},
+    "facing=up": {"model": "overtime:tinylamp","x": 270},
+    "facing=down": {"model": "overtime:tinylamp","x": 90}
+  }
+}

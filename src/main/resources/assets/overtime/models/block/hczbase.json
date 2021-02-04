@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "overtime:blocks/site93/heavymid",
+    "up": "overtime:blocks/site93/heavymid",
+    "north": "overtime:blocks/site93/heavylow",
+    "east": "overtime:blocks/site93/heavylow",
+    "south": "overtime:blocks/site93/heavylow",
+    "west": "overtime:blocks/site93/heavylow",
+    "particle": "overtime:blocks/site93/heavymid"
+  }
+}

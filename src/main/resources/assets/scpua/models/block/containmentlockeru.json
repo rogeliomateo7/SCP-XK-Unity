@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/contaimentlockeru",
-  "textures": {
-    "all": "scpua:blocks/contaimentlockeru",
-    "particle": "scpua:blocks/contaimentlockeru",
-    "0": "scpua:blocks/contaimentlockeru"
-  }
-}

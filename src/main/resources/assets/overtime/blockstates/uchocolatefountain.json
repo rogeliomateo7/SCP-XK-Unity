@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:uchocolatefountain"
+    },
+    "facing=north": {
+      "model": "overtime:uchocolatefountain"
+    },
+    "facing=east": {
+      "model": "overtime:uchocolatefountain",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:uchocolatefountain",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:uchocolatefountain",
+      "y": 270
+    }
+  }
+}

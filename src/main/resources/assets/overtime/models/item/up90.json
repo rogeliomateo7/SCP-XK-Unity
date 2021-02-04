@@ -1,0 +1,7 @@
+{
+  "parent": "overtime:custom/up90",
+  "textures": {
+    "0": "overtime:blocks/up90",
+    "missing": "overtime:blocks/"
+  }
+}

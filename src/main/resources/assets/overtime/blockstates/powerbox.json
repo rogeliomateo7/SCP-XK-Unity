@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:powerbox"
+    },
+    "facing=north": {
+      "model": "overtime:powerbox"
+    },
+    "facing=east": {
+      "model": "overtime:powerbox",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:powerbox",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:powerbox",
+      "y": 270
+    }
+  }
+}

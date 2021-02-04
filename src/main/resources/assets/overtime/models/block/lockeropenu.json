@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/openlockeru",
+  "textures": {
+    "all": "overtime:blocks/lockeru",
+    "particle": "overtime:blocks/lockeru",
+    "0": "overtime:blocks/lockeru"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/uwendigoskull",
-  "textures": {
-    "all": "scpua:blocks/uskull",
-    "particle": "scpua:blocks/uskull",
-    "0": "scpua:blocks/uskull"
-  }
-}

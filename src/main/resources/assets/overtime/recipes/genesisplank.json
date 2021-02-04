@@ -1,0 +1,16 @@
+{
+  "group": "overtime",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "overtime:genesislog"
+    }
+  },
+  "result": {
+    "item": "overtime:genesisplank",
+    "count": 4
+  }
+}

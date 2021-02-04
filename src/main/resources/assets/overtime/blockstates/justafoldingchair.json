@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:justafoldingchair"
+    },
+    "facing=north": {
+      "model": "overtime:justafoldingchair"
+    },
+    "facing=east": {
+      "model": "overtime:justafoldingchair",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:justafoldingchair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:justafoldingchair",
+      "y": 270
+    }
+  }
+}

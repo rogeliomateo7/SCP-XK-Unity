@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:alarmbutton"
+    },
+    "facing=north": {
+      "model": "overtime:alarmbutton"
+    },
+    "facing=east": {
+      "model": "overtime:alarmbutton",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:alarmbutton",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:alarmbutton",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/butlershandbell",
+  "textures": {
+    "1": "overtime:blocks/handbutlerbell"
+  }
+}

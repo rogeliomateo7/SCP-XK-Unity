@@ -1,0 +1,12 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+        "particle": "overtime:blocks/site78/tframe_bottom_l",
+        "up": "overtime:blocks/site78/tframe_middle_l",
+        "down": "overtime:blocks/site78/tframe_middle_l",
+        "north": "overtime:blocks/site78/tframe_bottom_l",
+        "east": "overtime:blocks/site78/tframe_bottom_nl",
+        "south": "overtime:blocks/site78/tframe_bottom_l",
+        "west": "overtime:blocks/site78/tframe_bottom_nl"
+   }
+}

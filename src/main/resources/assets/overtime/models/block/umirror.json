@@ -1,0 +1,9 @@
+{
+  "parent": "overtime:custom/umirror",
+  "textures": {
+    "all": "overtime:blocks/umirror",
+    "particle": "overtime:blocks/umirror",
+    "0": "overtime:blocks/umirror",
+    "missing": "overtime:blocks/"
+  }
+}

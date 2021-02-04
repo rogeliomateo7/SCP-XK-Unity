@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:containmentlockeru"
+    },
+    "facing=north": {
+      "model": "overtime:containmentlockeru"
+    },
+    "facing=east": {
+      "model": "overtime:containmentlockeru",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:containmentlockeru",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:containmentlockeru",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:storageshelfleft"
+    },
+    "facing=north": {
+      "model": "overtime:storageshelfleft"
+    },
+    "facing=east": {
+      "model": "overtime:storageshelfleft",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:storageshelfleft",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:storageshelfleft",
+      "y": 270
+    }
+  }
+}

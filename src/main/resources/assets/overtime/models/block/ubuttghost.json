@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/ubuttghost",
+  "textures": {
+    "all": "overtime:blocks/buttghost",
+    "particle": "overtime:blocks/buttghost",
+    "0": "overtime:blocks/buttghost"
+  }
+}

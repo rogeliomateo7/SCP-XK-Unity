@@ -24,5 +24,3 @@ run
 # Visual Studio Products
 .vscode/*
 *.code-workspace
-
-/Models/

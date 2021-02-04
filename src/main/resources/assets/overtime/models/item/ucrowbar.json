@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/ucrowbar",
+  "textures": {
+    "0": "overtime:blocks/crowbar"
+  }
+}

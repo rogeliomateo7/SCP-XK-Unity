@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/cerealbox",
-  "textures": {
-    "all": "scpua:blocks/cerealbox",
-    "particle": "scpua:blocks/cerealbox",
-    "0": "scpua:blocks/cerealbox"
-  }
-}

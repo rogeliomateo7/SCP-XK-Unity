@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:utoilet"
+    },
+    "facing=north": {
+      "model": "overtime:utoilet"
+    },
+    "facing=east": {
+      "model": "overtime:utoilet",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:utoilet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:utoilet",
+      "y": 270
+    }
+  }
+}

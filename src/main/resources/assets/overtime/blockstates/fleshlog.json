@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=up": {"model": "overtime:fleshlog"},
+    "facing=down": {"model": "overtime:fleshlog"},
+    "facing=north": {"model": "overtime:fleshlog", "x": 90},
+    "facing=south": {"model": "overtime:fleshlog", "x": 90},
+    "facing=east": {"model": "overtime:fleshlog", "y": 90, "x": 90},
+    "facing=west": {"model": "overtime:fleshlog", "y": 90, "x": 90}
+  }
+}

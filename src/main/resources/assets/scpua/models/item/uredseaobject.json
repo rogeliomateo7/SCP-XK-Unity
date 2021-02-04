@@ -1,6 +1,0 @@
-{
-  "parent": "scpua:custom/redseaobject",
-  "textures": {
-    "0": "scpua:blocks/redseaobject"
-  }
-}

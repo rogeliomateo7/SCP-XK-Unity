@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:barrela"
+    },
+    "facing=north": {
+      "model": "overtime:barrela"
+    },
+    "facing=east": {
+      "model": "overtime:barrela",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:barrela",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:barrela",
+      "y": 270
+    }
+  }
+}

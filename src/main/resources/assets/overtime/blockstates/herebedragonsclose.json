@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:herebedragonsclose"
+    },
+    "facing=north": {
+      "model": "overtime:herebedragonsclose"
+    },
+    "facing=east": {
+      "model": "overtime:herebedragonsclose",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:herebedragonsclose",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:herebedragonsclose",
+      "y": 270
+    }
+  }
+}

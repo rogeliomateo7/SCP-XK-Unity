@@ -1,0 +1,395 @@
+#Creative Tabs
+itemGroup.overtime=SCP:Overtime
+itemGroup.tools=Tools
+itemGroup.cosmetics=Overtime Cosmetics
+itemGroup.site93=Site-93
+itemGroup.site78=Site-78
+item.logoy.name=Logo Yellow
+item.logoo.name=Logo Orange
+item.logog.name=Logo Green
+item.logor.name=Logo Red
+item.logob.name=Logo Blue
+
+#Items
+#  Site-78
+item.coms_helmet.name=COMSuit Helmet
+item.coms_chestplate.name=COMSuit Chestplate
+item.coms_leggings.name=COMSuit Leggings
+item.coms_boots.name=COMSuit Boots
+
+#  Tools
+item.ucrowbar.name=Crowbar
+item.ubrokenpipe.name=Broken Pipe
+item.ucombatknife.name=Combat Knife
+item.ufireaxe.name=Fire Axe
+item.uablesword.name=Able Sword
+item.wrench.name=Wrench
+
+item.umedkit.name=Medkit
+item.painkiller.name=Pain Killer Container
+item.painkillerpill.name=Pain Killer Pill
+item.uadrenaline.name=Adrenaline
+item.ubandage.name=Bandage
+
+#  Scp items
+item.uselfreplicatingcake.name=Self Replicating Cake (871)
+item.420-j.name=The best █████ in the world (420-J)
+
+
+#Blocks
+#  Site98 Blocks
+tile.lczfloora.name=LCZ FloorA
+tile.lczfloorb.name=LCZ FloorB
+tile.lczbase.name=LCZ Base
+tile.lczbottom.name=LCZ Bottom
+tile.lczmiddle.name=LCZ Middle
+tile.lcztop.name=LCZ Top
+tile.hczfloor.name=HCZ Floor
+tile.hczbase.name=HCZ Base
+tile.hczmiddle.name=HCZ Middle
+tile.hcztop.name=HCZ Top
+tile.eczbase.name=ECZ Base
+tile.eczmiddle.name=ECZ Middle
+tile.ecztop.name=ECZ Top
+tile.shczfloor.name=SHCZ Floor
+tile.shczwall.name=SHCZ Bottom
+tile.shczmiddle.name=SHCZ Middle
+tile.shczupper.name=SHCZ Wall
+
+#  Cosmetics
+tile.trashbin.name=Trash Bin
+tile.railleft.name=Rail Left
+tile.railmiddle.name=Rail Middle
+tile.railright.name=Rail Right
+tile.powerbox.name=Power Box
+tile.fireextinguixer.name=Fire Extinguisher
+tile.tinylamp.name=Tiny Lamp
+tile.shelfleft.name=Shelf Left
+tile.shelfmiddle.name=Shelf Middle
+tile.shelfright.name=Shelf Right
+tile.barrela.name=Barrel Blue
+tile.barrelb.name=Barrel Red
+tile.wetfloorsign.name=Wet Floor Sign
+
+
+#  Lockdown Unity
+tile.walls1.name=Wall A1 SubLevel2
+tile.walls1a.name=Wall B1 Sublevel
+tile.walls1b.name=Wall C1 Sublevel
+tile.walls1d.name=Wall C1 Sublevel
+tile.walls1e.name=Wall D1 Sublevel
+tile.walls1f.name=Wall E1 Sublevel
+
+tile.walls2.name=Wall A2 SubLevel2 
+tile.walls2b.name=Wall C2 Sublevel
+tile.walls2d.name=Wall C2 Sublevel
+tile.walls2f.name=Wall E2 Sublevel
+tile.walls3b.name=Wall C3 Sublevel
+tile.walls3d.name=Wall C3 Sublevel
+
+tile.floors.name=Floor Sublevel2
+tile.grid.name=Grid Sublevel
+tile.wallpillow.name=Wall Pillow SubLevel
+
+tile.czglass.name=CZ Glass
+tile.metallichydrogen.name=Metallic Hydrogen
+
+tile.pipenightmare.name=Pipe Nightmare (015)
+tile.pipenightmareblock.name=Pipe Nightmare Block (015)
+tile.flesha.name=Flesh (610 A)
+tile.fleshb.name=Flesh (610 B)
+tile.ableblockfloor.name=076-1 Floor
+tile.ableblockbottom.name=076-1 Bottom
+tile.ableblockmiddle.name=076-1 Middle
+tile.ablecoffin.name=076-1 Coffin
+#  Site-78
+#  Office Blocks
+tile.office_purple_bottom.name=Purple Office Bottom
+tile.office_purple_line.name=Purple Office Line
+tile.office_purple_top.name=Purple Office Top
+tile.office_blue_bottom.name=Blue Office Bottom
+tile.office_blue_line.name=Blue Office Line
+tile.office_blue_top.name=Blue Office Top
+tile.office_grey_bottom.name=Grey Office Bottom
+tile.office_grey_line.name=Grey Office Line
+tile.office_grey_top.name=Grey Office Top
+tile.office_light_blue_top.name=Light Blue Office Top
+tile.office_light_blue_line.name=Light Blue Office Line
+tile.office_light_blue_bottom.name=Light Blue Office Bottom
+tile.office_red_top.name=Red Office Top
+tile.office_red_line.name=Red Office Line
+tile.office_red_bottom.name=Red Office Bottom
+tile.office_black_top.name=Black Office Top
+tile.office_black_line.name=Black Office Line
+tile.office_black_bottom.name=Black Office Bottom
+tile.office_yellow_top.name=Yellow Office Top
+tile.office_yellow_line.name=Yellow Office Line
+tile.office_yellow_bottom.name=Yellow Office Bottom
+tile.office_green_top.name=Green Office Top
+tile.office_green_line.name=Green Office Line
+tile.office_green_bottom.name=Green Office Bottom
+tile.office_dark_green_top.name=Dark Green Office Top
+tile.office_dark_green_line.name=Dark Green Office Line
+tile.office_dark_green_bottom.name=Dark Green Office Bottom
+tile.office_orange_top.name=Orange Office Top
+tile.office_orange_line.name=Orange Office Line
+tile.office_orange_bottom.name=Orange Office Bottom
+tile.office_cyan_top.name=Cyan Office Top
+tile.office_cyan_line.name=Cyan Office Line
+tile.office_cyan_bottom.name=Cyan Office Bottom
+#  Other
+tile.tesla_block.name=Tesla Block
+
+tile.tframe_top_nl.name=Tesla Frame Top No Line
+tile.tframe_top_l.name=Tesla Frame Top Line
+tile.tframe_middle_nl.name=Tesla Frame Middle No Line
+tile.tframe_middle_l.name=Tesla Frame Middle Line
+tile.tframe_bottom_nl.name=Tesla Frame Bottom No Line
+tile.tframe_bottom_l.name=Tesla Frame Bottom Line
+
+tile.flat_light_off.name=Flat Light
+tile.flat_light_on.name=Flat Light On
+
+
+#Potions
+
+#Entity's
+entity.plaguedoctoru.name=Plague Doctor (049 U)
+entity.ticklemonsteru.name=Tickle Monster (999)
+entity.scp076-2.name=Able (076-2)
+
+#Death Message
+death.attack.electrocuted=%1$s had a Shocking experience
+death.attack.pipenightmare=%1$s got Steamed to death
+
+#Keybinds (have to change soon)
+keys.s78.category=Site-78
+key.coms.desc=COMSuit Toggle
+
+
+#Unorganized crap
+
+entity.corrosivesnail.name=Corrosive Snail (075)
+item.ubulletam.name=Anti-Materiel Bullet
+item.neckbreaker.name=Neck Breaker
+entity.player682.name=Hard to Destroy Reptile (682)
+item.eriquinator.name=Eric
+item.thezoozipperbody.name=The Zoo Zipper (3660)
+tile.uatrocityskull.name=Atrocity Skull (1123)
+tile.ubuttghost.name=The Butt Ghost (789-J)
+entity.uclassd.name=Class D
+entity.reanimatedcorpse.name=Reanimated Corpse
+tile.walllightu.name=Wall Light 
+entity.malo.name=MalO (1471-2)
+item.udesertinacan.name="Desert in a Can" (622)
+item.inkstain.name=Ink Stain (505)
+lingering_potion.effect.sedutive=Lingering Sedutive
+effect.cure=Cure
+item.cereal.name=Bowl of Cereal
+entity.unclean.name=Unclean
+entity.ujoeschmo.name="Joe Schmo" (1504)
+entity.genesishuman.name=Song of Genesis (Human)
+splash_potion.effect.radiation=Splash Radiation .P
+tile.genesisstairplanks.name=Song of Genesis Stair
+entity.theburningman.name=The Burning Man (457)
+entity.genesisherbivore.name=Song of Genesis (Herbivore)
+item.thezoozipperhelmet.name=The Zoo Zipper Helmet
+entity.herebedragonse.name=Here Be Dragons E
+tile.genesistrees.name=Song Of Genesis Sappling
+tile.lockeropenu.name=Locker
+tile.genesisplank.name=Song of Genesis Plank
+tile.genesisdirtn.name=Song of Genesis Dirt (SAFE)
+item.phonemalo.name=Phone
+tipped_arrow.effect.cure=Arrow of Cure
+entity.herebedragonsg.name=Here Be Dragons G
+tile.genesislog.name=Song of Genesis Log
+tile.ubuttonon.name=Button 
+entity.herebedragonsa.name=Here Be Dragons A
+entity.aflockofdoves.name=A Flock of Doves (514)
+tile.uchocolatefountain.name=The Chocolate Fountain (743)
+item.upossessivemaskhelmet.name=The Possessive Mask (035)
+item.militaristicplaydoh.name=Militaristic Play-Doh (705)
+entity.upatchworkbear.name=Patchwork Bear (2295)
+entity.dove.name=Dove
+tile.genesisleaves.name=Song of Genesis Leaves
+item.up90.name=P90
+entity.genesishumann.name=Song of Genesis (Human) (SAFE)
+item.bananapill.name=Banana Pill by dado (3521)
+item.pocketcall.name=Pocket Call
+item.ufocusmaskbody.name=U Focus Mask Body
+entity.uthepesterbot.name=The Pester Bot (1370)
+item.umicrohid.name=Micro HID
+effect.radiation=Radiation Poisining
+splash_potion.effect.bleeding=Splash Bleeding
+splash_potion.effect.seduction=Splash Seduction
+entity.ufleshthathatesbomber.name=The Flesh That Hates (610 Bomber)
+splash_potion.effect.bananainfection=Splash Banana Infection
+entity.ugoc.name=GOC
+entity.deadlysilence.name=Deadly Silence (025-FR)
+item.patchwork.name=Patchwork
+item.thezoozipperboots.name=The Zoo Zipper Boots
+item.upossessivemaskbody.name=U Possessive Mask Body
+item.ufocusmaskboots.name=U Focus Mask Boots
+item.redacteddocument.name=[REDACTED]
+entity.uperipheraljumper.name=The Peripheral Jumper (372)
+item.upossessivemasklegs.name=U Possessive Mask Leggings
+item.phoneoff.name=Phone
+potion.effect.seduction=Seduction
+item.pocketcreator.name=Pocket Creator
+entity.roomba.name=Roomba
+tile.box.name=Contaiment Box
+entity.ufleshthathatestank.name=The Flesh That Hates (610 Tanks)
+entity.utheprototype.name="The Prototype" (001)
+effect.bleeding=Bleeding
+entity.cainu.name= Cain (073)
+tile.upeacockegg.name=Peacock Egg (80-FR)
+entity.userpent.name=Serpents Hand
+item.inkstainn.name=Ink Stain (505) (SAFE)
+tile.averyangryboxofcereal.name=A Very Angry Box of Cereal (3671)(W.I.P)
+splash_potion.effect.sedutive=Splash Sedutive
+item.uglock.name=Glock
+tile.containmentlockeru.name=Contaiment Locker
+tile.uoldia.name=The Old IA (079)
+entity.itsnotyouitsus.name="It's not you, it's us" (4064 )
+item.herebedragonsegg.name=Origami Dragon
+item.bitter.name=Bitter
+item.capofneglectbody.name=Cap Of Neglect Body
+item.ufocusmasklegs.name=U Focus Mask Leggings
+item.cavegamedimension.name=Cave Game Dimension Portal Igniter
+tile.firstaidu.name=First Aid
+entity.uwithmanyvoices98.name="With Many Voices" (939-98-U)
+entity.ufleshthathatesbreeder.name=The Flesh That Hates (610 Breeder)
+potion.effect.cure=Cure
+entity.umtf.name=MTF
+tile.cggrass.name=Cave Game Grass
+entity.plaguedoctorun.name=Plague Doctor (049 U)(SAFE)
+tile.ubuttonoff.name=Button 
+entity.thestatueu.name=The Statue (173 U)
+entity.uo5.name=O5-Redacted
+item.capofneglectlegs.name=Cap Of Neglect Leggings
+item.ufocusmaskhelmet.name=Focus Mask
+item.infection.name=Infection
+entity.erictoy.name=Eric's Toy (066)
+entity.uredacted.name=Redacted (** / ***** / ** / * )
+item.claw.name=Claw
+tile.genesisdirt.name=Song of Genesis Dirt
+entity.smithjim.name="Smith Jim" (2058)
+entity.herebedragonsf.name=Here Be Dragons F
+entity.thedeer.name=The Deer (2845)
+entity.cyborgchild.name=Cyborg Child (191)
+tile.tesla.name=Tesla
+entity.uwendigo.name=Wendigo
+item.thecure.name=The Cure
+tile.herebedragonsclose.name=Here Be Dragons (1762)
+entity.pigeon.name=Pigeon
+tile.umirror.name=Mirror
+entity.looselipsskinkshipsn.name=Loose Lips Skink Ships (3011)(SAFE)
+tile.storageshelfleft.name=Storage Shelf Left
+lingering_potion.effect.radiation=Lingering Radiation .P
+entity.ugpd.name=GPD
+item.ubulletp90.name=Bullet P90
+effect.sedutive=Sedutive
+entity.herebedragonsd.name=Here Be Dragons D
+entity.udarkform.name=Dark Form (080)
+entity.ustartlingstatue.name=The Startling Statue (650)
+entity.genesisguardian.name=Song of Genesis (Guardian)
+tile.thebirthdaymonkey.name=The Birthday Monkey (983)
+entity.uwithmanyvoices.name="With Many Voices" (939-U)
+tile.uiamatoaster.name="I am a Toaster" (426)
+tipped_arrow.effect.radiation=Arrow of Radiation .P
+item.thezoozipperlegs.name=The Zoo Zipper Leggings
+tile.laptopu.name=Laptop
+entity.mrdeedse.name=Mr Deeds
+tipped_arrow.effect.bleeding=Arrow of Bleeding
+entity.spikebotr.name=Red Spike Bot 
+item.adminsword.name=Admin Tool
+entity.theheartofdarkness.name=The Heart of Darkness (058)
+potion.effect.bananainfection=Banana Infection
+entity.daughterofshadows.name=Daughter Of Shadows (029)
+potion.effect.radiation=Radiation .P
+entity.aquatichorroru.name=The Aquatic Horror (1128)
+tile.ulegobox.name=The Living Lego (387)
+potion.effect.sedutive=Sedutive
+item.aquatichorrordimension.name=Aquatic Horror Dimension Portal Igniter
+tile.storageshelfmiddle.name=Storage Shelf Middle
+entity.thelivinglego.name=The Living Lego (387-1)
+entity.herebedragonsb.name=Here Be Dragons B
+effect.seduction=Seduction
+entity.headlights.name=The HeadLights (745)
+item.butlerhandbell.name=Butler's Hand Bell (662)
+item.peperclip.name=Peper Clip
+fluid.inkn=InkN
+entity.uwithmanyvoices101.name="With Many Voices" (939-101-U)
+item.upossessivemaskboots.name=U Possessive Mask Boots
+tile.lockerclosedu.name=Closed Locker
+entity.uoldman.name=The Old Man (106 U)
+entity.uscientist.name=Scientist
+entity.portal106.name=Portal106
+item.phoneon.name=Phone
+tile.uwskull.name=Wendigo Skull (323)
+tile.storageshelfright.name=Storage Shelf Right
+entity.uguard.name=Guard
+entity.looselipsskinkships.name=Loose Lips Skink Ships (3011)
+tile.songofgenesis.name=Song of Genesis (407)
+entity.humansrefutedn.name=Human Refuted (3199)(SAFE)
+item.bdaycandy.name=Birthday Candy
+item.uncleanland.name=Red Sea Object (093)
+item.capofneglectboots.name=Cap Of Neglect Boots
+entity.humansrefuted.name=Human Refuted (3199)
+tile.cgcobblestone.name=Cave Game Cobblestone
+entity.uhuman.name=Human
+fluid.ink=Ink
+entity.spikebotb.name=Blue Spike Bot 
+tile.upaddlingpool.name=Teleporting Paddling Pool (120)
+tipped_arrow.effect.sedutive=Arrow of Sedutive
+lingering_potion.effect.seduction=Lingering Seduction
+item.uflamethrower.name=FlameThower
+tile.waterdrinkeru.name=Water Drinker
+item.uspitt.name=Spitt
+entity.dohsoldier.name=Doh Soldier
+item.deadlycereal.name=Deadly Bowl
+tipped_arrow.effect.bananainfection=Arrow of Banana Infection
+item.banana.name=Banana
+item.capofneglecthelmet.name=Cap Of Neglect Helmet
+tipped_arrow.effect.seduction=Arrow of Seduction
+tile.songofgenesisn.name=Song of Genesis (407) (SAFE)
+item.pocketpull.name=Pocket Pull
+tile.herebedragonsopen.name=Here Be Dragons Open
+tile.justafoldingchair.name=Just A Folding Chair (2950)
+entity.ushadowperson.name=The Shadow Person (017)
+lingering_potion.effect.bananainfection=Lingering Banana Infection
+fluid.acid=Acid
+splash_potion.effect.cure=Splash Cure
+entity.udoorman.name=The Door Man (303)
+item.ubulletglock.name=Bullet Glock
+entity.ufleshthathatesspitter.name=The Flesh That Hates (610 Spitter)
+item.cerealbowl.name=Bowl
+entity.uchurch.name=The Church of the Broken God
+item.skullbitter.name=Skull Bitter
+item.uredseaobject.name=Red Sea Object (093)
+entity.ufleshthathateschild.name=The Flesh That Hates (610 Child)
+item.uantimaterielrifle.name=Anti-Materiel Rifle
+tile.utoilet.name=Toilet
+entity.harmlesskitten.name=A Harmless Kitten (247)
+potion.effect.bleeding=Bleeding
+item.upoolnoodle.name=Pool Noodle (365)
+entity.dohtank.name=Doh Tank
+entity.herebedragonsc.name=Here Be Dragons C
+entity.ucaos.name=Caos
+entity.burningmanplayer.name=The Burning Man (457)
+entity.ableu.name=Able (076-2)
+entity.genesiscarnivore.name=Song of Genesis (Carnivore)
+entity.ufleshthathateswalker.name=The Flesh That Hates (610 Walker)
+tile.uthepainting.name=The Painting (1074)
+entity.uants.name=Ant
+entity.fernandthecannibal.name=Fernand the Cannibal (082)
+entity.eggsrefuted.name=Egg (3199)
+entity.hardtodestroyreptileu.name=Hard to Destroy Reptile (682)
+lingering_potion.effect.bleeding=Lingering Bleeding
+tile.alarmbutton.name=Alarm Button
+lingering_potion.effect.cure=Lingering Cure
+tile.ballofsharp.name=Ball of Sharp (162)
+entity.giantparasitoidwasps.name=Giant Parasitoid Wasps (772)
+effect.bananainfection=Banana Infection
+entity.uuiu.name=UIU
+entity.humansrefutedbaby.name=Human Refuted (3199)

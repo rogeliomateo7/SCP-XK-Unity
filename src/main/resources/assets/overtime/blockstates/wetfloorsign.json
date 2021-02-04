@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:wetfloorsign"
+    },
+    "facing=north": {
+      "model": "overtime:wetfloorsign"
+    },
+    "facing=east": {
+      "model": "overtime:wetfloorsign",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:wetfloorsign",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:wetfloorsign",
+      "y": 270
+    }
+  }
+}

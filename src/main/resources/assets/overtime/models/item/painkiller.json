@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/upainkiller",
+  "textures": {
+    "0": "overtime:blocks/painkiller"
+  }
+}

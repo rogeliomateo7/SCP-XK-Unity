@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": {"model": "overtime:flat_light_off"},
+    "facing=north": {"model": "overtime:flat_light_off","x": -90},
+    "facing=east": {"model": "overtime:flat_light_off","y": 90,"x": -90},
+    "facing=south": {"model": "overtime:flat_light_off","x": 90},
+    "facing=west": {"model": "overtime:flat_light_off","y": 90,"x": 90},
+    "facing=up": {"model": "overtime:flat_light_off","x": 180},
+    "facing=down": {"model": "overtime:flat_light_off"}
+  }
+}

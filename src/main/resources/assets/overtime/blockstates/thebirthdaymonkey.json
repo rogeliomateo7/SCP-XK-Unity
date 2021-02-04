@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:thebirthdaymonkey"
+    },
+    "facing=north": {
+      "model": "overtime:thebirthdaymonkey"
+    },
+    "facing=east": {
+      "model": "overtime:thebirthdaymonkey",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:thebirthdaymonkey",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:thebirthdaymonkey",
+      "y": 270
+    }
+  }
+}

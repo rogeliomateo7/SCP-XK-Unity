@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/ubuttonon",
+  "textures": {
+    "all": "overtime:blocks/ubutton",
+    "particle": "overtime:blocks/ubutton",
+    "0": "overtime:blocks/ubutton"
+  }
+}

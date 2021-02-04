@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/upeacockegg",
-  "textures": {
-    "all": "scpua:blocks/80fr",
-    "particle": "scpua:blocks/80fr",
-    "0": "scpua:blocks/80fr"
-  }
-}

@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/uoldia",
+  "textures": {
+    "all": "overtime:blocks/079u",
+    "particle": "overtime:blocks/079u",
+    "0": "overtime:blocks/079u"
+  }
+}

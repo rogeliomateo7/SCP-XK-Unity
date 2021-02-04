@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:ulivinglego"
+    },
+    "facing=north": {
+      "model": "overtime:ulivinglego"
+    },
+    "facing=east": {
+      "model": "overtime:ulivinglego",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:ulivinglego",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:ulivinglego",
+      "y": 270
+    }
+  }
+}

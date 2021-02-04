@@ -1,0 +1,16 @@
+{
+  "group": "overtime",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "overtime:genesisplank"
+    },
+    {
+      "item": "overtime:genesisplank"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stick",
+    "count": 4
+  }
+}

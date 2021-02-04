@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "overtime:blocks/genesissappling",
+    "particle": "overtime:blocks/genesissappling"
+  }
+}

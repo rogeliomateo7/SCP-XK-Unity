@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/ulaptop",
+  "textures": {
+    "all": "overtime:blocks/ulaptop",
+    "particle": "overtime:blocks/ulaptop",
+    "0": "overtime:blocks/ulaptop"
+  }
+}

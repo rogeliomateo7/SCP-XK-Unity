@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "scpua:blocks/wall3",
-    "side": "scpua:blocks/wall13"
-  }
-}

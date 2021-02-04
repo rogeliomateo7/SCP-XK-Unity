@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:label"
+    },
+    "facing=north": {
+      "model": "overtime:label"
+    },
+    "facing=east": {
+      "model": "overtime:label",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:label",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:label",
+      "y": 270
+    }
+  }
+}

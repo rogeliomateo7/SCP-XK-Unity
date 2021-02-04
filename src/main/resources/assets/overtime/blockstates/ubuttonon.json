@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:ubuttonon"
+    },
+    "facing=north": {
+      "model": "overtime:ubuttonon"
+    },
+    "facing=east": {
+      "model": "overtime:ubuttonon",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:ubuttonon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:ubuttonon",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "overtime:ubuttonon",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "overtime:ubuttonon",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "overtime:custom/uantimaterielrifle",
+  "textures": {
+    "0": "overtime:blocks/rifle",
+    "missing": "overtime:blocks/"
+  }
+}

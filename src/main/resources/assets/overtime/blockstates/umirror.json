@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:umirror"
+    },
+    "facing=north": {
+      "model": "overtime:umirror"
+    },
+    "facing=east": {
+      "model": "overtime:umirror",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:umirror",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:umirror",
+      "y": 270
+    }
+  }
+}

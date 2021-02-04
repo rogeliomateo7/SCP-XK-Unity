@@ -1,6 +1,0 @@
-{
-  "parent": "scpua:custom/ucombatknife",
-  "textures": {
-    "0": "scpua:blocks/combatknife"
-  }
-}

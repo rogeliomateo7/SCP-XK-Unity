@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/uwatercooler",
-  "textures": {
-    "all": "scpua:blocks/watercooler",
-    "particle": "scpua:blocks/watercooler",
-    "0": "scpua:blocks/watercooler"
-  }
-}

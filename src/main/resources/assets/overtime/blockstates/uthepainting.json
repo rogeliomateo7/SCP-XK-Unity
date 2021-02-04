@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:uthepainting"
+    },
+    "facing=north": {
+      "model": "overtime:uthepainting"
+    },
+    "facing=east": {
+      "model": "overtime:uthepainting",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:uthepainting",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:uthepainting",
+      "y": 270
+    }
+  }
+}

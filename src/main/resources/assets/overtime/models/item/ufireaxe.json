@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/ufireaxe",
+  "textures": {
+    "0": "overtime:blocks/fireaxe"
+  }
+}

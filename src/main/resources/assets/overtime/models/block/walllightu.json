@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/walllightu",
+  "textures": {
+    "all": "overtime:blocks/walllight",
+    "particle": "overtime:blocks/walllight",
+    "0": "overtime:blocks/walllight"
+  }
+}

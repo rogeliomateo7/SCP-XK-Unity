@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "overtime:blocks/site93/sheavywall",
+    "side": "overtime:blocks/site93/sheavymid"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/phoneoff",
+  "textures": {
+    "1": "overtime:blocks/cellphone"
+  }
+}

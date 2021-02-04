@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/openlockeru",
-  "textures": {
-    "all": "scpua:blocks/lockeru",
-    "particle": "scpua:blocks/lockeru",
-    "0": "scpua:blocks/lockeru"
-  }
-}

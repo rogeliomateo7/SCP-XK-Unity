@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:genesislog"
+    },
+    "facing=south": {
+      "model": "overtime:genesislog"
+    },
+    "facing=north": {
+      "model": "overtime:genesislog"
+    },
+    "facing=east": {
+      "model": "overtime:genesislog",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "overtime:genesislog",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "overtime:genesislog",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "overtime:genesislog",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

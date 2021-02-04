@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/walllightu",
-  "textures": {
-    "all": "scpua:blocks/walllight",
-    "particle": "scpua:blocks/walllight",
-    "0": "scpua:blocks/walllight"
-  }
-}

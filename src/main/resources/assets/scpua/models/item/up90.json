@@ -1,7 +1,0 @@
-{
-  "parent": "scpua:custom/up90",
-  "textures": {
-    "0": "scpua:blocks/up90",
-    "missing": "scpua:blocks/"
-  }
-}

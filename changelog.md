@@ -8,6 +8,7 @@
 + 610 Slows you down when you walk on it
 
 # Major Changes! (If your world had any thing related to the things in red, you might want to check it out)
+- MODID HAS CHANGED TO overtime
 - Removed safe Variant of 610 Blocks
 - Changed how sounds work (might throw 1000+ of errors regarding sounds, however this will be a one time thing)
 - Changed Barrels from barrel and ybarrel to BarrelsB and A

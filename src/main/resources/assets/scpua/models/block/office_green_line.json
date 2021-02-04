@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "scpua:blocks/site78/wall",
-    "side": "scpua:blocks/site78/office_green_line"
-  }
-}

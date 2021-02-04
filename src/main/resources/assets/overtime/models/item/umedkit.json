@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/umedkit",
+  "textures": {
+    "0": "overtime:blocks/medkit"
+  }
+}

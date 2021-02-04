@@ -1,0 +1,8 @@
+{
+  "parent": "overtime:custom/contaimentlockeru",
+  "textures": {
+    "all": "overtime:blocks/contaimentlockeru",
+    "particle": "overtime:blocks/contaimentlockeru",
+    "0": "overtime:blocks/contaimentlockeru"
+  }
+}

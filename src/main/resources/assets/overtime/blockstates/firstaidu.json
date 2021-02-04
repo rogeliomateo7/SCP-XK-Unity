@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:firstaidu"
+    },
+    "facing=north": {
+      "model": "overtime:firstaidu"
+    },
+    "facing=east": {
+      "model": "overtime:firstaidu",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:firstaidu",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:firstaidu",
+      "y": 270
+    }
+  }
+}

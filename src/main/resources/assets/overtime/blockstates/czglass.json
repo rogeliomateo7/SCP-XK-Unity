@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:czglass"
+    },
+    "facing=north": {
+      "model": "overtime:czglass"
+    },
+    "facing=east": {
+      "model": "overtime:czglass",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:czglass",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:czglass",
+      "y": 270
+    }
+  }
+}

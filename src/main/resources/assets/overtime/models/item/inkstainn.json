@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/inkstain",
+  "textures": {
+    "0": "overtime:blocks/505"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:averyangryboxofcereal"
+    },
+    "facing=north": {
+      "model": "overtime:averyangryboxofcereal"
+    },
+    "facing=east": {
+      "model": "overtime:averyangryboxofcereal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:averyangryboxofcereal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:averyangryboxofcereal",
+      "y": 270
+    }
+  }
+}

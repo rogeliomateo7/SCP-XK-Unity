@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:upeacockegg"
+    },
+    "facing=north": {
+      "model": "overtime:upeacockegg"
+    },
+    "facing=east": {
+      "model": "overtime:upeacockegg",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:upeacockegg",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:upeacockegg",
+      "y": 270
+    }
+  }
+}

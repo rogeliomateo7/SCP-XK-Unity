@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:laptopu"
+    },
+    "facing=north": {
+      "model": "overtime:laptopu"
+    },
+    "facing=east": {
+      "model": "overtime:laptopu",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:laptopu",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:laptopu",
+      "y": 270
+    }
+  }
+}

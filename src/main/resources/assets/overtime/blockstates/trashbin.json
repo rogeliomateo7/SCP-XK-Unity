@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:trashbin"
+    },
+    "facing=north": {
+      "model": "overtime:trashbin"
+    },
+    "facing=east": {
+      "model": "overtime:trashbin",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:trashbin",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:trashbin",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "overtime:custom/hbdopen",
+  "textures": {
+    "all": "overtime:blocks/upper",
+    "particle": "overtime:blocks/upper",
+    "2": "overtime:blocks/front",
+    "3": "overtime:blocks/inside",
+    "4": "overtime:blocks/bottom",
+    "5": "overtime:blocks/sides",
+    "6": "overtime:blocks/upper",
+    "missing": "overtime:blocks/"
+  }
+}

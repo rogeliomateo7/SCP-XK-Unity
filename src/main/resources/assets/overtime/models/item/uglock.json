@@ -1,0 +1,6 @@
+{
+  "parent": "overtime:custom/uglock",
+  "textures": {
+    "0": "overtime:blocks/glock"
+  }
+}

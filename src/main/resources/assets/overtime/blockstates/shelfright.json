@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:shelfright"
+    },
+    "facing=north": {
+      "model": "overtime:shelfright"
+    },
+    "facing=east": {
+      "model": "overtime:shelfright",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:shelfright",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:shelfright",
+      "y": 270
+    }
+  }
+}

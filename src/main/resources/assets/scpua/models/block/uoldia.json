@@ -1,8 +1,0 @@
-{
-  "parent": "scpua:custom/uoldia",
-  "textures": {
-    "all": "scpua:blocks/079u",
-    "particle": "scpua:blocks/079u",
-    "0": "scpua:blocks/079u"
-  }
-}

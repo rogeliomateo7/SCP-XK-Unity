@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "scpua:blocks/407planks",
-    "top": "scpua:blocks/407planks",
-    "side": "scpua:blocks/407planks"
-  }
-}

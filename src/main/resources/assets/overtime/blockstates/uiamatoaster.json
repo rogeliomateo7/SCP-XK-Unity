@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "overtime:uiamatoaster"
+    },
+    "facing=north": {
+      "model": "overtime:uiamatoaster"
+    },
+    "facing=east": {
+      "model": "overtime:uiamatoaster",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overtime:uiamatoaster",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overtime:uiamatoaster",
+      "y": 270
+    }
+  }
+}
