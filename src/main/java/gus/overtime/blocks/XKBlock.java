@@ -96,6 +96,11 @@ public class XKBlock extends Block {
 			setHardness(1.5F);
 			setResistance(2);
 		}
+		if (material == Material.GLASS) {
+			setSoundType(SoundType.GLASS);
+			setHardness(1F);
+			setResistance(1);
+		}
 
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(name));

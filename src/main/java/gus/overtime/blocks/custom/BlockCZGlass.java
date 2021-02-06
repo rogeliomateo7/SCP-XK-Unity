@@ -4,16 +4,30 @@ import gus.overtime.blocks.XKBlockHorizontal;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+
+import java.util.Random;
 
 import static gus.overtime.Overtime.TAB_OVERTIME;
 
 public class BlockCZGlass extends XKBlockHorizontal {
     public BlockCZGlass() {
         super("czglass", TAB_OVERTIME, Material.GLASS);
+    }
+
+    @Override
+    public boolean canSilkHarvest(World world, BlockPos pos, IBlockState state, EntityPlayer player) {
+        return true;
+    }
+
+    @Override
+    public int quantityDropped(Random random) {
+        return 0;
     }
 
     public static AxisAlignedBB
